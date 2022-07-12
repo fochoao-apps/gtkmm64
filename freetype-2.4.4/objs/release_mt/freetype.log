@@ -1,0 +1,55 @@
+﻿  autofit.c
+  ftbase.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\base\ftrfork.c(830,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\base\ftrfork.c(831,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\base\ftrfork.c(820,7): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ftbbox.c
+  ftbitmap.c
+  ftfstype.c
+  ftgasp.c
+  ftglyph.c
+  ftgxval.c
+  ftinit.c
+  ftlcdfil.c
+  ftmm.c
+  ftotval.c
+  ftpatent.c
+  ftpfr.c
+  ftstroke.c
+  ftsynth.c
+  ftsystem.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\base\ftsystem.c(239,12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  fttype1.c
+  ftwinfnt.c
+  ftxf86.c
+  Generating Code...
+  Compiling...
+  bdf.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\bdf\bdflib.c(1918,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\bdf\bdflib.c(1930,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\bdf\bdflib.c(2249,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\bdf\bdflib.c(2256,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ftcache.c
+  cff.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\cff\cffgload.c(2704,38): warning C4244: '=': conversion from 'FT_UInt' to 'FT_Byte', possible loss of data
+  type1cid.c
+  ftgzip.c
+  ftlzw.c
+  pcf.c
+  pfr.c
+  psaux.c
+  pshinter.c
+  psmodule.c
+  raster.c
+  sfnt.c
+  smooth.c
+  truetype.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\truetype\ttobjs.c(316,52): warning C4244: 'function': conversion from 'int' to 'FT_UShort', possible loss of data
+  type1.c
+  type42.c
+  winfnt.c
+  Generating Code...
+  ftdebug.c
+D:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1553,5): warning MSB8012: TargetPath(C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\objs\release_mt\freetype.lib) does not match the Library's OutputFile property value (C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\objs\freetype244MT.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+D:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1555,5): warning MSB8012: TargetName(freetype) does not match the Library's OutputFile property value (freetype244MT). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  freetype.vcxproj -> C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\objs\release_mt\freetype.lib

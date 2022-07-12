@@ -1,0 +1,3 @@
+lib/libpopt.dll.a
+include/popt.h
+manifest/popt-dev_1.10.2-tml-20050828_win64.mft

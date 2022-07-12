@@ -1,0 +1,15 @@
+prefix=c:/devel/target/406ff90a6379dc078c6308da5f5aded2
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+svgz_supported=true
+css_supported=true
+
+Name: librsvg
+Description: library that renders svg files
+Version: 2.26.2
+Requires: glib-2.0 gdk-pixbuf-2.0 cairo
+Requires.private
+Libs: -L${libdir} -lrsvg-2
+Cflags: -I${includedir}/librsvg-2

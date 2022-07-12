@@ -1,0 +1,132 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>FontSelectionDialog</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<link rel="home" href="index.html" title="Programming with gtkmm">
+<link rel="up" href="chapter-dialogs.html" title="Chapter 15. Dialogs">
+<link rel="prev" href="sec-color-selection-dialog.html" title="ColorSelectionDialog">
+<link rel="next" href="chapter-drawingarea.html" title="Chapter 16. The Drawing Area Widget">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">FontSelectionDialog</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="sec-color-selection-dialog.html"><img src="icons/prev.png" alt="Prev"></a> </td>
+<th width="60%" align="center">Chapter 15. Dialogs</th>
+<td width="20%" align="right"> <a accesskey="n" href="chapter-drawingarea.html"><img src="icons/next.png" alt="Next"></a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1" title="FontSelectionDialog">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="sec-font-selection-dialog"></a>FontSelectionDialog</h2></div></div></div>
+<p>
+The <code class="classname">FontSelectionDialog</code> allows the user to choose a
+font.
+</p>
+<p><a class="ulink" href="http://library.gnome.org/devel/gtkmm/unstable/classGtk_1_1FontSelectionDialog.html" target="_top">Reference</a></p>
+<div class="sect2" title="Example">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="fontselectiondialog-example"></a>Example</h3></div></div></div>
+<div class="figure">
+<a name="figure-dialogs-fontselectiondialog"></a><p class="title"><b>Figure 15.4. FontSelectionDialog</b></p>
+<div class="figure-contents"><div class="screenshot"><div><img src="figures/dialogs_fontselectiondialog.png" alt="FontSelectionDialog"></div></div></div>
+</div>
+<br class="figure-break"><p><a class="ulink" href="http://git.gnome.org/cgit/gtkmm-documentation/tree/examples/book/dialogs/fontselectiondialog" target="_top">Source Code</a></p>
+<p>File: <code class="filename">examplewindow.h</code>
+</p>
+<pre class="programlisting">
+#ifndef GTKMM_EXAMPLEWINDOW_H
+#define GTKMM_EXAMPLEWINDOW_H
+
+#include &lt;gtkmm.h&gt;
+
+class ExampleWindow : public Gtk::Window
+{
+public:
+  ExampleWindow();
+  virtual ~ExampleWindow();
+
+protected:
+  //Signal handlers:
+  void on_button_font_set();
+
+  //Child widgets:
+  Gtk::FontButton m_Button;
+};
+
+#endif //GTKMM_EXAMPLEWINDOW_H
+</pre>
+<p>File: <code class="filename">examplewindow.cc</code>
+</p>
+<pre class="programlisting">
+#include "examplewindow.h"
+#include &lt;iostream&gt;
+
+
+ExampleWindow::ExampleWindow()
+: m_Button("sans")
+{
+  set_title("Gtk::FontSelectionDialog example");
+
+  add(m_Button);
+  m_Button.signal_font_set().connect(sigc::mem_fun(*this,
+              &amp;ExampleWindow::on_button_font_set) );
+
+  show_all_children();
+}
+
+ExampleWindow::~ExampleWindow()
+{
+}
+
+void ExampleWindow::on_button_font_set()
+{
+  Glib::ustring font_name = m_Button.get_font_name();
+  std::cout &lt;&lt; "Font chosen: " &lt;&lt; font_name &lt;&lt; std::endl;
+}
+</pre>
+<p>File: <code class="filename">main.cc</code>
+</p>
+<pre class="programlisting">
+#include "examplewindow.h"
+#include &lt;gtkmm/main.h&gt;
+
+int main(int argc, char *argv[])
+{
+  Gtk::Main kit(argc, argv);
+
+  ExampleWindow window;
+  //Shows the window and returns when it is closed.
+  Gtk::Main::run(window);
+
+  return 0;
+}
+</pre>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="sec-color-selection-dialog.html"><img src="icons/prev.png" alt="Prev"></a> </td>
+<td width="20%" align="center"><a accesskey="u" href="chapter-dialogs.html"><img src="icons/up.png" alt="Up"></a></td>
+<td width="40%" align="right"> <a accesskey="n" href="chapter-drawingarea.html"><img src="icons/next.png" alt="Next"></a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">ColorSelectionDialog </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html"><img src="icons/home.png" alt="Home"></a></td>
+<td width="40%" align="right" valign="top"> Chapter 16. The Drawing Area Widget</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,1131 @@
++++ latest --arch=win64 zlib
+++ ZLIB=zlib-1.2.3-1
++++ latest --arch=win64 jpeg
+++ JPEG=jpeg-7-1
+++ patch -p0 --verbose
+Hmm...  Looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|--- libtiff/Makefile.in
+|+++ libtiff/Makefile.in
+--------------------------
+Patching file `libtiff/Makefile.in' using Plan A...
+Hunk #1 succeeded at 515.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|--- libtiff/libtiff.def
+|+++ libtiff/libtiff.def
+--------------------------
+Patching file `libtiff/libtiff.def' using Plan A...
+Hunk #1 succeeded at 104.
+done
+++ lt_cv_deplibs_check_method=pass_all
+++ CC='x86_64-w64-mingw32-gcc -mthreads'
+++ CFLAGS=-O2
+++ ./configure --host=x86_64-w64-mingw32 --with-zlib-include-dir=/devel/dist/win64/zlib-1.2.3-1/include --with-zlib-lib-dir=/devel/dist/win64/zlib-1.2.3-1/lib --with-jpeg-include-dir=/devel/dist/win64/jpeg-7-1/include --with-jpeg-lib-dir=/devel/dist/win64/jpeg-7-1/lib --disable-static --prefix=c:/devel/target/f42c6c73c8e786c55ee21d819904e874
+configure: WARNING: If you wanted to set the --build type, don't use --host.
+    If a cross compiler is detected then cross compile mode will be used.
+checking build system type... i686-pc-mingw32
+checking host system type... x86_64-w64-mingw32
+checking target system type... x86_64-w64-mingw32
+checking for a BSD-compatible install... /opt/local/bin/install -c
+checking whether build environment is sane... yes
+checking for x86_64-w64-mingw32-strip... x86_64-w64-mingw32-strip
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether build environment is sane... yes
+checking for x86_64-w64-mingw32-gcc... x86_64-w64-mingw32-gcc -mthreads
+checking for C compiler default output file name... a.exe
+checking whether the C compiler works... yes
+checking whether we are cross compiling... yes
+checking for suffix of executables... .exe
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-w64-mingw32-gcc -mthreads accepts -g... yes
+checking for x86_64-w64-mingw32-gcc -mthreads option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of x86_64-w64-mingw32-gcc -mthreads... gcc3
+checking for x86_64-w64-mingw32-gcc -mthreads option to accept ISO C99... -std=gnu99
+checking for x86_64-w64-mingw32-gcc -mthreads -std=gnu99 option to accept ISO Standard C... (cached) -std=gnu99
+checking how to run the C preprocessor... x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -E
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /opt/gnuwin32/bin/grep
+checking for egrep... /opt/gnuwin32/bin/grep -E
+checking for fgrep... /opt/gnuwin32/bin/grep -F
+checking for ld used by x86_64-w64-mingw32-gcc -mthreads -std=gnu99... c:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/bin/ld.exe
+checking if the linker (c:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/bin/ld.exe) is GNU ld... yes
+checking whether x86_64-w64-mingw32-gcc -mthreads -std=gnu99 and cc understand -c and -o together... yes
+checking for ld used by x86_64-w64-mingw32-gcc -mthreads -std=gnu99... (cached) c:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/bin/ld.exe
+checking if the linker (c:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/bin/ld.exe) is GNU ld... (cached) yes
+checking for C compiler warning flags... -Wall -W
+checking whether make sets $(MAKE)... (cached) yes
+checking whether ln -s works... yes
+checking for BSD- or MS-compatible name lister (nm)... /opt/mingw64/bin/x86_64-w64-mingw32-nm
+checking the name lister (/opt/mingw64/bin/x86_64-w64-mingw32-nm) interface... BSD nm
+checking the maximum length of command line arguments... 8192
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for c:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/bin/ld.exe option to reload object files... -r
+checking for x86_64-w64-mingw32-objdump... x86_64-w64-mingw32-objdump
+checking how to recognize dependent libraries... (cached) pass_all
+checking for x86_64-w64-mingw32-ar... x86_64-w64-mingw32-ar
+checking for x86_64-w64-mingw32-strip... (cached) x86_64-w64-mingw32-strip
+checking for x86_64-w64-mingw32-ranlib... x86_64-w64-mingw32-ranlib
+checking command to parse /opt/mingw64/bin/x86_64-w64-mingw32-nm output from x86_64-w64-mingw32-gcc -mthreads -std=gnu99 object... ok
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for x86_64-w64-mingw32-as... x86_64-w64-mingw32-as
+checking for x86_64-w64-mingw32-dlltool... x86_64-w64-mingw32-dlltool
+checking for x86_64-w64-mingw32-objdump... (cached) x86_64-w64-mingw32-objdump
+checking for objdir... .libs
+checking if x86_64-w64-mingw32-gcc -mthreads -std=gnu99 supports -fno-rtti -fno-exceptions... no
+checking for x86_64-w64-mingw32-gcc -mthreads -std=gnu99 option to produce PIC... -DDLL_EXPORT -DPIC
+checking if x86_64-w64-mingw32-gcc -mthreads -std=gnu99 PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if x86_64-w64-mingw32-gcc -mthreads -std=gnu99 static flag -static works... yes
+checking if x86_64-w64-mingw32-gcc -mthreads -std=gnu99 supports -c -o file.o... yes
+checking if x86_64-w64-mingw32-gcc -mthreads -std=gnu99 supports -c -o file.o... (cached) yes
+checking whether the x86_64-w64-mingw32-gcc -mthreads -std=gnu99 linker (c:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/bin/ld.exe) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for x86_64-w64-mingw32-g++... x86_64-w64-mingw32-g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether x86_64-w64-mingw32-g++ accepts -g... yes
+checking dependency style of x86_64-w64-mingw32-g++... gcc3
+checking how to run the C++ preprocessor... x86_64-w64-mingw32-g++ -E
+checking for ld used by x86_64-w64-mingw32-g++... c:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/bin/ld.exe
+checking if the linker (c:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/bin/ld.exe) is GNU ld... yes
+checking whether the x86_64-w64-mingw32-g++ linker (c:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/bin/ld.exe) supports shared libraries... yes
+checking for x86_64-w64-mingw32-g++ option to produce PIC... -DDLL_EXPORT -DPIC
+checking if x86_64-w64-mingw32-g++ PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if x86_64-w64-mingw32-g++ static flag -static works... yes
+checking if x86_64-w64-mingw32-g++ supports -c -o file.o... yes
+checking if x86_64-w64-mingw32-g++ supports -c -o file.o... (cached) yes
+checking whether the x86_64-w64-mingw32-g++ linker (c:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/bin/ld.exe) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking for main in -lc... no
+checking assert.h usability... yes
+checking assert.h presence... yes
+checking for assert.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking io.h usability... yes
+checking io.h presence... yes
+checking for io.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking search.h usability... yes
+checking search.h presence... yes
+checking for search.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking whether byte ordering is bigendian... no
+checking for off_t... yes
+checking for size_t... yes
+checking size of int... 4
+checking size of long... 4
+checking whether time.h and sys/time.h may both be included... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for int8... no
+checking for int16... no
+checking for int32... no
+checking size of signed long... 4
+checking size of unsigned long... 4
+checking size of signed long long... 8
+checking size of unsigned long long... 8
+checking for signed 64-bit type... signed long long
+checking for unsigned 64-bit type... unsigned long long
+checking for floor... yes
+checking for isascii... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mmap... no
+checking for pow... yes
+checking for setmode... yes
+checking for sqrt... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for getopt... yes
+checking for strcasecmp... yes
+checking for strtoul... yes
+checking for lfind... yes
+checking native cpu bit order... msb2lsb
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... unknown
+checking for _LARGE_FILES value needed for large files... unknown
+checking for inflateEnd in -lz... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking for jpeg_read_scanlines in -ljpeg... yes
+checking jpeglib.h usability... yes
+checking jpeglib.h presence... yes
+checking for jpeglib.h... yes
+checking for jbg_dec_init in -ljbig... no
+checking jbig.h usability... no
+checking jbig.h presence... no
+checking for jbig.h... no
+checking for X... no
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... no
+checking whether pthreads work with -Kthread... no
+checking whether pthreads work with -kthread... no
+checking for the pthreads library -llthread... no
+checking whether pthreads work with -pthread... no
+checking whether pthreads work with -pthreads... no
+checking whether pthreads work with -mthreads... no
+checking for the pthreads library -lpthread... no
+checking whether pthreads work with --thread-safe... no
+checking whether pthreads work with -mt... no
+checking for pthread-config... no
+checking whether we are using the Microsoft C compiler... no
+checking windows.h usability... yes
+checking windows.h presence... yes
+checking for windows.h... yes
+checking for OpenGL library... -lopengl32
+checking for OpenGL Utility library... -lglu32
+checking for GLUT library... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating build/Makefile
+config.status: creating contrib/Makefile
+config.status: creating contrib/acorn/Makefile
+config.status: creating contrib/addtiffo/Makefile
+config.status: creating contrib/dbs/Makefile
+config.status: creating contrib/dbs/xtiff/Makefile
+config.status: creating contrib/iptcutil/Makefile
+config.status: creating contrib/mac-cw/Makefile
+config.status: creating contrib/mac-mpw/Makefile
+config.status: creating contrib/mfs/Makefile
+config.status: creating contrib/pds/Makefile
+config.status: creating contrib/ras/Makefile
+config.status: creating contrib/stream/Makefile
+config.status: creating contrib/tags/Makefile
+config.status: creating contrib/win_dib/Makefile
+config.status: creating html/Makefile
+config.status: creating html/images/Makefile
+config.status: creating html/man/Makefile
+config.status: creating libtiff/Makefile
+config.status: creating man/Makefile
+config.status: creating port/Makefile
+config.status: creating test/Makefile
+config.status: creating tools/Makefile
+config.status: creating libtiff/tif_config.h
+config.status: creating libtiff/tiffconf.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+Libtiff is now configured for x86_64-w64-mingw32
+
+  Installation directory:             c:/devel/target/f42c6c73c8e786c55ee21d819904e874
+  Documentation directory:            ${prefix}/share/doc/tiff-3.9.1
+  C compiler:                         x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W
+  C++ compiler:                       x86_64-w64-mingw32-g++ -g -O2
+  Enable runtime linker paths:        no
+  Support Microsoft Document Imaging: yes
+
+ Support for internal codecs:
+  CCITT Group 3 & 4 algorithms:       yes
+  Macintosh PackBits algorithm:       yes
+  LZW algorithm:                      yes
+  ThunderScan 4-bit RLE algorithm:    yes
+  NeXT 2-bit RLE algorithm:           yes
+  LogLuv high dynamic range encoding: yes
+
+ Support for external codecs:
+  ZLIB support:                       yes
+  Pixar log-format algorithm:         yes
+  JPEG support:                       yes
+  Old JPEG support:                   yes
+  ISO JBIG support:                   no
+
+  C++ support:                        yes
+
+  OpenGL support:                     no
+
+++ make -j3 install
+Making install in port
+make[1]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/port'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT dummy.lo -MD -MP -MF .deps/dummy.Tpo -c -o dummy.lo dummy.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT dummy.lo -MD -MP -MF .deps/dummy.Tpo -c dummy.c  -DDLL_EXPORT -DPIC -o .libs/dummy.o
+mv -f .deps/dummy.Tpo .deps/dummy.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o libport.la  dummy.lo  -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-ar cru .libs/libport.a .libs/dummy.o 
+libtool: link: x86_64-w64-mingw32-ranlib .libs/libport.a
+libtool: link: ( cd ".libs" && rm -f "libport.la" && ln -s "../libport.la" "libport.la" )
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/port'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/port'
+make[1]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/port'
+Making install in libtiff
+make[1]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/libtiff'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_aux.lo -MD -MP -MF .deps/tif_aux.Tpo -c -o tif_aux.lo tif_aux.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_close.lo -MD -MP -MF .deps/tif_close.Tpo -c -o tif_close.lo tif_close.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_codec.lo -MD -MP -MF .deps/tif_codec.Tpo -c -o tif_codec.lo tif_codec.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_aux.lo -MD -MP -MF .deps/tif_aux.Tpo -c tif_aux.c  -DDLL_EXPORT -DPIC -o .libs/tif_aux.o
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_codec.lo -MD -MP -MF .deps/tif_codec.Tpo -c tif_codec.c  -DDLL_EXPORT -DPIC -o .libs/tif_codec.o
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_close.lo -MD -MP -MF .deps/tif_close.Tpo -c tif_close.c  -DDLL_EXPORT -DPIC -o .libs/tif_close.o
+mv -f .deps/tif_codec.Tpo .deps/tif_codec.Plo
+mv -f .deps/tif_close.Tpo .deps/tif_close.Plo
+mv -f .deps/tif_aux.Tpo .deps/tif_aux.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_color.lo -MD -MP -MF .deps/tif_color.Tpo -c -o tif_color.lo tif_color.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_compress.lo -MD -MP -MF .deps/tif_compress.Tpo -c -o tif_compress.lo tif_compress.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_dir.lo -MD -MP -MF .deps/tif_dir.Tpo -c -o tif_dir.lo tif_dir.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_color.lo -MD -MP -MF .deps/tif_color.Tpo -c tif_color.c  -DDLL_EXPORT -DPIC -o .libs/tif_color.o
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_compress.lo -MD -MP -MF .deps/tif_compress.Tpo -c tif_compress.c  -DDLL_EXPORT -DPIC -o .libs/tif_compress.o
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_dir.lo -MD -MP -MF .deps/tif_dir.Tpo -c tif_dir.c  -DDLL_EXPORT -DPIC -o .libs/tif_dir.o
+mv -f .deps/tif_color.Tpo .deps/tif_color.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_dirinfo.lo -MD -MP -MF .deps/tif_dirinfo.Tpo -c -o tif_dirinfo.lo tif_dirinfo.c
+mv -f .deps/tif_compress.Tpo .deps/tif_compress.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_dirread.lo -MD -MP -MF .deps/tif_dirread.Tpo -c -o tif_dirread.lo tif_dirread.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_dirinfo.lo -MD -MP -MF .deps/tif_dirinfo.Tpo -c tif_dirinfo.c  -DDLL_EXPORT -DPIC -o .libs/tif_dirinfo.o
+tif_dirinfo.c: In function 'TIFFFindFieldInfoByName':
+tif_dirinfo.c:798:11: warning: passing argument 3 of 'lfind' from incompatible pointer type
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/search.h:25:17: note: expected 'unsigned int *' but argument is of type 'size_t *'
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_dirread.lo -MD -MP -MF .deps/tif_dirread.Tpo -c tif_dirread.c  -DDLL_EXPORT -DPIC -o .libs/tif_dirread.o
+tif_dirread.c: In function 'TIFFFetchFloatArray':
+tif_dirread.c:1429:3: warning: dereferencing type-punned pointer will break strict-aliasing rules
+mv -f .deps/tif_dir.Tpo .deps/tif_dir.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_dirwrite.lo -MD -MP -MF .deps/tif_dirwrite.Tpo -c -o tif_dirwrite.lo tif_dirwrite.c
+mv -f .deps/tif_dirinfo.Tpo .deps/tif_dirinfo.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_dumpmode.lo -MD -MP -MF .deps/tif_dumpmode.Tpo -c -o tif_dumpmode.lo tif_dumpmode.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_dirwrite.lo -MD -MP -MF .deps/tif_dirwrite.Tpo -c tif_dirwrite.c  -DDLL_EXPORT -DPIC -o .libs/tif_dirwrite.o
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_dumpmode.lo -MD -MP -MF .deps/tif_dumpmode.Tpo -c tif_dumpmode.c  -DDLL_EXPORT -DPIC -o .libs/tif_dumpmode.o
+mv -f .deps/tif_dumpmode.Tpo .deps/tif_dumpmode.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_error.lo -MD -MP -MF .deps/tif_error.Tpo -c -o tif_error.lo tif_error.c
+mv -f .deps/tif_dirread.Tpo .deps/tif_dirread.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_extension.lo -MD -MP -MF .deps/tif_extension.Tpo -c -o tif_extension.lo tif_extension.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_error.lo -MD -MP -MF .deps/tif_error.Tpo -c tif_error.c  -DDLL_EXPORT -DPIC -o .libs/tif_error.o
+mv -f .deps/tif_dirwrite.Tpo .deps/tif_dirwrite.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_fax3.lo -MD -MP -MF .deps/tif_fax3.Tpo -c -o tif_fax3.lo tif_fax3.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_extension.lo -MD -MP -MF .deps/tif_extension.Tpo -c tif_extension.c  -DDLL_EXPORT -DPIC -o .libs/tif_extension.o
+mv -f .deps/tif_error.Tpo .deps/tif_error.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_fax3sm.lo -MD -MP -MF .deps/tif_fax3sm.Tpo -c -o tif_fax3sm.lo tif_fax3sm.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_fax3.lo -MD -MP -MF .deps/tif_fax3.Tpo -c tif_fax3.c  -DDLL_EXPORT -DPIC -o .libs/tif_fax3.o
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_fax3sm.lo -MD -MP -MF .deps/tif_fax3sm.Tpo -c tif_fax3sm.c  -DDLL_EXPORT -DPIC -o .libs/tif_fax3sm.o
+mv -f .deps/tif_extension.Tpo .deps/tif_extension.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_flush.lo -MD -MP -MF .deps/tif_flush.Tpo -c -o tif_flush.lo tif_flush.c
+tif_fax3.c: In function '_TIFFFax3fillruns':
+tif_fax3.c:395:21: warning: cast from pointer to integer of different size
+tif_fax3.c:430:21: warning: cast from pointer to integer of different size
+tif_fax3.c: In function 'find0span':
+tif_fax3.c:806:11: warning: cast from pointer to integer of different size
+tif_fax3.c: In function 'find1span':
+tif_fax3.c:865:11: warning: cast from pointer to integer of different size
+tif_fax3.c: In function 'Fax3Encode1DRow':
+tif_fax3.c:940:8: warning: cast from pointer to integer of different size
+tif_fax3.c: In function 'Fax3DecodeRLE':
+tif_fax3.c:1552:27: warning: cast from pointer to integer of different size
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_flush.lo -MD -MP -MF .deps/tif_flush.Tpo -c tif_flush.c  -DDLL_EXPORT -DPIC -o .libs/tif_flush.o
+mv -f .deps/tif_fax3sm.Tpo .deps/tif_fax3sm.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_getimage.lo -MD -MP -MF .deps/tif_getimage.Tpo -c -o tif_getimage.lo tif_getimage.c
+mv -f .deps/tif_flush.Tpo .deps/tif_flush.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_jbig.lo -MD -MP -MF .deps/tif_jbig.Tpo -c -o tif_jbig.lo tif_jbig.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_getimage.lo -MD -MP -MF .deps/tif_getimage.Tpo -c tif_getimage.c  -DDLL_EXPORT -DPIC -o .libs/tif_getimage.o
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_jbig.lo -MD -MP -MF .deps/tif_jbig.Tpo -c tif_jbig.c  -DDLL_EXPORT -DPIC -o .libs/tif_jbig.o
+mv -f .deps/tif_jbig.Tpo .deps/tif_jbig.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_jpeg.lo -MD -MP -MF .deps/tif_jpeg.Tpo -c -o tif_jpeg.lo tif_jpeg.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_jpeg.lo -MD -MP -MF .deps/tif_jpeg.Tpo -c tif_jpeg.c  -DDLL_EXPORT -DPIC -o .libs/tif_jpeg.o
+mv -f .deps/tif_fax3.Tpo .deps/tif_fax3.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_luv.lo -MD -MP -MF .deps/tif_luv.Tpo -c -o tif_luv.lo tif_luv.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_luv.lo -MD -MP -MF .deps/tif_luv.Tpo -c tif_luv.c  -DDLL_EXPORT -DPIC -o .libs/tif_luv.o
+mv -f .deps/tif_jpeg.Tpo .deps/tif_jpeg.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_lzw.lo -MD -MP -MF .deps/tif_lzw.Tpo -c -o tif_lzw.lo tif_lzw.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_lzw.lo -MD -MP -MF .deps/tif_lzw.Tpo -c tif_lzw.c  -DDLL_EXPORT -DPIC -o .libs/tif_lzw.o
+mv -f .deps/tif_lzw.Tpo .deps/tif_lzw.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_next.lo -MD -MP -MF .deps/tif_next.Tpo -c -o tif_next.lo tif_next.c
+mv -f .deps/tif_luv.Tpo .deps/tif_luv.Plo
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_next.lo -MD -MP -MF .deps/tif_next.Tpo -c tif_next.c  -DDLL_EXPORT -DPIC -o .libs/tif_next.o
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_ojpeg.lo -MD -MP -MF .deps/tif_ojpeg.Tpo -c -o tif_ojpeg.lo tif_ojpeg.c
+make[1]: stat: tif_open.lo: Bad file number
+mv -f .deps/tif_getimage.Tpo .deps/tif_getimage.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_open.lo -MD -MP -MF .deps/tif_open.Tpo -c -o tif_open.lo tif_open.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_ojpeg.lo -MD -MP -MF .deps/tif_ojpeg.Tpo -c tif_ojpeg.c  -DDLL_EXPORT -DPIC -o .libs/tif_ojpeg.o
+mv -f .deps/tif_next.Tpo .deps/tif_next.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_packbits.lo -MD -MP -MF .deps/tif_packbits.Tpo -c -o tif_packbits.lo tif_packbits.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_open.lo -MD -MP -MF .deps/tif_open.Tpo -c tif_open.c  -DDLL_EXPORT -DPIC -o .libs/tif_open.o
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_packbits.lo -MD -MP -MF .deps/tif_packbits.Tpo -c tif_packbits.c  -DDLL_EXPORT -DPIC -o .libs/tif_packbits.o
+mv -f .deps/tif_open.Tpo .deps/tif_open.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_pixarlog.lo -MD -MP -MF .deps/tif_pixarlog.Tpo -c -o tif_pixarlog.lo tif_pixarlog.c
+mv -f .deps/tif_packbits.Tpo .deps/tif_packbits.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_predict.lo -MD -MP -MF .deps/tif_predict.Tpo -c -o tif_predict.lo tif_predict.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_pixarlog.lo -MD -MP -MF .deps/tif_pixarlog.Tpo -c tif_pixarlog.c  -DDLL_EXPORT -DPIC -o .libs/tif_pixarlog.o
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_predict.lo -MD -MP -MF .deps/tif_predict.Tpo -c tif_predict.c  -DDLL_EXPORT -DPIC -o .libs/tif_predict.o
+mv -f .deps/tif_ojpeg.Tpo .deps/tif_ojpeg.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_print.lo -MD -MP -MF .deps/tif_print.Tpo -c -o tif_print.lo tif_print.c
+mv -f .deps/tif_predict.Tpo .deps/tif_predict.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_read.lo -MD -MP -MF .deps/tif_read.Tpo -c -o tif_read.lo tif_read.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_print.lo -MD -MP -MF .deps/tif_print.Tpo -c tif_print.c  -DDLL_EXPORT -DPIC -o .libs/tif_print.o
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_read.lo -MD -MP -MF .deps/tif_read.Tpo -c tif_read.c  -DDLL_EXPORT -DPIC -o .libs/tif_read.o
+mv -f .deps/tif_pixarlog.Tpo .deps/tif_pixarlog.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_strip.lo -MD -MP -MF .deps/tif_strip.Tpo -c -o tif_strip.lo tif_strip.c
+mv -f .deps/tif_print.Tpo .deps/tif_print.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_swab.lo -MD -MP -MF .deps/tif_swab.Tpo -c -o tif_swab.lo tif_swab.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_strip.lo -MD -MP -MF .deps/tif_strip.Tpo -c tif_strip.c  -DDLL_EXPORT -DPIC -o .libs/tif_strip.o
+mv -f .deps/tif_read.Tpo .deps/tif_read.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_thunder.lo -MD -MP -MF .deps/tif_thunder.Tpo -c -o tif_thunder.lo tif_thunder.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_swab.lo -MD -MP -MF .deps/tif_swab.Tpo -c tif_swab.c  -DDLL_EXPORT -DPIC -o .libs/tif_swab.o
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_thunder.lo -MD -MP -MF .deps/tif_thunder.Tpo -c tif_thunder.c  -DDLL_EXPORT -DPIC -o .libs/tif_thunder.o
+mv -f .deps/tif_strip.Tpo .deps/tif_strip.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_tile.lo -MD -MP -MF .deps/tif_tile.Tpo -c -o tif_tile.lo tif_tile.c
+mv -f .deps/tif_swab.Tpo .deps/tif_swab.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_unix.lo -MD -MP -MF .deps/tif_unix.Tpo -c -o tif_unix.lo tif_unix.c
+mv -f .deps/tif_thunder.Tpo .deps/tif_thunder.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_version.lo -MD -MP -MF .deps/tif_version.Tpo -c -o tif_version.lo tif_version.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_tile.lo -MD -MP -MF .deps/tif_tile.Tpo -c tif_tile.c  -DDLL_EXPORT -DPIC -o .libs/tif_tile.o
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_unix.lo -MD -MP -MF .deps/tif_unix.Tpo -c tif_unix.c  -DDLL_EXPORT -DPIC -o .libs/tif_unix.o
+tif_unix.c: In function '_tiffReadProc':
+tif_unix.c:58:25: warning: cast from pointer to integer of different size
+tif_unix.c: In function '_tiffWriteProc':
+tif_unix.c:64:26: warning: cast from pointer to integer of different size
+tif_unix.c: In function '_tiffSeekProc':
+tif_unix.c:70:25: warning: cast from pointer to integer of different size
+tif_unix.c: In function '_tiffCloseProc':
+tif_unix.c:76:16: warning: cast from pointer to integer of different size
+tif_unix.c: In function '_tiffSizeProc':
+tif_unix.c:88:25: warning: cast from pointer to integer of different size
+tif_unix.c: In function 'TIFFFdOpen':
+tif_unix.c:140:6: warning: cast to pointer from integer of different size
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_version.lo -MD -MP -MF .deps/tif_version.Tpo -c tif_version.c  -DDLL_EXPORT -DPIC -o .libs/tif_version.o
+mv -f .deps/tif_tile.Tpo .deps/tif_tile.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_warning.lo -MD -MP -MF .deps/tif_warning.Tpo -c -o tif_warning.lo tif_warning.c
+mv -f .deps/tif_version.Tpo .deps/tif_version.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_write.lo -MD -MP -MF .deps/tif_write.Tpo -c -o tif_write.lo tif_write.c
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_warning.lo -MD -MP -MF .deps/tif_warning.Tpo -c tif_warning.c  -DDLL_EXPORT -DPIC -o .libs/tif_warning.o
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_write.lo -MD -MP -MF .deps/tif_write.Tpo -c tif_write.c  -DDLL_EXPORT -DPIC -o .libs/tif_write.o
+tif_write.c: In function 'TIFFAppendToStrip':
+tif_write.c:633:49: warning: comparison between signed and unsigned integer expressions
+tif_unix.c: In function 'TIFFOpenW':
+tif_unix.c:209:3: warning: format '%s' expects type 'char *', but argument 4 has type 'const wchar_t *'
+mv -f .deps/tif_warning.Tpo .deps/tif_warning.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_zip.lo -MD -MP -MF .deps/tif_zip.Tpo -c -o tif_zip.lo tif_zip.c
+mv -f .deps/tif_unix.Tpo .deps/tif_unix.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-w64-mingw32-g++ -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -g -O2 -MT tif_stream.lo -MD -MP -MF .deps/tif_stream.Tpo -c -o tif_stream.lo tif_stream.cxx
+libtool: compile:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -O2 -Wall -W -MT tif_zip.lo -MD -MP -MF .deps/tif_zip.Tpo -c tif_zip.c  -DDLL_EXPORT -DPIC -o .libs/tif_zip.o
+mv -f .deps/tif_write.Tpo .deps/tif_write.Plo
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I.   -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT mkg3states.o -MD -MP -MF .deps/mkg3states.Tpo -c -o mkg3states.o mkg3states.c
+mv -f .deps/mkg3states.Tpo .deps/mkg3states.Po
+libtool: compile:  x86_64-w64-mingw32-g++ -DHAVE_CONFIG_H -I. -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include -g -O2 -MT tif_stream.lo -MD -MP -MF .deps/tif_stream.Tpo -c tif_stream.cxx  -DDLL_EXPORT -DPIC -o .libs/tif_stream.o
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o mkg3states.exe mkg3states.o ../port/libport.la -ljpeg -lz 
+mv -f .deps/tif_zip.Tpo .deps/tif_zip.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W -no-undefined -version-number 3:9:1  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o libtiff.la -rpath c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib -export-symbols libtiff.def tif_aux.lo tif_close.lo tif_codec.lo tif_color.lo tif_compress.lo tif_dir.lo tif_dirinfo.lo tif_dirread.lo tif_dirwrite.lo tif_dumpmode.lo tif_error.lo tif_extension.lo tif_fax3.lo tif_fax3sm.lo tif_flush.lo tif_getimage.lo tif_jbig.lo tif_jpeg.lo tif_luv.lo tif_lzw.lo tif_next.lo tif_ojpeg.lo tif_open.lo tif_packbits.lo tif_pixarlog.lo tif_predict.lo tif_print.lo tif_read.lo tif_strip.lo tif_swab.lo tif_thunder.lo tif_tile.lo tif_unix.lo tif_version.lo tif_warning.lo tif_write.lo tif_zip.lo ../port/libport.la -ljpeg -lz 
+mv -f .deps/tif_stream.Tpo .deps/tif_stream.Plo
+libtool: link: /opt/mingw64/bin/x86_64-w64-mingw32-nm  .libs/tif_aux.o .libs/tif_close.o .libs/tif_codec.o .libs/tif_color.o .libs/tif_compress.o .libs/tif_dir.o .libs/tif_dirinfo.o .libs/tif_dirread.o .libs/tif_dirwrite.o .libs/tif_dumpmode.o .libs/tif_error.o .libs/tif_extension.o .libs/tif_fax3.o .libs/tif_fax3sm.o .libs/tif_flush.o .libs/tif_getimage.o .libs/tif_jbig.o .libs/tif_jpeg.o .libs/tif_luv.o .libs/tif_lzw.o .libs/tif_next.o .libs/tif_ojpeg.o .libs/tif_open.o .libs/tif_packbits.o .libs/tif_pixarlog.o .libs/tif_predict.o .libs/tif_print.o .libs/tif_read.o .libs/tif_strip.o .libs/tif_swab.o .libs/tif_thunder.o .libs/tif_tile.o .libs/tif_unix.o .libs/tif_version.o .libs/tif_warning.o .libs/tif_write.o .libs/tif_zip.o   ../port/.libs/libport.a | sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*_\([_A-Za-z][_A-Za-z0-9]*\)\{0,1\}$/\1 _\2 \2/p' | /bin/sed -e '/^[BCDGRS][ ]/s/.*[ ]\([^ ]*\)/\1 DATA/' | /bin/sed -e '/^[AITW][ ]/s/.*[ ]//' | sort | uniq > .libs/libtiff.exp
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/mkg3states.exe mkg3states.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../port/.libs/libport.a -ljpeg -lz -mthreads
+libtool: link: if test "x`/bin/sed 1q .libs/libtiff.def`" = xEXPORTS; then cp .libs/libtiff.def .libs/libtiff-3.dll.def; else echo EXPORTS > .libs/libtiff-3.dll.def; cat .libs/libtiff.def >> .libs/libtiff-3.dll.def; fi
+libtool: link:  x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -shared .libs/libtiff-3.dll.def  .libs/tif_aux.o .libs/tif_close.o .libs/tif_codec.o .libs/tif_color.o .libs/tif_compress.o .libs/tif_dir.o .libs/tif_dirinfo.o .libs/tif_dirread.o .libs/tif_dirwrite.o .libs/tif_dumpmode.o .libs/tif_error.o .libs/tif_extension.o .libs/tif_fax3.o .libs/tif_fax3sm.o .libs/tif_flush.o .libs/tif_getimage.o .libs/tif_jbig.o .libs/tif_jpeg.o .libs/tif_luv.o .libs/tif_lzw.o .libs/tif_next.o .libs/tif_ojpeg.o .libs/tif_open.o .libs/tif_packbits.o .libs/tif_pixarlog.o .libs/tif_predict.o .libs/tif_print.o .libs/tif_read.o .libs/tif_strip.o .libs/tif_swab.o .libs/tif_thunder.o .libs/tif_tile.o .libs/tif_unix.o .libs/tif_version.o .libs/tif_warning.o .libs/tif_write.o .libs/tif_zip.o  -Wl,--whole-archive ../port/.libs/libport.a -Wl,--no-whole-archive  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib -ljpeg -lz  -mthreads   -mthreads -o .libs/libtiff-3.dll -Wl,--enable-auto-image-base -Xlinker --out-implib -Xlinker .libs/libtiff.dll.a
+Creating library file: .libs/libtiff.dll.a
+libtool: link: rm -f .libs/libtiff.exp .libs/libtiff.filter
+libtool: link: ( cd ".libs" && rm -f "libtiff.la" && ln -s "../libtiff.la" "libtiff.la" )
+/bin/sh ../libtool  --tag=CXX   --mode=link x86_64-w64-mingw32-g++  -g -O2 -no-undefined -version-number 3:9:1  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o libtiffxx.la -rpath c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib tif_stream.lo ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-g++ -shared -nostdlib c:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/lib/dllcrt2.o c:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/lib/crtbegin.o  .libs/tif_stream.o  -Wl,--whole-archive ../port/.libs/libport.a -Wl,--no-whole-archive  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a -ljpeg -lz -Lc:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0 -Lc:/opt/mingw64/bin/../lib/gcc -Lc:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/lib/../lib64 -Lc:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/lib -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -luser32 -lkernel32 -ladvapi32 -lshell32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/opt/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/4.5.0/../../../../x86_64-w64-mingw32/lib/crtend.o    -mthreads -o .libs/libtiffxx-3.dll -Wl,--enable-auto-image-base -Xlinker --out-implib -Xlinker .libs/libtiffxx.dll.a
+Creating library file: .libs/libtiffxx.dll.a
+libtool: link: ( cd ".libs" && rm -f "libtiffxx.la" && ln -s "../libtiffxx.la" "libtiffxx.la" )
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/libtiff'
+test -z "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib" || /bin/mkdir -p "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib"
+test -z "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/include" || /bin/mkdir -p "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/include"
+test -z "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/include" || /bin/mkdir -p "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/include"
+ /bin/sh ../libtool   --mode=install /opt/local/bin/install -c   libtiff.la libtiffxx.la 'c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib'
+ /opt/local/bin/install -c -m 644 tiff.h tiffio.h tiffvers.h tiffio.hxx 'c:/devel/target/f42c6c73c8e786c55ee21d819904e874/include'
+ /opt/local/bin/install -c -m 644 tiffconf.h 'c:/devel/target/f42c6c73c8e786c55ee21d819904e874/include'
+libtool: install: /opt/local/bin/install -c .libs/libtiff.dll.a c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/libtiff.dll.a
+libtool: install: base_file=`basename libtiff.la`
+libtool: install:  dlpath=`/bin/sh 2>&1 -c '. .libs/'libtiff.la'i; echo libtiff-3.dll'`
+libtool: install:  dldir=c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/`dirname ../bin/libtiff-3.dll`
+libtool: install:  test -d c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/../bin || mkdir -p c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/../bin
+libtool: install:  /opt/local/bin/install -c .libs/libtiff-3.dll c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/../bin/libtiff-3.dll
+libtool: install:  chmod a+x c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/../bin/libtiff-3.dll
+libtool: install:  if test -n '' && test -n 'x86_64-w64-mingw32-strip --strip-unneeded'; then eval 'x86_64-w64-mingw32-strip --strip-unneeded c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/../bin/libtiff-3.dll' || exit 0; fi
+libtool: install: /opt/local/bin/install -c .libs/libtiff.lai c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/libtiff.la
+libtool: install: /opt/local/bin/install -c .libs/libtiffxx.dll.a c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/libtiffxx.dll.a
+libtool: install: base_file=`basename libtiffxx.la`
+libtool: install:  dlpath=`/bin/sh 2>&1 -c '. .libs/'libtiffxx.la'i; echo libtiffxx-3.dll'`
+libtool: install:  dldir=c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/`dirname ../bin/libtiffxx-3.dll`
+libtool: install:  test -d c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/../bin || mkdir -p c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/../bin
+libtool: install:  /opt/local/bin/install -c .libs/libtiffxx-3.dll c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/../bin/libtiffxx-3.dll
+libtool: install:  chmod a+x c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/../bin/libtiffxx-3.dll
+libtool: install:  if test -n '' && test -n 'x86_64-w64-mingw32-strip --strip-unneeded'; then eval 'x86_64-w64-mingw32-strip --strip-unneeded c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/../bin/libtiffxx-3.dll' || exit 0; fi
+libtool: install: /opt/local/bin/install -c .libs/libtiffxx.lai c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib/libtiffxx.la
+----------------------------------------------------------------------
+Libraries have been installed in:
+   c:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-LLIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/libtiff'
+make[1]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/libtiff'
+Making install in tools
+make[1]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/tools'
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT bmp2tiff.o -MD -MP -MF .deps/bmp2tiff.Tpo -c -o bmp2tiff.o bmp2tiff.c
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT fax2ps.o -MD -MP -MF .deps/fax2ps.Tpo -c -o fax2ps.o fax2ps.c
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT fax2tiff.o -MD -MP -MF .deps/fax2tiff.Tpo -c -o fax2tiff.o fax2tiff.c
+fax2tiff.c: In function 'main':
+fax2tiff.c:266:44: warning: cast to pointer from integer of different size
+mv -f .deps/fax2tiff.Tpo .deps/fax2tiff.Po
+mv -f .deps/fax2ps.Tpo .deps/fax2ps.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT gif2tiff.o -MD -MP -MF .deps/gif2tiff.Tpo -c -o gif2tiff.o gif2tiff.c
+make[1]: stat: pal2rgb.o: Bad file number
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT pal2rgb.o -MD -MP -MF .deps/pal2rgb.Tpo -c -o pal2rgb.o pal2rgb.c
+mv -f .deps/bmp2tiff.Tpo .deps/bmp2tiff.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT ppm2tiff.o -MD -MP -MF .deps/ppm2tiff.Tpo -c -o ppm2tiff.o ppm2tiff.c
+mv -f .deps/pal2rgb.Tpo .deps/pal2rgb.Po
+mv -f .deps/gif2tiff.Tpo .deps/gif2tiff.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT ras2tiff.o -MD -MP -MF .deps/ras2tiff.Tpo -c -o ras2tiff.o ras2tiff.c
+mv -f .deps/ppm2tiff.Tpo .deps/ppm2tiff.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT raw2tiff.o -MD -MP -MF .deps/raw2tiff.Tpo -c -o raw2tiff.o raw2tiff.c
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT rgb2ycbcr.o -MD -MP -MF .deps/rgb2ycbcr.Tpo -c -o rgb2ycbcr.o rgb2ycbcr.c
+mv -f .deps/ras2tiff.Tpo .deps/ras2tiff.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT thumbnail.o -MD -MP -MF .deps/thumbnail.Tpo -c -o thumbnail.o thumbnail.c
+mv -f .deps/rgb2ycbcr.Tpo .deps/rgb2ycbcr.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiff2bw.o -MD -MP -MF .deps/tiff2bw.Tpo -c -o tiff2bw.o tiff2bw.c
+mv -f .deps/raw2tiff.Tpo .deps/raw2tiff.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiff2pdf.o -MD -MP -MF .deps/tiff2pdf.Tpo -c -o tiff2pdf.o tiff2pdf.c
+tiff2pdf.c: In function 'main':
+tiff2pdf.c:665:9: warning: format '%u' expects type 'unsigned int', but argument 3 has type 'size_t'
+tiff2pdf.c:678:7: warning: format '%u' expects type 'unsigned int', but argument 3 has type 'size_t'
+tiff2pdf.c:691:7: warning: format '%u' expects type 'unsigned int', but argument 3 has type 'size_t'
+tiff2pdf.c:704:7: warning: format '%u' expects type 'unsigned int', but argument 3 has type 'size_t'
+tiff2pdf.c:717:7: warning: format '%u' expects type 'unsigned int', but argument 3 has type 'size_t'
+tiff2pdf.c: In function 't2p_init':
+tiff2pdf.c:933:4: warning: format '%u' expects type 'unsigned int', but argument 3 has type 'long long unsigned int'
+tiff2pdf.c: In function 't2p_read_tiff_init':
+tiff2pdf.c:1068:4: warning: format '%u' expects type 'unsigned int', but argument 3 has type 'long long unsigned int'
+tiff2pdf.c:1079:4: warning: format '%u' expects type 'unsigned int', but argument 3 has type 'long long unsigned int'
+tiff2pdf.c:1211:6: warning: format '%u' expects type 'unsigned int', but argument 3 has type 'long long unsigned int'
+tiff2pdf.c: In function 't2p_write_pdf_string':
+tiff2pdf.c:3729:4: warning: unknown conversion type character 'h' in format
+tiff2pdf.c:3729:4: warning: too many arguments for format
+tiff2pdf.c: In function 't2p_write_pdf_trailer':
+tiff2pdf.c:5149:2: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiff2pdf.c:5165:4: warning: unknown conversion type character 'h' in format
+tiff2pdf.c:5165:4: warning: too many arguments for format
+tiff2pdf.c: In function 't2p_write_pdf':
+tiff2pdf.c:5246:4: warning: format '%u' expects type 'unsigned int', but argument 3 has type 'long long unsigned int'
+mv -f .deps/tiff2bw.Tpo .deps/tiff2bw.Po
+mv -f .deps/thumbnail.Tpo .deps/thumbnail.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiff2ps.o -MD -MP -MF .deps/tiff2ps.Tpo -c -o tiff2ps.o tiff2ps.c
+make[1]: stat: tiff2rgba.exe: Bad file number
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiff2rgba.o -MD -MP -MF .deps/tiff2rgba.Tpo -c -o tiff2rgba.o tiff2rgba.c
+mv -f .deps/tiff2rgba.Tpo .deps/tiff2rgba.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiffcmp.o -MD -MP -MF .deps/tiffcmp.Tpo -c -o tiffcmp.o tiffcmp.c
+mv -f .deps/tiffcmp.Tpo .deps/tiffcmp.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiffcp.o -MD -MP -MF .deps/tiffcp.Tpo -c -o tiffcp.o tiffcp.c
+mv -f .deps/tiff2ps.Tpo .deps/tiff2ps.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiffcrop.o -MD -MP -MF .deps/tiffcrop.Tpo -c -o tiffcrop.o tiffcrop.c
+tiffcrop.c: In function 'extractContigSamples16bits':
+tiffcrop.c:2581:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'extractContigSamples24bits':
+tiffcrop.c:2682:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'extractContigSamples32bits':
+tiffcrop.c:2791:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c:2809:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'extractContigSamplesShifted16bits':
+tiffcrop.c:2993:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'extractContigSamplesShifted24bits':
+tiffcrop.c:3096:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'extractContigSamplesShifted32bits':
+tiffcrop.c:3209:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c:3227:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'combineSeparateSamples16bits':
+tiffcrop.c:3536:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'combineSeparateSamples24bits':
+tiffcrop.c:3651:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'combineSeparateSamples32bits':
+tiffcrop.c:3785:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c:3803:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'rotateContigSamples16bits':
+tiffcrop.c:6889:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'rotateContigSamples24bits':
+tiffcrop.c:6985:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'rotateContigSamples32bits':
+tiffcrop.c:7098:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c:7116:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'reverseSamples16bits':
+tiffcrop.c:7545:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'reverseSamples24bits':
+tiffcrop.c:7633:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c: In function 'reverseSamples32bits':
+tiffcrop.c:7740:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+tiffcrop.c:7758:7: warning: dereferencing type-punned pointer will break strict-aliasing rules
+mv -f .deps/tiffcp.Tpo .deps/tiffcp.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiffdither.o -MD -MP -MF .deps/tiffdither.Tpo -c -o tiffdither.o tiffdither.c
+mv -f .deps/tiffdither.Tpo .deps/tiffdither.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiffdump.o -MD -MP -MF .deps/tiffdump.Tpo -c -o tiffdump.o tiffdump.c
+mv -f .deps/tiff2pdf.Tpo .deps/tiff2pdf.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiffinfo.o -MD -MP -MF .deps/tiffinfo.Tpo -c -o tiffinfo.o tiffinfo.c
+mv -f .deps/tiffdump.Tpo .deps/tiffdump.Po
+mv -f .deps/tiffinfo.Tpo .deps/tiffinfo.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiffmedian.o -MD -MP -MF .deps/tiffmedian.Tpo -c -o tiffmedian.o tiffmedian.c
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiffset.o -MD -MP -MF .deps/tiffset.Tpo -c -o tiffset.o tiffset.c
+mv -f .deps/tiffset.Tpo .deps/tiffset.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../libtiff -I../libtiff -I../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiffsplit.o -MD -MP -MF .deps/tiffsplit.Tpo -c -o tiffsplit.o tiffsplit.c
+mv -f .deps/tiffsplit.Tpo .deps/tiffsplit.Po
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o bmp2tiff.exe bmp2tiff.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+mv -f .deps/tiffmedian.Tpo .deps/tiffmedian.Po
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o fax2ps.exe fax2ps.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+mv -f .deps/tiffcrop.Tpo .deps/tiffcrop.Po
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o fax2tiff.exe fax2tiff.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/bmp2tiff.exe bmp2tiff.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/fax2ps.exe fax2ps.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/fax2tiff.exe fax2tiff.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o gif2tiff.exe gif2tiff.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o pal2rgb.exe pal2rgb.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o ppm2tiff.exe ppm2tiff.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/gif2tiff.exe gif2tiff.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/pal2rgb.exe pal2rgb.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/ppm2tiff.exe ppm2tiff.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o ras2tiff.exe ras2tiff.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o raw2tiff.exe raw2tiff.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o rgb2ycbcr.exe rgb2ycbcr.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/ras2tiff.exe ras2tiff.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/raw2tiff.exe raw2tiff.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/rgb2ycbcr.exe rgb2ycbcr.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o thumbnail.exe thumbnail.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiff2bw.exe tiff2bw.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiff2pdf.exe tiff2pdf.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/thumbnail.exe thumbnail.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiff2bw.exe tiff2bw.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiff2pdf.exe tiff2pdf.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiff2ps.exe tiff2ps.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiff2rgba.exe tiff2rgba.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiffcmp.exe tiffcmp.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiff2ps.exe tiff2ps.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiff2rgba.exe tiff2rgba.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiffcmp.exe tiffcmp.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiffcp.exe tiffcp.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiffcrop.exe tiffcrop.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiffdither.exe tiffdither.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiffcp.exe tiffcp.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiffcrop.exe tiffcrop.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiffdither.exe tiffdither.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiffdump.exe tiffdump.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiffinfo.exe tiffinfo.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiffmedian.exe tiffmedian.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiffdump.exe tiffdump.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiffinfo.exe tiffinfo.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiffmedian.exe tiffmedian.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiffset.exe tiffset.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiffsplit.exe tiffsplit.o ../libtiff/libtiff.la ../port/libport.la -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiffset.exe tiffset.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiffsplit.exe tiffsplit.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../libtiff/.libs/libtiff.dll.a ../port/.libs/libport.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/tools'
+test -z "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin" || /bin/mkdir -p "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin"
+make[2]: Nothing to be done for `install-data-am'.
+  /bin/sh ../libtool   --mode=install /opt/local/bin/install -c bmp2tiff.exe fax2ps.exe fax2tiff.exe gif2tiff.exe pal2rgb.exe ppm2tiff.exe ras2tiff.exe raw2tiff.exe rgb2ycbcr.exe thumbnail.exe tiff2bw.exe tiff2pdf.exe tiff2ps.exe tiff2rgba.exe tiffcmp.exe tiffcp.exe tiffcrop.exe tiffdither.exe tiffdump.exe tiffinfo.exe tiffmedian.exe tiffset.exe tiffsplit.exe 'c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin'
+libtool: install: /opt/local/bin/install -c .libs/bmp2tiff.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/bmp2tiff.exe
+libtool: install: /opt/local/bin/install -c .libs/fax2ps.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/fax2ps.exe
+libtool: install: /opt/local/bin/install -c .libs/fax2tiff.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/fax2tiff.exe
+libtool: install: /opt/local/bin/install -c .libs/gif2tiff.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/gif2tiff.exe
+libtool: install: /opt/local/bin/install -c .libs/pal2rgb.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/pal2rgb.exe
+libtool: install: /opt/local/bin/install -c .libs/ppm2tiff.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/ppm2tiff.exe
+libtool: install: /opt/local/bin/install -c .libs/ras2tiff.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/ras2tiff.exe
+libtool: install: /opt/local/bin/install -c .libs/raw2tiff.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/raw2tiff.exe
+libtool: install: /opt/local/bin/install -c .libs/rgb2ycbcr.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/rgb2ycbcr.exe
+libtool: install: /opt/local/bin/install -c .libs/thumbnail.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/thumbnail.exe
+libtool: install: /opt/local/bin/install -c .libs/tiff2bw.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/tiff2bw.exe
+libtool: install: /opt/local/bin/install -c .libs/tiff2pdf.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/tiff2pdf.exe
+libtool: install: /opt/local/bin/install -c .libs/tiff2ps.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/tiff2ps.exe
+libtool: install: /opt/local/bin/install -c .libs/tiff2rgba.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/tiff2rgba.exe
+libtool: install: /opt/local/bin/install -c .libs/tiffcmp.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/tiffcmp.exe
+libtool: install: /opt/local/bin/install -c .libs/tiffcp.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/tiffcp.exe
+libtool: install: /opt/local/bin/install -c .libs/tiffcrop.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/tiffcrop.exe
+libtool: install: /opt/local/bin/install -c .libs/tiffdither.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/tiffdither.exe
+libtool: install: /opt/local/bin/install -c .libs/tiffdump.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/tiffdump.exe
+libtool: install: /opt/local/bin/install -c .libs/tiffinfo.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/tiffinfo.exe
+libtool: install: /opt/local/bin/install -c .libs/tiffmedian.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/tiffmedian.exe
+libtool: install: /opt/local/bin/install -c .libs/tiffset.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/tiffset.exe
+libtool: install: /opt/local/bin/install -c .libs/tiffsplit.exe c:/devel/target/f42c6c73c8e786c55ee21d819904e874/bin/tiffsplit.exe
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/tools'
+make[1]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/tools'
+Making install in build
+make[1]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/build'
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/build'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/build'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/build'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/build'
+make[1]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/build'
+Making install in contrib
+make[1]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib'
+Making install in acorn
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/acorn'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/acorn'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/acorn'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/acorn'
+Making install in addtiffo
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/addtiffo'
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../../libtiff -I../../libtiff -I../../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT addtiffo.o -MD -MP -MF .deps/addtiffo.Tpo -c -o addtiffo.o addtiffo.c
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../../libtiff -I../../libtiff -I../../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_overview.o -MD -MP -MF .deps/tif_overview.Tpo -c -o tif_overview.o tif_overview.c
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../../libtiff -I../../libtiff -I../../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tif_ovrcache.o -MD -MP -MF .deps/tif_ovrcache.Tpo -c -o tif_ovrcache.o tif_ovrcache.c
+tif_overview.c: In function 'TIFF_WriteOverview':
+tif_overview.c:88:32: warning: unused parameter 'bUseSubIFDs'
+tif_overview.c: In function 'TIFF_DownSample_Subsampled':
+tif_overview.c:384:21: warning: unused variable 'pSourceBaseEnd'
+tif_overview.c:383:9: warning: unused variable 'nSourceBaseInc'
+tif_overview.c:382:21: warning: unused variable 'pDestBase'
+tif_overview.c:381:21: warning: unused variable 'pSourceBase'
+tif_overview.c: In function 'TIFFBuildOverviews':
+tif_overview.c:687:32: warning: unused parameter 'pfnProgress'
+tif_overview.c:688:33: warning: unused parameter 'pProgressData'
+mv -f .deps/addtiffo.Tpo .deps/addtiffo.Po
+mv -f .deps/tif_ovrcache.Tpo .deps/tif_ovrcache.Po
+mv -f .deps/tif_overview.Tpo .deps/tif_overview.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o addtiffo.exe addtiffo.o tif_overview.o tif_ovrcache.o ../../libtiff/libtiff.la -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/addtiffo.exe addtiffo.o tif_overview.o tif_ovrcache.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../../libtiff/.libs/libtiff.dll.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/addtiffo'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/addtiffo'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/addtiffo'
+Making install in dbs
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/dbs'
+Making install in xtiff
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/dbs/xtiff'
+make[4]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/dbs/xtiff'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/dbs/xtiff'
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/dbs/xtiff'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/dbs'
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../../libtiff -I../../libtiff -I../../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiff-bi.o -MD -MP -MF .deps/tiff-bi.Tpo -c -o tiff-bi.o tiff-bi.c
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../../libtiff -I../../libtiff -I../../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiff-grayscale.o -MD -MP -MF .deps/tiff-grayscale.Tpo -c -o tiff-grayscale.o tiff-grayscale.c
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../../libtiff -I../../libtiff -I../../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiff-palette.o -MD -MP -MF .deps/tiff-palette.Tpo -c -o tiff-palette.o tiff-palette.c
+mv -f .deps/tiff-bi.Tpo .deps/tiff-bi.Po
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../../libtiff -I../../libtiff -I../../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT tiff-rgb.o -MD -MP -MF .deps/tiff-rgb.Tpo -c -o tiff-rgb.o tiff-rgb.c
+mv -f .deps/tiff-grayscale.Tpo .deps/tiff-grayscale.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiff-bi.exe tiff-bi.o ../../libtiff/libtiff.la -ljpeg -lz 
+mv -f .deps/tiff-palette.Tpo .deps/tiff-palette.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiff-grayscale.exe tiff-grayscale.o ../../libtiff/libtiff.la -ljpeg -lz 
+mv -f .deps/tiff-rgb.Tpo .deps/tiff-rgb.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiff-palette.exe tiff-palette.o ../../libtiff/libtiff.la -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiff-bi.exe tiff-bi.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../../libtiff/.libs/libtiff.dll.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiff-grayscale.exe tiff-grayscale.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../../libtiff/.libs/libtiff.dll.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiff-palette.exe tiff-palette.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../../libtiff/.libs/libtiff.dll.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+/bin/sh ../../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o tiff-rgb.exe tiff-rgb.o ../../libtiff/libtiff.la -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/tiff-rgb.exe tiff-rgb.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../../libtiff/.libs/libtiff.dll.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+make[4]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/dbs'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/dbs'
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/dbs'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/dbs'
+Making install in iptcutil
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/iptcutil'
+x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -DHAVE_CONFIG_H -I. -I../../libtiff -I../../libtiff  -I/devel/dist/win64/jpeg-7-1/include -I/devel/dist/win64/zlib-1.2.3-1/include   -O2 -Wall -W -MT iptcutil.o -MD -MP -MF .deps/iptcutil.Tpo -c -o iptcutil.o iptcutil.c
+iptcutil.c: In function 'super_fgets':
+iptcutil.c:335:10: warning: cast from pointer to integer of different size
+iptcutil.c:335:19: warning: cast from pointer to integer of different size
+iptcutil.c:340:14: warning: cast from pointer to integer of different size
+iptcutil.c:340:21: warning: cast from pointer to integer of different size
+iptcutil.c:355:12: warning: cast from pointer to integer of different size
+iptcutil.c:355:21: warning: cast from pointer to integer of different size
+mv -f .deps/iptcutil.Tpo .deps/iptcutil.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link x86_64-w64-mingw32-gcc -mthreads -std=gnu99  -O2 -Wall -W  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib  -o iptcutil.exe iptcutil.o ../../libtiff/libtiff.la -ljpeg -lz 
+libtool: link: x86_64-w64-mingw32-gcc -mthreads -std=gnu99 -O2 -Wall -W -o .libs/iptcutil.exe iptcutil.o  -L/devel/dist/win64/jpeg-7-1/lib -L/devel/dist/win64/zlib-1.2.3-1/lib ../../libtiff/.libs/libtiff.dll.a -ljpeg -lz -mthreads -Lc:/devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/iptcutil'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/iptcutil'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/iptcutil'
+Making install in mac-cw
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/mac-cw'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/mac-cw'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/mac-cw'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/mac-cw'
+Making install in mac-mpw
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/mac-mpw'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/mac-mpw'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/mac-mpw'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/mac-mpw'
+Making install in mfs
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/mfs'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/mfs'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/mfs'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/mfs'
+Making install in pds
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/pds'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/pds'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/pds'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/pds'
+Making install in ras
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/ras'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/ras'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/ras'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/ras'
+Making install in stream
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/stream'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/stream'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/stream'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/stream'
+Making install in tags
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/tags'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/tags'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/tags'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/tags'
+Making install in win_dib
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/win_dib'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib/win_dib'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/win_dib'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib/win_dib'
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/contrib'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib'
+make[1]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/contrib'
+Making install in test
+make[1]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/test'
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/test'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/test'
+make[1]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/test'
+Making install in man
+make[1]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/man'
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/man/man1" || /bin/mkdir -p "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/man/man1"
+test -z "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/man/man3" || /bin/mkdir -p "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/man/man3"
+ /opt/local/bin/install -c -m 644 bmp2tiff.1 fax2ps.1 fax2tiff.1 gif2tiff.1 pal2rgb.1 ppm2tiff.1 ras2tiff.1 raw2tiff.1 rgb2ycbcr.1 sgi2tiff.1 thumbnail.1 tiff2bw.1 tiff2pdf.1 tiff2ps.1 tiff2rgba.1 tiffcmp.1 tiffcp.1 tiffcrop.1 tiffdither.1 tiffdump.1 tiffgt.1 tiffinfo.1 tiffmedian.1 tiffset.1 tiffsplit.1 tiffsv.1 'c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/man/man1'
+ /opt/local/bin/install -c -m 644 libtiff.3tiff TIFFbuffer.3tiff TIFFClose.3tiff TIFFcodec.3tiff TIFFcolor.3tiff TIFFDataWidth.3tiff TIFFError.3tiff TIFFFlush.3tiff TIFFGetField.3tiff TIFFmemory.3tiff TIFFOpen.3tiff TIFFPrintDirectory.3tiff TIFFquery.3tiff TIFFReadDirectory.3tiff TIFFReadEncodedStrip.3tiff TIFFReadEncodedTile.3tiff TIFFReadRawStrip.3tiff TIFFReadRawTile.3tiff TIFFReadRGBAImage.3tiff TIFFReadRGBAStrip.3tiff TIFFReadRGBATile.3tiff TIFFReadScanline.3tiff TIFFReadTile.3tiff TIFFRGBAImage.3tiff TIFFSetDirectory.3tiff TIFFSetField.3tiff TIFFsize.3tiff TIFFstrip.3tiff TIFFswab.3tiff TIFFtile.3tiff TIFFWarning.3tiff TIFFWriteDirectory.3tiff TIFFWriteEncodedStrip.3tiff TIFFWriteEncodedTile.3tiff TIFFWriteRawStrip.3tiff TIFFWriteRawTile.3tiff TIFFWriteScanline.3tiff TIFFWriteTile.3tiff 'c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/man/man3'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/man'
+make[1]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/man'
+Making install in html
+make[1]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/html'
+Making install in images
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/html/images'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/html/images'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1/html/images" || /bin/mkdir -p "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1/html/images"
+ /opt/local/bin/install -c -m 644 back.gif bali.jpg cat.gif cover.jpg cramps.gif dave.gif info.gif jello.jpg jim.gif note.gif oxford.gif quad.jpg ring.gif smallliz.jpg strike.gif warning.gif 'c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1/html/images'
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/html/images'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/html/images'
+Making install in man
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/html/man'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/html/man'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1/html/man" || /bin/mkdir -p "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1/html/man"
+ /opt/local/bin/install -c -m 644 index.html libtiff.3tiff.html TIFFbuffer.3tiff.html TIFFClose.3tiff.html TIFFcodec.3tiff.html TIFFcolor.3tiff.html TIFFDataWidth.3tiff.html TIFFError.3tiff.html TIFFFlush.3tiff.html TIFFGetField.3tiff.html TIFFmemory.3tiff.html TIFFOpen.3tiff.html TIFFPrintDirectory.3tiff.html TIFFquery.3tiff.html TIFFReadDirectory.3tiff.html TIFFReadEncodedStrip.3tiff.html TIFFReadEncodedTile.3tiff.html TIFFReadRawStrip.3tiff.html TIFFReadRawTile.3tiff.html TIFFReadRGBAImage.3tiff.html TIFFReadRGBAStrip.3tiff.html TIFFReadRGBATile.3tiff.html TIFFReadScanline.3tiff.html TIFFReadTile.3tiff.html TIFFRGBAImage.3tiff.html TIFFSetDirectory.3tiff.html TIFFSetField.3tiff.html TIFFsize.3tiff.html TIFFstrip.3tiff.html TIFFswab.3tiff.html TIFFtile.3tiff.html TIFFWarning.3tiff.html TIFFWriteDirectory.3tiff.html TIFFWriteEncodedStrip.3tiff.html TIFFWriteEncodedTile.3tiff.html TIFFWriteRawStrip.3tiff.html TIFFWriteRawTile.3tiff.html TIFFWriteScanline.3tiff.html TIFFWriteTile.3tiff.html fax2ps.1.html 'c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1/html/man'
+ /opt/local/bin/install -c -m 644 fax2tiff.1.html gif2tiff.1.html pal2rgb.1.html ppm2tiff.1.html ras2tiff.1.html raw2tiff.1.html rgb2ycbcr.1.html sgi2tiff.1.html thumbnail.1.html tiff2bw.1.html tiff2pdf.1.html tiff2ps.1.html tiff2rgba.1.html tiffcmp.1.html tiffcp.1.html tiffcrop.1.html tiffdither.1.html tiffdump.1.html tiffgt.1.html tiffinfo.1.html tiffmedian.1.html tiffset.1.html tiffsplit.1.html tiffsv.1.html 'c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1/html/man'
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/html/man'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/html/man'
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/html'
+make[3]: Entering directory `/devel/src/libtiff/3.9.1-1_win64/html'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1/html" || /bin/mkdir -p "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1/html"
+ /opt/local/bin/install -c -m 644 addingtags.html bugs.html build.html contrib.html document.html images.html index.html internals.html intro.html libtiff.html misc.html support.html TIFFTechNote2.html tools.html v3.4beta007.html v3.4beta016.html v3.4beta018.html v3.4beta024.html v3.4beta028.html v3.4beta029.html v3.4beta031.html v3.4beta032.html v3.4beta033.html v3.4beta034.html v3.4beta035.html v3.4beta036.html v3.5.1.html v3.5.2.html v3.5.3.html v3.5.4.html v3.5.5.html v3.5.6-beta.html v3.5.7.html v3.6.0.html v3.6.1.html v3.7.0alpha.html v3.7.0beta.html v3.7.0beta2.html v3.7.0.html v3.7.1.html 'c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1/html'
+ /opt/local/bin/install -c -m 644 v3.7.2.html v3.7.3.html v3.7.4.html v3.8.0.html v3.8.1.html v3.8.2.html v3.9.0beta.html 'c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1/html'
+make[3]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/html'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/html'
+make[1]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64/html'
+make[1]: Entering directory `/devel/src/libtiff/3.9.1-1_win64'
+make[2]: Entering directory `/devel/src/libtiff/3.9.1-1_win64'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1" || /bin/mkdir -p "c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1"
+ /opt/local/bin/install -c -m 644 COPYRIGHT ChangeLog README README.vms RELEASE-DATE TODO VERSION 'c:/devel/target/f42c6c73c8e786c55ee21d819904e874/share/doc/tiff-3.9.1'
+make[2]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64'
+make[1]: Leaving directory `/devel/src/libtiff/3.9.1-1_win64'
+++ lib -machine:X64 -name:libtiff-3.dll -def:libtiff/libtiff.def -out:tiff.lib
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+   Creating library tiff.lib and object tiff.exp
+++ cp libtiff/libtiff.def tiff.lib /devel/target/f42c6c73c8e786c55ee21d819904e874/lib
+++ rm -f /tmp/libtiff_3.9.1-1_win64.zip /tmp/libtiff-dev_3.9.1-1_win64.zip
+++ cd /devel/target/f42c6c73c8e786c55ee21d819904e874
+++ zip /tmp/libtiff_3.9.1-1_win64.zip bin/libtiff-3.dll bin/libtiffxx-3.dll
+  adding: bin/libtiff-3.dll (224 bytes security) (deflated 67%)
+  adding: bin/libtiffxx-3.dll (224 bytes security) (deflated 73%)
+++ zip /tmp/libtiff-dev_3.9.1-1_win64.zip bin/bmp2tiff.exe bin/fax2ps.exe bin/fax2tiff.exe bin/gif2tiff.exe bin/pal2rgb.exe bin/ppm2tiff.exe bin/ras2tiff.exe bin/raw2tiff.exe bin/rgb2ycbcr.exe bin/thumbnail.exe bin/tiff2bw.exe bin/tiff2pdf.exe bin/tiff2ps.exe bin/tiff2rgba.exe bin/tiffcmp.exe bin/tiffcp.exe bin/tiffcrop.exe bin/tiffdither.exe bin/tiffdump.exe bin/tiffinfo.exe bin/tiffmedian.exe bin/tiffset.exe bin/tiffsplit.exe
+  adding: bin/bmp2tiff.exe (224 bytes security) (deflated 67%)
+  adding: bin/fax2ps.exe (224 bytes security) (deflated 68%)
+  adding: bin/fax2tiff.exe (224 bytes security) (deflated 68%)
+  adding: bin/gif2tiff.exe (224 bytes security) (deflated 67%)
+  adding: bin/pal2rgb.exe (224 bytes security) (deflated 68%)
+  adding: bin/ppm2tiff.exe (224 bytes security) (deflated 68%)
+  adding: bin/ras2tiff.exe (224 bytes security) (deflated 68%)
+  adding: bin/raw2tiff.exe (224 bytes security) (deflated 68%)
+  adding: bin/rgb2ycbcr.exe (224 bytes security) (deflated 67%)
+  adding: bin/thumbnail.exe (224 bytes security) (deflated 67%)
+  adding: bin/tiff2bw.exe (224 bytes security) (deflated 67%)
+  adding: bin/tiff2pdf.exe (224 bytes security) (deflated 64%)
+  adding: bin/tiff2ps.exe (224 bytes security) (deflated 65%)
+  adding: bin/tiff2rgba.exe (224 bytes security) (deflated 68%)
+  adding: bin/tiffcmp.exe (224 bytes security) (deflated 67%)
+  adding: bin/tiffcp.exe (224 bytes security) (deflated 66%)
+  adding: bin/tiffcrop.exe (224 bytes security) (deflated 62%)
+  adding: bin/tiffdither.exe (224 bytes security) (deflated 68%)
+  adding: bin/tiffdump.exe (224 bytes security) (deflated 67%)
+  adding: bin/tiffinfo.exe (224 bytes security) (deflated 68%)
+  adding: bin/tiffmedian.exe (224 bytes security) (deflated 66%)
+  adding: bin/tiffset.exe (224 bytes security) (deflated 69%)
+  adding: bin/tiffsplit.exe (224 bytes security) (deflated 69%)
+++ zip /tmp/libtiff-dev_3.9.1-1_win64.zip lib/libtiff.dll.a lib/libtiffxx.dll.a
+  adding: lib/libtiff.dll.a (224 bytes security) (deflated 93%)
+  adding: lib/libtiffxx.dll.a (224 bytes security) (deflated 81%)
+++ zip /tmp/libtiff-dev_3.9.1-1_win64.zip lib/tiff.lib
+  adding: lib/tiff.lib (224 bytes security) (deflated 84%)
+++ zip -r -D /tmp/libtiff-dev_3.9.1-1_win64.zip include share
+  adding: include/tiff.h (224 bytes security) (deflated 67%)
+  adding: include/tiffconf.h (224 bytes security) (deflated 57%)
+  adding: include/tiffio.h (224 bytes security) (deflated 70%)
+  adding: include/tiffio.hxx (224 bytes security) (deflated 45%)
+  adding: include/tiffvers.h (224 bytes security) (deflated 35%)
+  adding: share/doc/tiff-3.9.1/ChangeLog (224 bytes security) (deflated 73%)
+  adding: share/doc/tiff-3.9.1/COPYRIGHT (224 bytes security) (deflated 44%)
+  adding: share/doc/tiff-3.9.1/html/addingtags.html (224 bytes security) (deflated 60%)
+  adding: share/doc/tiff-3.9.1/html/bugs.html (224 bytes security) (deflated 51%)
+  adding: share/doc/tiff-3.9.1/html/build.html (224 bytes security) (deflated 66%)
+  adding: share/doc/tiff-3.9.1/html/contrib.html (224 bytes security) (deflated 58%)
+  adding: share/doc/tiff-3.9.1/html/document.html (224 bytes security) (deflated 53%)
+  adding: share/doc/tiff-3.9.1/html/images/back.gif (224 bytes security) (deflated 31%)
+  adding: share/doc/tiff-3.9.1/html/images/bali.jpg (224 bytes security) (deflated 1%)
+  adding: share/doc/tiff-3.9.1/html/images/cat.gif (224 bytes security) (deflated 2%)
+  adding: share/doc/tiff-3.9.1/html/images/cover.jpg (224 bytes security) (deflated 2%)
+  adding: share/doc/tiff-3.9.1/html/images/cramps.gif (224 bytes security) (deflated 1%)
+  adding: share/doc/tiff-3.9.1/html/images/dave.gif (224 bytes security) (deflated 0%)
+  adding: share/doc/tiff-3.9.1/html/images/info.gif (224 bytes security) (stored 0%)
+  adding: share/doc/tiff-3.9.1/html/images/jello.jpg (224 bytes security) (deflated 4%)
+  adding: share/doc/tiff-3.9.1/html/images/jim.gif (224 bytes security) (deflated 1%)
+  adding: share/doc/tiff-3.9.1/html/images/note.gif (224 bytes security) (deflated 5%)
+  adding: share/doc/tiff-3.9.1/html/images/oxford.gif (224 bytes security) (stored 0%)
+  adding: share/doc/tiff-3.9.1/html/images/quad.jpg (224 bytes security) (deflated 1%)
+  adding: share/doc/tiff-3.9.1/html/images/ring.gif (224 bytes security) (stored 0%)
+  adding: share/doc/tiff-3.9.1/html/images/smallliz.jpg (224 bytes security) (deflated 1%)
+  adding: share/doc/tiff-3.9.1/html/images/strike.gif (224 bytes security) (deflated 1%)
+  adding: share/doc/tiff-3.9.1/html/images/warning.gif (224 bytes security) (stored 0%)
+  adding: share/doc/tiff-3.9.1/html/images.html (224 bytes security) (deflated 41%)
+  adding: share/doc/tiff-3.9.1/html/index.html (224 bytes security) (deflated 61%)
+  adding: share/doc/tiff-3.9.1/html/internals.html (224 bytes security) (deflated 65%)
+  adding: share/doc/tiff-3.9.1/html/intro.html (224 bytes security) (deflated 51%)
+  adding: share/doc/tiff-3.9.1/html/libtiff.html (224 bytes security) (deflated 76%)
+  adding: share/doc/tiff-3.9.1/html/man/fax2ps.1.html (224 bytes security) (deflated 73%)
+  adding: share/doc/tiff-3.9.1/html/man/fax2tiff.1.html (224 bytes security) (deflated 80%)
+  adding: share/doc/tiff-3.9.1/html/man/gif2tiff.1.html (224 bytes security) (deflated 69%)
+  adding: share/doc/tiff-3.9.1/html/man/index.html (224 bytes security) (deflated 83%)
+  adding: share/doc/tiff-3.9.1/html/man/libtiff.3tiff.html (224 bytes security) (deflated 87%)
+  adding: share/doc/tiff-3.9.1/html/man/pal2rgb.1.html (224 bytes security) (deflated 73%)
+  adding: share/doc/tiff-3.9.1/html/man/ppm2tiff.1.html (224 bytes security) (deflated 66%)
+  adding: share/doc/tiff-3.9.1/html/man/ras2tiff.1.html (224 bytes security) (deflated 67%)
+  adding: share/doc/tiff-3.9.1/html/man/raw2tiff.1.html (224 bytes security) (deflated 81%)
+  adding: share/doc/tiff-3.9.1/html/man/rgb2ycbcr.1.html (224 bytes security) (deflated 69%)
+  adding: share/doc/tiff-3.9.1/html/man/sgi2tiff.1.html (224 bytes security) (deflated 69%)
+  adding: share/doc/tiff-3.9.1/html/man/thumbnail.1.html (224 bytes security) (deflated 70%)
+  adding: share/doc/tiff-3.9.1/html/man/tiff2bw.1.html (224 bytes security) (deflated 71%)
+  adding: share/doc/tiff-3.9.1/html/man/tiff2pdf.1.html (224 bytes security) (deflated 84%)
+  adding: share/doc/tiff-3.9.1/html/man/tiff2ps.1.html (224 bytes security) (deflated 78%)
+  adding: share/doc/tiff-3.9.1/html/man/tiff2rgba.1.html (224 bytes security) (deflated 66%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFbuffer.3tiff.html (224 bytes security) (deflated 67%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFClose.3tiff.html (224 bytes security) (deflated 68%)
+  adding: share/doc/tiff-3.9.1/html/man/tiffcmp.1.html (224 bytes security) (deflated 70%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFcodec.3tiff.html (224 bytes security) (deflated 65%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFcolor.3tiff.html (224 bytes security) (deflated 85%)
+  adding: share/doc/tiff-3.9.1/html/man/tiffcp.1.html (224 bytes security) (deflated 78%)
+  adding: share/doc/tiff-3.9.1/html/man/tiffcrop.1.html (224 bytes security) (deflated 80%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFDataWidth.3tiff.html (224 bytes security) (deflated 69%)
+  adding: share/doc/tiff-3.9.1/html/man/tiffdither.1.html (224 bytes security) (deflated 70%)
+  adding: share/doc/tiff-3.9.1/html/man/tiffdump.1.html (224 bytes security) (deflated 70%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFError.3tiff.html (224 bytes security) (deflated 67%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFFlush.3tiff.html (224 bytes security) (deflated 71%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFGetField.3tiff.html (224 bytes security) (deflated 86%)
+  adding: share/doc/tiff-3.9.1/html/man/tiffgt.1.html (224 bytes security) (deflated 78%)
+  adding: share/doc/tiff-3.9.1/html/man/tiffinfo.1.html (224 bytes security) (deflated 74%)
+  adding: share/doc/tiff-3.9.1/html/man/tiffmedian.1.html (224 bytes security) (deflated 70%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFmemory.3tiff.html (224 bytes security) (deflated 67%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFOpen.3tiff.html (224 bytes security) (deflated 72%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFPrintDirectory.3tiff.html (224 bytes security) (deflated 77%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFquery.3tiff.html (224 bytes security) (deflated 69%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFReadDirectory.3tiff.html (224 bytes security) (deflated 72%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFReadEncodedStrip.3tiff.html (224 bytes security) (deflated 68%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFReadEncodedTile.3tiff.html (224 bytes security) (deflated 68%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFReadRawStrip.3tiff.html (224 bytes security) (deflated 68%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFReadRawTile.3tiff.html (224 bytes security) (deflated 67%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFReadRGBAImage.3tiff.html (224 bytes security) (deflated 75%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFReadRGBAStrip.3tiff.html (224 bytes security) (deflated 69%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFReadRGBATile.3tiff.html (224 bytes security) (deflated 72%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFReadScanline.3tiff.html (224 bytes security) (deflated 68%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFReadTile.3tiff.html (224 bytes security) (deflated 68%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFRGBAImage.3tiff.html (224 bytes security) (deflated 69%)
+  adding: share/doc/tiff-3.9.1/html/man/tiffset.1.html (224 bytes security) (deflated 80%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFSetDirectory.3tiff.html (224 bytes security) (deflated 70%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFSetField.3tiff.html (224 bytes security) (deflated 85%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFsize.3tiff.html (224 bytes security) (deflated 68%)
+  adding: share/doc/tiff-3.9.1/html/man/tiffsplit.1.html (224 bytes security) (deflated 69%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFstrip.3tiff.html (224 bytes security) (deflated 68%)
+  adding: share/doc/tiff-3.9.1/html/man/tiffsv.1.html (224 bytes security) (deflated 70%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFswab.3tiff.html (224 bytes security) (deflated 67%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFtile.3tiff.html (224 bytes security) (deflated 70%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFWarning.3tiff.html (224 bytes security) (deflated 67%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFWriteDirectory.3tiff.html (224 bytes security) (deflated 71%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFWriteEncodedStrip.3tiff.html (224 bytes security) (deflated 69%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFWriteEncodedTile.3tiff.html (224 bytes security) (deflated 69%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFWriteRawStrip.3tiff.html (224 bytes security) (deflated 70%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFWriteRawTile.3tiff.html (224 bytes security) (deflated 69%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFWriteScanline.3tiff.html (224 bytes security) (deflated 68%)
+  adding: share/doc/tiff-3.9.1/html/man/TIFFWriteTile.3tiff.html (224 bytes security) (deflated 68%)
+  adding: share/doc/tiff-3.9.1/html/misc.html (224 bytes security) (deflated 47%)
+  adding: share/doc/tiff-3.9.1/html/support.html (224 bytes security) (deflated 79%)
+  adding: share/doc/tiff-3.9.1/html/TIFFTechNote2.html (224 bytes security) (deflated 65%)
+  adding: share/doc/tiff-3.9.1/html/tools.html (224 bytes security) (deflated 65%)
+  adding: share/doc/tiff-3.9.1/html/v3.4beta007.html (224 bytes security) (deflated 55%)
+  adding: share/doc/tiff-3.9.1/html/v3.4beta016.html (224 bytes security) (deflated 60%)
+  adding: share/doc/tiff-3.9.1/html/v3.4beta018.html (224 bytes security) (deflated 53%)
+  adding: share/doc/tiff-3.9.1/html/v3.4beta024.html (224 bytes security) (deflated 57%)
+  adding: share/doc/tiff-3.9.1/html/v3.4beta028.html (224 bytes security) (deflated 59%)
+  adding: share/doc/tiff-3.9.1/html/v3.4beta029.html (224 bytes security) (deflated 53%)
+  adding: share/doc/tiff-3.9.1/html/v3.4beta031.html (224 bytes security) (deflated 54%)
+  adding: share/doc/tiff-3.9.1/html/v3.4beta032.html (224 bytes security) (deflated 56%)
+  adding: share/doc/tiff-3.9.1/html/v3.4beta033.html (224 bytes security) (deflated 56%)
+  adding: share/doc/tiff-3.9.1/html/v3.4beta034.html (224 bytes security) (deflated 50%)
+  adding: share/doc/tiff-3.9.1/html/v3.4beta035.html (224 bytes security) (deflated 50%)
+  adding: share/doc/tiff-3.9.1/html/v3.4beta036.html (224 bytes security) (deflated 55%)
+  adding: share/doc/tiff-3.9.1/html/v3.5.1.html (224 bytes security) (deflated 52%)
+  adding: share/doc/tiff-3.9.1/html/v3.5.2.html (224 bytes security) (deflated 52%)
+  adding: share/doc/tiff-3.9.1/html/v3.5.3.html (224 bytes security) (deflated 53%)
+  adding: share/doc/tiff-3.9.1/html/v3.5.4.html (224 bytes security) (deflated 54%)
+  adding: share/doc/tiff-3.9.1/html/v3.5.5.html (224 bytes security) (deflated 56%)
+  adding: share/doc/tiff-3.9.1/html/v3.5.6-beta.html (224 bytes security) (deflated 56%)
+  adding: share/doc/tiff-3.9.1/html/v3.5.7.html (224 bytes security) (deflated 57%)
+  adding: share/doc/tiff-3.9.1/html/v3.6.0.html (224 bytes security) (deflated 62%)
+  adding: share/doc/tiff-3.9.1/html/v3.6.1.html (224 bytes security) (deflated 62%)
+  adding: share/doc/tiff-3.9.1/html/v3.7.0.html (224 bytes security) (deflated 63%)
+  adding: share/doc/tiff-3.9.1/html/v3.7.0alpha.html (224 bytes security) (deflated 68%)
+  adding: share/doc/tiff-3.9.1/html/v3.7.0beta.html (224 bytes security) (deflated 62%)
+  adding: share/doc/tiff-3.9.1/html/v3.7.0beta2.html (224 bytes security) (deflated 61%)
+  adding: share/doc/tiff-3.9.1/html/v3.7.1.html (224 bytes security) (deflated 68%)
+  adding: share/doc/tiff-3.9.1/html/v3.7.2.html (224 bytes security) (deflated 71%)
+  adding: share/doc/tiff-3.9.1/html/v3.7.3.html (224 bytes security) (deflated 65%)
+  adding: share/doc/tiff-3.9.1/html/v3.7.4.html (224 bytes security) (deflated 61%)
+  adding: share/doc/tiff-3.9.1/html/v3.8.0.html (224 bytes security) (deflated 66%)
+  adding: share/doc/tiff-3.9.1/html/v3.8.1.html (224 bytes security) (deflated 72%)
+  adding: share/doc/tiff-3.9.1/html/v3.8.2.html (224 bytes security) (deflated 67%)
+  adding: share/doc/tiff-3.9.1/html/v3.9.0beta.html (224 bytes security) (deflated 66%)
+  adding: share/doc/tiff-3.9.1/README (224 bytes security) (deflated 47%)
+  adding: share/doc/tiff-3.9.1/README.vms (224 bytes security) (deflated 30%)
+  adding: share/doc/tiff-3.9.1/RELEASE-DATE (224 bytes security) (stored 0%)
+  adding: share/doc/tiff-3.9.1/TODO (224 bytes security) (deflated 31%)
+  adding: share/doc/tiff-3.9.1/VERSION (224 bytes security) (stored 0%)
+  adding: share/man/man1/bmp2tiff.1 (224 bytes security) (deflated 47%)
+  adding: share/man/man1/fax2ps.1 (224 bytes security) (deflated 54%)
+  adding: share/man/man1/fax2tiff.1 (224 bytes security) (deflated 63%)
+  adding: share/man/man1/gif2tiff.1 (224 bytes security) (deflated 46%)
+  adding: share/man/man1/pal2rgb.1 (224 bytes security) (deflated 51%)
+  adding: share/man/man1/ppm2tiff.1 (224 bytes security) (deflated 48%)
+  adding: share/man/man1/ras2tiff.1 (224 bytes security) (deflated 48%)
+  adding: share/man/man1/raw2tiff.1 (224 bytes security) (deflated 55%)
+  adding: share/man/man1/rgb2ycbcr.1 (224 bytes security) (deflated 50%)
+  adding: share/man/man1/sgi2tiff.1 (224 bytes security) (deflated 49%)
+  adding: share/man/man1/thumbnail.1 (224 bytes security) (deflated 51%)
+  adding: share/man/man1/tiff2bw.1 (224 bytes security) (deflated 51%)
+  adding: share/man/man1/tiff2pdf.1 (224 bytes security) (deflated 60%)
+  adding: share/man/man1/tiff2ps.1 (224 bytes security) (deflated 58%)
+  adding: share/man/man1/tiff2rgba.1 (224 bytes security) (deflated 49%)
+  adding: share/man/man1/tiffcmp.1 (224 bytes security) (deflated 47%)
+  adding: share/man/man1/tiffcp.1 (224 bytes security) (deflated 60%)
+  adding: share/man/man1/tiffcrop.1 (224 bytes security) (deflated 63%)
+  adding: share/man/man1/tiffdither.1 (224 bytes security) (deflated 53%)
+  adding: share/man/man1/tiffdump.1 (224 bytes security) (deflated 47%)
+  adding: share/man/man1/tiffgt.1 (224 bytes security) (deflated 58%)
+  adding: share/man/man1/tiffinfo.1 (224 bytes security) (deflated 49%)
+  adding: share/man/man1/tiffmedian.1 (224 bytes security) (deflated 50%)
+  adding: share/man/man1/tiffset.1 (224 bytes security) (deflated 50%)
+  adding: share/man/man1/tiffsplit.1 (224 bytes security) (deflated 45%)
+  adding: share/man/man1/tiffsv.1 (224 bytes security) (deflated 52%)
+  adding: share/man/man3/libtiff.3tiff (224 bytes security) (deflated 62%)
+  adding: share/man/man3/TIFFbuffer.3tiff (224 bytes security) (deflated 53%)
+  adding: share/man/man3/TIFFClose.3tiff (224 bytes security) (deflated 46%)
+  adding: share/man/man3/TIFFcodec.3tiff (224 bytes security) (deflated 50%)
+  adding: share/man/man3/TIFFcolor.3tiff (224 bytes security) (deflated 60%)
+  adding: share/man/man3/TIFFDataWidth.3tiff (224 bytes security) (deflated 47%)
+  adding: share/man/man3/TIFFError.3tiff (224 bytes security) (deflated 49%)
+  adding: share/man/man3/TIFFFlush.3tiff (224 bytes security) (deflated 51%)
+  adding: share/man/man3/TIFFGetField.3tiff (224 bytes security) (deflated 60%)
+  adding: share/man/man3/TIFFmemory.3tiff (224 bytes security) (deflated 51%)
+  adding: share/man/man3/TIFFOpen.3tiff (224 bytes security) (deflated 61%)
+  adding: share/man/man3/TIFFPrintDirectory.3tiff (224 bytes security) (deflated 50%)
+  adding: share/man/man3/TIFFquery.3tiff (224 bytes security) (deflated 57%)
+  adding: share/man/man3/TIFFReadDirectory.3tiff (224 bytes security) (deflated 61%)
+  adding: share/man/man3/TIFFReadEncodedStrip.3tiff (224 bytes security) (deflated 48%)
+  adding: share/man/man3/TIFFReadEncodedTile.3tiff (224 bytes security) (deflated 48%)
+  adding: share/man/man3/TIFFReadRawStrip.3tiff (224 bytes security) (deflated 47%)
+  adding: share/man/man3/TIFFReadRawTile.3tiff (224 bytes security) (deflated 46%)
+  adding: share/man/man3/TIFFReadRGBAImage.3tiff (224 bytes security) (deflated 60%)
+  adding: share/man/man3/TIFFReadRGBAStrip.3tiff (224 bytes security) (deflated 57%)
+  adding: share/man/man3/TIFFReadRGBATile.3tiff (224 bytes security) (deflated 57%)
+  adding: share/man/man3/TIFFReadScanline.3tiff (224 bytes security) (deflated 50%)
+  adding: share/man/man3/TIFFReadTile.3tiff (224 bytes security) (deflated 49%)
+  adding: share/man/man3/TIFFRGBAImage.3tiff (224 bytes security) (deflated 59%)
+  adding: share/man/man3/TIFFSetDirectory.3tiff (224 bytes security) (deflated 51%)
+  adding: share/man/man3/TIFFSetField.3tiff (224 bytes security) (deflated 58%)
+  adding: share/man/man3/TIFFsize.3tiff (224 bytes security) (deflated 48%)
+  adding: share/man/man3/TIFFstrip.3tiff (224 bytes security) (deflated 55%)
+  adding: share/man/man3/TIFFswab.3tiff (224 bytes security) (deflated 51%)
+  adding: share/man/man3/TIFFtile.3tiff (224 bytes security) (deflated 58%)
+  adding: share/man/man3/TIFFWarning.3tiff (224 bytes security) (deflated 49%)
+  adding: share/man/man3/TIFFWriteDirectory.3tiff (224 bytes security) (deflated 60%)
+  adding: share/man/man3/TIFFWriteEncodedStrip.3tiff (224 bytes security) (deflated 51%)
+  adding: share/man/man3/TIFFWriteEncodedTile.3tiff (224 bytes security) (deflated 50%)
+  adding: share/man/man3/TIFFWriteRawStrip.3tiff (224 bytes security) (deflated 51%)
+  adding: share/man/man3/TIFFWriteRawTile.3tiff (224 bytes security) (deflated 50%)
+  adding: share/man/man3/TIFFWriteScanline.3tiff (224 bytes security) (deflated 56%)
+  adding: share/man/man3/TIFFWriteTile.3tiff (224 bytes security) (deflated 48%)

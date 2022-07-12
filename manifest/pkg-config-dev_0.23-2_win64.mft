@@ -1,0 +1,4 @@
+share/aclocal/pkg.m4
+src/tml/make/pkg-config_0.23-2_win64.sh
+src/tml/make/pkg-config_0.23-2_win64.log
+manifest/pkg-config-dev_0.23-2_win64.mft

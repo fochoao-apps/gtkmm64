@@ -1,0 +1,491 @@
+++ patch -p1
+patching file librsvg-zip.in
++++ latest --arch=win64 glib pkg-config atk pango cairo gtk+ freetype fontconfig libgsf libcroco libxml2 libpng
+++ DEPS='glib-2.24.0-2 pkg-config-0.23-2 atk-1.30.0-1 pango-1.28.0-1 cairo-1.8.10-2 gtk+-2.20.0-1 freetype-2.3.12-1 fontconfig-2.8.0-1 libgsf-1.14.17-1 libcroco-0.6.2-1 libxml2-2.7.4-1 libpng-1.4.0-1'
++++ latest --arch=win64 proxy-libintl
+++ PROXY_LIBINTL=proxy-libintl-20090911
++++ latest --arch=win64 win-iconv
+++ WIN_ICONV=win-iconv-tml-20090911
+++ PKG_CONFIG_PATH=/dummy
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/glib-2.24.0-2/lib/pkgconfig ']'
+++ PKG_CONFIG_PATH=/devel/dist/win64/glib-2.24.0-2/lib/pkgconfig:/dummy
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/pkg-config-0.23-2/bin:/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/pkg-config-0.23-2/lib/pkgconfig ']'
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/atk-1.30.0-1/bin:/devel/dist/win64/pkg-config-0.23-2/bin:/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/atk-1.30.0-1/lib/pkgconfig ']'
+++ PKG_CONFIG_PATH=/devel/dist/win64/atk-1.30.0-1/lib/pkgconfig:/devel/dist/win64/glib-2.24.0-2/lib/pkgconfig:/dummy
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/pango-1.28.0-1/bin:/devel/dist/win64/atk-1.30.0-1/bin:/devel/dist/win64/pkg-config-0.23-2/bin:/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/pango-1.28.0-1/lib/pkgconfig ']'
+++ PKG_CONFIG_PATH=/devel/dist/win64/pango-1.28.0-1/lib/pkgconfig:/devel/dist/win64/atk-1.30.0-1/lib/pkgconfig:/devel/dist/win64/glib-2.24.0-2/lib/pkgconfig:/dummy
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/cairo-1.8.10-2/bin:/devel/dist/win64/pango-1.28.0-1/bin:/devel/dist/win64/atk-1.30.0-1/bin:/devel/dist/win64/pkg-config-0.23-2/bin:/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/cairo-1.8.10-2/lib/pkgconfig ']'
+++ PKG_CONFIG_PATH=/devel/dist/win64/cairo-1.8.10-2/lib/pkgconfig:/devel/dist/win64/pango-1.28.0-1/lib/pkgconfig:/devel/dist/win64/atk-1.30.0-1/lib/pkgconfig:/devel/dist/win64/glib-2.24.0-2/lib/pkgconfig:/dummy
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/gtk+-2.20.0-1/bin:/devel/dist/win64/cairo-1.8.10-2/bin:/devel/dist/win64/pango-1.28.0-1/bin:/devel/dist/win64/atk-1.30.0-1/bin:/devel/dist/win64/pkg-config-0.23-2/bin:/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/gtk+-2.20.0-1/lib/pkgconfig ']'
+++ PKG_CONFIG_PATH=/devel/dist/win64/gtk+-2.20.0-1/lib/pkgconfig:/devel/dist/win64/cairo-1.8.10-2/lib/pkgconfig:/devel/dist/win64/pango-1.28.0-1/lib/pkgconfig:/devel/dist/win64/atk-1.30.0-1/lib/pkgconfig:/devel/dist/win64/glib-2.24.0-2/lib/pkgconfig:/dummy
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/freetype-2.3.12-1/bin:/devel/dist/win64/gtk+-2.20.0-1/bin:/devel/dist/win64/cairo-1.8.10-2/bin:/devel/dist/win64/pango-1.28.0-1/bin:/devel/dist/win64/atk-1.30.0-1/bin:/devel/dist/win64/pkg-config-0.23-2/bin:/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/freetype-2.3.12-1/lib/pkgconfig ']'
+++ PKG_CONFIG_PATH=/devel/dist/win64/freetype-2.3.12-1/lib/pkgconfig:/devel/dist/win64/gtk+-2.20.0-1/lib/pkgconfig:/devel/dist/win64/cairo-1.8.10-2/lib/pkgconfig:/devel/dist/win64/pango-1.28.0-1/lib/pkgconfig:/devel/dist/win64/atk-1.30.0-1/lib/pkgconfig:/devel/dist/win64/glib-2.24.0-2/lib/pkgconfig:/dummy
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/fontconfig-2.8.0-1/bin:/devel/dist/win64/freetype-2.3.12-1/bin:/devel/dist/win64/gtk+-2.20.0-1/bin:/devel/dist/win64/cairo-1.8.10-2/bin:/devel/dist/win64/pango-1.28.0-1/bin:/devel/dist/win64/atk-1.30.0-1/bin:/devel/dist/win64/pkg-config-0.23-2/bin:/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/fontconfig-2.8.0-1/lib/pkgconfig ']'
+++ PKG_CONFIG_PATH=/devel/dist/win64/fontconfig-2.8.0-1/lib/pkgconfig:/devel/dist/win64/freetype-2.3.12-1/lib/pkgconfig:/devel/dist/win64/gtk+-2.20.0-1/lib/pkgconfig:/devel/dist/win64/cairo-1.8.10-2/lib/pkgconfig:/devel/dist/win64/pango-1.28.0-1/lib/pkgconfig:/devel/dist/win64/atk-1.30.0-1/lib/pkgconfig:/devel/dist/win64/glib-2.24.0-2/lib/pkgconfig:/dummy
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/libgsf-1.14.17-1/bin:/devel/dist/win64/fontconfig-2.8.0-1/bin:/devel/dist/win64/freetype-2.3.12-1/bin:/devel/dist/win64/gtk+-2.20.0-1/bin:/devel/dist/win64/cairo-1.8.10-2/bin:/devel/dist/win64/pango-1.28.0-1/bin:/devel/dist/win64/atk-1.30.0-1/bin:/devel/dist/win64/pkg-config-0.23-2/bin:/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/libgsf-1.14.17-1/lib/pkgconfig ']'
+++ PKG_CONFIG_PATH=/devel/dist/win64/libgsf-1.14.17-1/lib/pkgconfig:/devel/dist/win64/fontconfig-2.8.0-1/lib/pkgconfig:/devel/dist/win64/freetype-2.3.12-1/lib/pkgconfig:/devel/dist/win64/gtk+-2.20.0-1/lib/pkgconfig:/devel/dist/win64/cairo-1.8.10-2/lib/pkgconfig:/devel/dist/win64/pango-1.28.0-1/lib/pkgconfig:/devel/dist/win64/atk-1.30.0-1/lib/pkgconfig:/devel/dist/win64/glib-2.24.0-2/lib/pkgconfig:/dummy
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/libcroco-0.6.2-1/bin:/devel/dist/win64/libgsf-1.14.17-1/bin:/devel/dist/win64/fontconfig-2.8.0-1/bin:/devel/dist/win64/freetype-2.3.12-1/bin:/devel/dist/win64/gtk+-2.20.0-1/bin:/devel/dist/win64/cairo-1.8.10-2/bin:/devel/dist/win64/pango-1.28.0-1/bin:/devel/dist/win64/atk-1.30.0-1/bin:/devel/dist/win64/pkg-config-0.23-2/bin:/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/libcroco-0.6.2-1/lib/pkgconfig ']'
+++ PKG_CONFIG_PATH=/devel/dist/win64/libcroco-0.6.2-1/lib/pkgconfig:/devel/dist/win64/libgsf-1.14.17-1/lib/pkgconfig:/devel/dist/win64/fontconfig-2.8.0-1/lib/pkgconfig:/devel/dist/win64/freetype-2.3.12-1/lib/pkgconfig:/devel/dist/win64/gtk+-2.20.0-1/lib/pkgconfig:/devel/dist/win64/cairo-1.8.10-2/lib/pkgconfig:/devel/dist/win64/pango-1.28.0-1/lib/pkgconfig:/devel/dist/win64/atk-1.30.0-1/lib/pkgconfig:/devel/dist/win64/glib-2.24.0-2/lib/pkgconfig:/dummy
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/libxml2-2.7.4-1/bin:/devel/dist/win64/libcroco-0.6.2-1/bin:/devel/dist/win64/libgsf-1.14.17-1/bin:/devel/dist/win64/fontconfig-2.8.0-1/bin:/devel/dist/win64/freetype-2.3.12-1/bin:/devel/dist/win64/gtk+-2.20.0-1/bin:/devel/dist/win64/cairo-1.8.10-2/bin:/devel/dist/win64/pango-1.28.0-1/bin:/devel/dist/win64/atk-1.30.0-1/bin:/devel/dist/win64/pkg-config-0.23-2/bin:/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/libxml2-2.7.4-1/lib/pkgconfig ']'
+++ PKG_CONFIG_PATH=/devel/dist/win64/libxml2-2.7.4-1/lib/pkgconfig:/devel/dist/win64/libcroco-0.6.2-1/lib/pkgconfig:/devel/dist/win64/libgsf-1.14.17-1/lib/pkgconfig:/devel/dist/win64/fontconfig-2.8.0-1/lib/pkgconfig:/devel/dist/win64/freetype-2.3.12-1/lib/pkgconfig:/devel/dist/win64/gtk+-2.20.0-1/lib/pkgconfig:/devel/dist/win64/cairo-1.8.10-2/lib/pkgconfig:/devel/dist/win64/pango-1.28.0-1/lib/pkgconfig:/devel/dist/win64/atk-1.30.0-1/lib/pkgconfig:/devel/dist/win64/glib-2.24.0-2/lib/pkgconfig:/dummy
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/libpng-1.4.0-1/bin:/devel/dist/win64/libxml2-2.7.4-1/bin:/devel/dist/win64/libcroco-0.6.2-1/bin:/devel/dist/win64/libgsf-1.14.17-1/bin:/devel/dist/win64/fontconfig-2.8.0-1/bin:/devel/dist/win64/freetype-2.3.12-1/bin:/devel/dist/win64/gtk+-2.20.0-1/bin:/devel/dist/win64/cairo-1.8.10-2/bin:/devel/dist/win64/pango-1.28.0-1/bin:/devel/dist/win64/atk-1.30.0-1/bin:/devel/dist/win64/pkg-config-0.23-2/bin:/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/libpng-1.4.0-1/lib/pkgconfig ']'
+++ PKG_CONFIG_PATH=/devel/dist/win64/libpng-1.4.0-1/lib/pkgconfig:/devel/dist/win64/libxml2-2.7.4-1/lib/pkgconfig:/devel/dist/win64/libcroco-0.6.2-1/lib/pkgconfig:/devel/dist/win64/libgsf-1.14.17-1/lib/pkgconfig:/devel/dist/win64/fontconfig-2.8.0-1/lib/pkgconfig:/devel/dist/win64/freetype-2.3.12-1/lib/pkgconfig:/devel/dist/win64/gtk+-2.20.0-1/lib/pkgconfig:/devel/dist/win64/cairo-1.8.10-2/lib/pkgconfig:/devel/dist/win64/pango-1.28.0-1/lib/pkgconfig:/devel/dist/win64/atk-1.30.0-1/lib/pkgconfig:/devel/dist/win64/glib-2.24.0-2/lib/pkgconfig:/dummy
+++ sed -e 's/need_relink=yes/need_relink=no # no way --tml/'
+++ mv ltmain.temp ltmain.sh
+++ lt_cv_deplibs_check_method=pass_all
+++ CC=x86_64-w64-mingw32-gcc
+++ CPPFLAGS='-I/devel/dist/win64/proxy-libintl-20090911/include -I/devel/dist/win64/win-iconv-tml-20090911/include'
+++ LDFLAGS='-L/devel/dist/win64/proxy-libintl-20090911/lib -Wl,--exclude-libs=libintl.a'
+++ CFLAGS=-O2
+++ ./configure --host=x86_64-w64-mingw32 --disable-gtk-doc --disable-static --prefix=c:/devel/target/406ff90a6379dc078c6308da5f5aded2
+configure: WARNING: If you wanted to set the --build type, don't use --host.
+    If a cross compiler is detected then cross compile mode will be used.
+checking for a BSD-compatible install... /opt/local/bin/install -c
+checking whether build environment is sane... yes
+checking for x86_64-w64-mingw32-strip... x86_64-w64-mingw32-strip
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for style of include used by make... GNU
+checking for x86_64-w64-mingw32-gcc... x86_64-w64-mingw32-gcc
+checking for C compiler default output file name... a.exe
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... .exe
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-w64-mingw32-gcc accepts -g... yes
+checking for x86_64-w64-mingw32-gcc option to accept ISO C89... none needed
+checking dependency style of x86_64-w64-mingw32-gcc... gcc3
+checking for library containing strerror... none required
+checking for x86_64-w64-mingw32-gcc... (cached) x86_64-w64-mingw32-gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether x86_64-w64-mingw32-gcc accepts -g... (cached) yes
+checking for x86_64-w64-mingw32-gcc option to accept ISO C89... (cached) none needed
+checking dependency style of x86_64-w64-mingw32-gcc... (cached) gcc3
+checking how to run the C preprocessor... x86_64-w64-mingw32-gcc -E
+checking for gawk... (cached) gawk
+checking build system type... i686-pc-mingw32
+checking host system type... x86_64-w64-mingw32
+checking for x86_64-w64-mingw32-as... x86_64-w64-mingw32-as
+checking for x86_64-w64-mingw32-dlltool... x86_64-w64-mingw32-dlltool
+checking for x86_64-w64-mingw32-objdump... x86_64-w64-mingw32-objdump
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by x86_64-w64-mingw32-gcc... c:/opt/mingw64/x86_64-w64-mingw32/bin/ld.exe
+checking if the linker (c:/opt/mingw64/x86_64-w64-mingw32/bin/ld.exe) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /opt/mingw64/bin/x86_64-w64-mingw32-nm
+checking the name lister (/opt/mingw64/bin/x86_64-w64-mingw32-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 8192
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for c:/opt/mingw64/x86_64-w64-mingw32/bin/ld.exe option to reload object files... -r
+checking for x86_64-w64-mingw32-objdump... (cached) x86_64-w64-mingw32-objdump
+checking how to recognize dependent libraries... (cached) pass_all
+checking for x86_64-w64-mingw32-ar... x86_64-w64-mingw32-ar
+checking for x86_64-w64-mingw32-strip... (cached) x86_64-w64-mingw32-strip
+checking for x86_64-w64-mingw32-ranlib... x86_64-w64-mingw32-ranlib
+checking command to parse /opt/mingw64/bin/x86_64-w64-mingw32-nm output from x86_64-w64-mingw32-gcc object... ok
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-w64-mingw32-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-w64-mingw32-gcc option to produce PIC... -DDLL_EXPORT -DPIC
+checking if x86_64-w64-mingw32-gcc PIC flag -DDLL_EXPORT -DPIC works... yes
+checking if x86_64-w64-mingw32-gcc static flag -static works... yes
+checking if x86_64-w64-mingw32-gcc supports -c -o file.o... yes
+checking if x86_64-w64-mingw32-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-w64-mingw32-gcc linker (c:/opt/mingw64/x86_64-w64-mingw32/bin/ld.exe) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for ANSI C header files... (cached) yes
+checking whether x86_64-w64-mingw32-gcc and cc understand -c and -o together... yes
+checking whether byte ordering is bigendian... no
+checking for some Win32 platform... yes
+checking for native Win32... yes
+checking for x86_64-w64-mingw32-pkg-config... no
+checking for pkg-config... /devel/dist/win64/pkg-config-0.23-2/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for GLIB... yes
+checking for LIBRSVG... yes
+checking for GIO... yes
+checking for LIBGSF... yes
+checking for LIBCROCO... yes
+checking for strtok_r... no
+checking for basename... no
+checking for more warnings... no
+checking for GTK... yes
+checking for GDK_X11... no
+checking for gdk-pixbuf-query-loaders... /devel/dist/win64/gtk+-2.20.0-1/bin/gdk-pixbuf-query-loaders
+checking for gtkdoc-check... no
+checking for gtkdoc-rebase... no
+checking for gtkdoc-mkpdf... no
+checking whether to build gtk-doc documentation... no
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for LC_MESSAGES... no
+configure: creating ./config.status
+config.status: creating librsvg.spec
+config.status: creating librsvg-features.h
+config.status: creating Makefile
+config.status: creating librsvg-2.0.pc
+config.status: creating librsvg-2.0-uninstalled.pc
+config.status: creating librsvg-zip
+config.status: creating rsvg
+config.status: creating data/Makefile
+config.status: creating gtk-engine/Makefile
+config.status: creating gtk-engine/examples/Makefile
+config.status: creating gtk-engine/examples/bubble/Makefile
+config.status: creating gtk-engine/examples/bubble/gtk-2.0/Makefile
+config.status: creating gdk-pixbuf-loader/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/pdiff/Makefile
+config.status: creating doc/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+librsvg-2.26.2
+
+	prefix:                         c:/devel/target/406ff90a6379dc078c6308da5f5aded2
+	compiler:                       x86_64-w64-mingw32-gcc
+
+	Build GdkPixbuf loader:         yes
+	Build theme engine:             yes
+	Handle svgz files:              true
+	Use GIO:                        true
+	Use libcroco for css parsing:   true
+
+++ make install
+Making install in .
+make[1]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64'
+  CC     rsvg-affine.lo
+  CC     librsvg-features.lo
+  CC     rsvg-bpath-util.lo
+  CC     rsvg-css.lo
+  CC     rsvg-defs.lo
+  CC     rsvg-image.lo
+  CC     rsvg-paint-server.lo
+  CC     rsvg-path.lo
+  CC     rsvg-base-file-util.lo
+  CC     rsvg-filter.lo
+  CC     rsvg-marker.lo
+  CC     rsvg-mask.lo
+  CC     rsvg-shapes.lo
+  CC     rsvg-structure.lo
+  CC     rsvg-styles.lo
+  CC     rsvg-text.lo
+  CC     rsvg-cond.lo
+  CC     rsvg-base.lo
+( cd . && glib-mkenums \
+			--fhead "#include \"librsvg-enum-types.h\"\n#include \"rsvg.h\"" \
+			--fprod "\n/* enumerations from \"@filename@\" */" \
+			--vhead "GType\n@enum_name@_get_type (void)\n{\n  static GType etype = 0;\n  if (etype == 0) {\n    static const G@Type@Value values[] = {" 	\
+			--vprod "      { @VALUENAME@, \"@VALUENAME@\", \"@valuenick@\" }," \
+			--vtail "      { 0, NULL, NULL }\n    };\n    etype = g_@type@_register_static (\"@EnumName@\", values);\n  }\n  return etype;\n}\n" \
+		rsvg.h rsvg-cairo.h ) > tmp-librsvg-enum-types.c \
+	&& (cmp -s tmp-librsvg-enum-types.c librsvg-enum-types.c || cp tmp-librsvg-enum-types.c librsvg-enum-types.c ) \
+	&& rm -f tmp-librsvg-enum-types.c \
+	&& echo timestamp > s-enum-types-c
+( cd . && glib-mkenums \
+			--fhead "#ifndef __LIBRSVG_ENUM_TYPES_H__\n#define __LIBRSVG_ENUM_TYPES_H__\n\n#include <glib-object.h>\n\nG_BEGIN_DECLS\n" \
+			--fprod "/* enumerations from \"@filename@\" */\n" \
+			--vhead "GType @enum_name@_get_type (void);\n#define RSVG_TYPE_@ENUMSHORT@ (@enum_name@_get_type())\n" 	\
+			--ftail "G_END_DECLS\n\n#endif /* __LIBRSVG_ENUM_TYPES_H__ */" \
+		rsvg.h rsvg-cairo.h ) > tmp-librsvg-enum-types.h \
+	&& (cmp -s tmp-librsvg-enum-types.h librsvg-enum-types.h || cp tmp-librsvg-enum-types.h librsvg-enum-types.h ) \
+	&& rm -f tmp-librsvg-enum-types.h	\
+	&& echo timestamp > s-enum-types-h
+  CC     librsvg-enum-types.lo
+  CC     rsvg-cairo-draw.lo
+  CC     rsvg-cairo-render.lo
+  CC     rsvg-cairo-clip.lo
+  CC     rsvg.lo
+  CC     rsvg-gobject.lo
+rsvg-gobject.c: In function 'rsvg_ctx_free_helper':
+rsvg-gobject.c:84:2: warning: passing argument 1 of 'xmlFreeNode' from incompatible pointer type
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/tree.h:931:3: note: expected 'xmlNodePtr' but argument is of type 'xmlEntityPtr'
+  CC     rsvg-file-util.lo
+  CCLD   librsvg-2.la
+Creating library file: .libs/librsvg-2.dll.a
+  CC     rsvg-convert.o
+  CCLD   rsvg-convert.exe
+  CC     test-display.o
+  CCLD   rsvg-view.exe
+  CC     test-performance.o
+  CCLD   test-performance.exe
+  CC     rsvg-dimensions.o
+  CCLD   rsvg-dimensions.exe
+make[2]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64'
+test -z "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib" || /bin/mkdir -p "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib"
+ /bin/sh ./libtool   --mode=install /opt/local/bin/install -c   librsvg-2.la 'c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib'
+libtool: install: /opt/local/bin/install -c .libs/librsvg-2.dll.a c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/librsvg-2.dll.a
+libtool: install: base_file=`basename librsvg-2.la`
+libtool: install:  dlpath=`/bin/sh 2>&1 -c '. .libs/'librsvg-2.la'i; echo librsvg-2-2.dll'`
+libtool: install:  dldir=c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/`dirname ../bin/librsvg-2-2.dll`
+libtool: install:  test -d c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/../bin || mkdir -p c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/../bin
+libtool: install:  /opt/local/bin/install -c .libs/librsvg-2-2.dll c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/../bin/librsvg-2-2.dll
+libtool: install:  chmod a+x c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/../bin/librsvg-2-2.dll
+libtool: install:  if test -n '' && test -n 'x86_64-w64-mingw32-strip --strip-unneeded'; then eval 'x86_64-w64-mingw32-strip --strip-unneeded c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/../bin/librsvg-2-2.dll' || exit 0; fi
+libtool: install: /opt/local/bin/install -c .libs/librsvg-2.lai c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/librsvg-2.la
+----------------------------------------------------------------------
+Libraries have been installed in:
+   c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-LLIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+test -z "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/bin" || /bin/mkdir -p "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/bin"
+  /bin/sh ./libtool   --mode=install /opt/local/bin/install -c rsvg-convert.exe rsvg-view.exe 'c:/devel/target/406ff90a6379dc078c6308da5f5aded2/bin'
+libtool: install: /opt/local/bin/install -c .libs/rsvg-convert.exe c:/devel/target/406ff90a6379dc078c6308da5f5aded2/bin/rsvg-convert.exe
+libtool: install: /opt/local/bin/install -c .libs/rsvg-view.exe c:/devel/target/406ff90a6379dc078c6308da5f5aded2/bin/rsvg-view.exe
+test -z "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/bin" || /bin/mkdir -p "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/bin"
+ /opt/local/bin/install -c rsvg 'c:/devel/target/406ff90a6379dc078c6308da5f5aded2/bin'
+test -z "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/include/librsvg-2/librsvg" || /bin/mkdir -p "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/include/librsvg-2/librsvg"
+ /opt/local/bin/install -c -m 644 rsvg.h rsvg-cairo.h librsvg-features.h librsvg-enum-types.h 'c:/devel/target/406ff90a6379dc078c6308da5f5aded2/include/librsvg-2/librsvg'
+test -z "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/share/man/man1" || /bin/mkdir -p "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/share/man/man1"
+ /opt/local/bin/install -c -m 644 rsvg.1 'c:/devel/target/406ff90a6379dc078c6308da5f5aded2/share/man/man1'
+test -z "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/pkgconfig" || /bin/mkdir -p "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/pkgconfig"
+ /opt/local/bin/install -c -m 644 librsvg-2.0.pc 'c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/pkgconfig'
+make[2]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64'
+make[1]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64'
+Making install in gdk-pixbuf-loader
+make[1]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/gdk-pixbuf-loader'
+  CC     io-svg.lo
+  CCLD   svg_loader.la
+Creating library file: .libs/svg_loader.dll.a
+make[2]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/gdk-pixbuf-loader'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/loaders" || /bin/mkdir -p "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/loaders"
+ /bin/sh ../libtool   --mode=install /opt/local/bin/install -c   svg_loader.la 'c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/loaders'
+libtool: install: /opt/local/bin/install -c .libs/svg_loader.dll.a c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/loaders/svg_loader.dll.a
+libtool: install: base_file=`basename svg_loader.la`
+libtool: install:  dlpath=`/bin/sh 2>&1 -c '. .libs/'svg_loader.la'i; echo svg_loader.dll'`
+libtool: install:  dldir=c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/loaders/`dirname svg_loader.dll`
+libtool: install:  test -d c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/loaders/. || mkdir -p c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/loaders/.
+libtool: install:  /opt/local/bin/install -c .libs/svg_loader.dll c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/loaders/./svg_loader.dll
+libtool: install:  chmod a+x c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/loaders/./svg_loader.dll
+libtool: install:  if test -n '' && test -n 'x86_64-w64-mingw32-strip --strip-unneeded'; then eval 'x86_64-w64-mingw32-strip --strip-unneeded c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/loaders/./svg_loader.dll' || exit 0; fi
+libtool: install: /opt/local/bin/install -c .libs/svg_loader.lai c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/loaders/svg_loader.la
+----------------------------------------------------------------------
+Libraries have been installed in:
+   c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/loaders
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-LLIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make  install-data-hook
+make[3]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/gdk-pixbuf-loader'
+if [ -z "" ] ; then \
+	  /bin/sh /devel/src/gnome/librsvg/2.26.2-1_win64/install-sh -d c:/devel/target/406ff90a6379dc078c6308da5f5aded2/etc/gtk-2.0 ; \
+	  /devel/dist/win64/gtk+-2.20.0-1/bin/gdk-pixbuf-query-loaders > c:/devel/target/406ff90a6379dc078c6308da5f5aded2/etc/gtk-2.0/gdk-pixbuf.loaders ; \
+	fi
+make[3]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/gdk-pixbuf-loader'
+make[2]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/gdk-pixbuf-loader'
+make[1]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/gdk-pixbuf-loader'
+Making install in gtk-engine
+make[1]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/gtk-engine'
+make[2]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/gtk-engine'
+  CC     svg-draw.lo
+  CC     svg-main.lo
+  CC     svg-render.lo
+  CC     svg-rc-style.lo
+  CCLD   libsvg.la
+Creating library file: .libs/libsvg.dll.a
+make[3]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/gtk-engine'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/engines" || /bin/mkdir -p "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/engines"
+ /bin/sh ../libtool   --mode=install /opt/local/bin/install -c   libsvg.la 'c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/engines'
+libtool: install: /opt/local/bin/install -c .libs/libsvg.dll.a c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/engines/libsvg.dll.a
+libtool: install: base_file=`basename libsvg.la`
+libtool: install:  dlpath=`/bin/sh 2>&1 -c '. .libs/'libsvg.la'i; echo libsvg.dll'`
+libtool: install:  dldir=c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/engines/`dirname libsvg.dll`
+libtool: install:  test -d c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/engines/. || mkdir -p c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/engines/.
+libtool: install:  /opt/local/bin/install -c .libs/libsvg.dll c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/engines/./libsvg.dll
+libtool: install:  chmod a+x c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/engines/./libsvg.dll
+libtool: install:  if test -n '' && test -n 'x86_64-w64-mingw32-strip --strip-unneeded'; then eval 'x86_64-w64-mingw32-strip --strip-unneeded c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/engines/./libsvg.dll' || exit 0; fi
+libtool: install: /opt/local/bin/install -c .libs/libsvg.lai c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/engines/libsvg.la
+----------------------------------------------------------------------
+Libraries have been installed in:
+   c:/devel/target/406ff90a6379dc078c6308da5f5aded2/lib/gtk-2.0/2.10.0/engines
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-LLIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/gtk-engine'
+make[2]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/gtk-engine'
+make[1]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/gtk-engine'
+Making install in data
+make[1]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/data'
+make[2]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/data'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/share/pixmaps" || /bin/mkdir -p "c:/devel/target/406ff90a6379dc078c6308da5f5aded2/share/pixmaps"
+ /opt/local/bin/install -c -m 644 svg-viewer.svg 'c:/devel/target/406ff90a6379dc078c6308da5f5aded2/share/pixmaps'
+make[2]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/data'
+make[1]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/data'
+Making install in tests
+make[1]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/tests'
+Making install in pdiff
+make[2]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/tests/pdiff'
+  CC     lpyramid.lo
+  CC     pdiff.lo
+  CCLD   libpdiff.la
+  CC     args.o
+  CC     perceptualdiff.o
+  CCLD   perceptualdiff.exe
+make[3]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/tests/pdiff'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/tests/pdiff'
+make[2]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/tests/pdiff'
+Making install in .
+make[2]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/tests'
+make[3]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/tests'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/tests'
+make[2]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/tests'
+make[1]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/tests'
+Making install in doc
+make[1]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/doc'
+make[2]: Entering directory `/devel/src/gnome/librsvg/2.26.2-1_win64/doc'
+make[2]: Nothing to be done for `install-exec-am'.
+-- Installing ./html/home.png
+-- Installing ./html/index.html
+-- Installing ./html/index.sgml
+-- Installing ./html/ix01.html
+-- Installing ./html/left.png
+-- Installing ./html/pt02.html
+-- Installing ./html/pt03.html
+-- Installing ./html/pt04.html
+-- Installing ./html/right.png
+-- Installing ./html/rsvg-Cairo.html
+-- Installing ./html/rsvg-Core-API.html
+-- Installing ./html/rsvg-GdkPixbuf.html
+-- Installing ./html/rsvg.devhelp
+-- Installing ./html/rsvg.devhelp2
+-- Installing ./html/rsvg.html
+-- Installing ./html/style.css
+-- Installing ./html/up.png
+make[2]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/doc'
+make[1]: Leaving directory `/devel/src/gnome/librsvg/2.26.2-1_win64/doc'
+++ echo 'To add svg icon support to your GTK+ installation for Windows, 
+follow these instructions:
+
+1. Download the svg pixbuf loader. You can find it here:
+http://ftp.gnome.org/pub/gnome/binaries/win64/librsvg/
+
+2. Download the dependencies:
+libcroco: http://ftp.gnome.org/pub/gnome/binaries/win64/libcroco/
+libgsf: http://ftp.gnome.org/pub/gnome/binaries/win64/libgsf/
+libxml2: http://ftp.gnome.org/pub/gnome/binaries/win64/dependencies
+bzip2: http://ftp.gnome.org/pub/gnome/binaries/win64/dependencies
+zlib: http://ftp.gnome.org/pub/gnome/binaries/win64/dependencies
+
+3. Unzip them to the appropriate location (eg, your main application
+directory) so that the DLLs all end up in the same directory as your
+application'\''s .exe.
+
+4. Use gdk-query-pixbufloaders to re-create the gdk-pixbuf.loaders
+file. It is highly recommended that you redirect the output of this
+command to create the file rather than editing the file by hand. An
+example command follows:
+
+  bin\gdk-query-pixbufloaders > etc\gtk-2.0\gdk-pixbuf.loaders'
+++ ./librsvg-zip
+rm: cannot lstat `/tmp/librsvg-2.26.2.zip': No such file or directory
+  adding: bin/librsvg-2-2.dll (200 bytes security) (deflated 64%)
+rm: cannot lstat `/tmp/librsvg-dev-2.26.2.zip': No such file or directory
+  adding: bin/rsvg-convert.exe (200 bytes security) (deflated 69%)
+  adding: bin/rsvg-view.exe (200 bytes security) (deflated 70%)
+  adding: include/librsvg-2/librsvg/librsvg-enum-types.h (200 bytes security) (deflated 38%)
+  adding: include/librsvg-2/librsvg/librsvg-features.h (200 bytes security) (deflated 65%)
+  adding: include/librsvg-2/librsvg/rsvg-cairo.h (200 bytes security) (deflated 44%)
+  adding: include/librsvg-2/librsvg/rsvg.h (200 bytes security) (deflated 67%)
+  adding: lib/librsvg-2.dll.a (200 bytes security) (deflated 92%)
+  adding: lib/pkgconfig/librsvg-2.0.pc (200 bytes security) (deflated 34%)
+rm: cannot lstat `/tmp/svg-gtk-engine-2.26.2.zip': No such file or directory
+  adding: lib/gtk-2.0/2.10.0/engines/libsvg.dll (200 bytes security) (deflated 69%)
+rm: cannot lstat `/tmp/svg-gdk-pixbuf-loader-2.26.2.zip': No such file or directory
+  adding: lib/gtk-2.0/2.10.0/loaders/svg_loader.dll (200 bytes security) (deflated 70%)
+++ cd c:/devel/target/406ff90a6379dc078c6308da5f5aded2
+++ zip /tmp/svg-gdk-pixbuf-loader_2.26.2-1_win64.zip svg-gdk-pixbuf-loader.README.txt
+  adding: svg-gdk-pixbuf-loader.README.txt (200 bytes security) (deflated 57%)
+++ mv /tmp/librsvg-2.26.2.zip /tmp/librsvg_2.26.2-1_win64.zip
+++ mv /tmp/librsvg-dev-2.26.2.zip /tmp/librsvg-dev_2.26.2-1_win64.zip
+++ mv /tmp/svg-gtk-engine-2.26.2.zip /tmp/svg-gtk-engine_2.26.2-1_win64.zip
+++ mv /tmp/svg-gdk-pixbuf-loader-2.26.2.zip /tmp/svg-gdk-pixbuf-loader_2.26.2-1_win64.zip
+++ :

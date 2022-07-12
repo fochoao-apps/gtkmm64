@@ -1,0 +1,1217 @@
++++ latest --arch=win64 glib pkg-config libxml2
+++ DEPS='glib-2.24.0-2 pkg-config-0.23-2 libxml2-2.7.4-1'
++++ latest --arch=win64 proxy-libintl
+++ PROXY_LIBINTL=proxy-libintl-20090911
+++ PKG_CONFIG_PATH=/dummy
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/glib-2.24.0-2/lib/pkgconfig ']'
+++ PKG_CONFIG_PATH=/devel/dist/win64/glib-2.24.0-2/lib/pkgconfig:/dummy
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/pkg-config-0.23-2/bin:/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/pkg-config-0.23-2/lib/pkgconfig ']'
+++ for D in '$DEPS'
+++ PATH='/devel/dist/win64/libxml2-2.7.4-1/bin:/devel/dist/win64/pkg-config-0.23-2/bin:/devel/dist/win64/glib-2.24.0-2/bin:/opt/winsdk7/Bin/x64:/opt/winsdk7/Bin:/opt/MSVS9/Common7/Tools:/opt/MSVS9/Common7/IDE:/opt/MSVS9/VC/bin/x86_amd64:/opt/mingw64/bin:/opt/misc/bin:/opt/gnu/bin:/opt/mingw/bin:/opt/svn/bin:/opt/local/bin:/c/Windows/Microsoft.NET/Framework/v3.5:/c/Windows/Microsoft.NET/Framework/v2.0.50727:/c/Program Files (x86)/Java/jdk1.6.0_18/bin:/opt/xemacs/XEmacs-21.4.22/i586-pc-win32:/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/:/c/Program Files (x86)/QuickTime/QTSystem/'
+++ '[' -d /devel/dist/win64/libxml2-2.7.4-1/lib/pkgconfig ']'
+++ PKG_CONFIG_PATH=/devel/dist/win64/libxml2-2.7.4-1/lib/pkgconfig:/devel/dist/win64/glib-2.24.0-2/lib/pkgconfig:/dummy
+++ sed -e 's/need_relink=yes/need_relink=no # no way --tml/'
+++ mv ltmain.temp ltmain.sh
+++ lt_cv_deplibs_check_method=pass_all
+++ CC=x86_64-w64-mingw32-gcc
+++ CPPFLAGS=-I/devel/dist/win64/proxy-libintl-20090911/include
+++ LDFLAGS='-L/devel/dist/win64/proxy-libintl-20090911/lib -Wl,--exclude-libs=libintl.a'
+++ CFLAGS=-O
+++ ./configure --host=x86_64-w64-mingw32 --disable-static --prefix=c:/devel/target/6c109371e468ca0fa87c69f4625d9a45
+configure: WARNING: If you wanted to set the --build type, don't use --host.
+    If a cross compiler is detected then cross compile mode will be used.
+checking build system type... i686-pc-mingw32
+checking host system type... x86_64-w64-mingw32
+checking target system type... x86_64-w64-mingw32
+checking for a BSD-compatible install... /opt/local/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for x86_64-w64-mingw32-strip... x86_64-w64-mingw32-strip
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for x86_64-w64-mingw32-gcc... x86_64-w64-mingw32-gcc
+checking for C compiler default output file name... a.exe
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... .exe
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-w64-mingw32-gcc accepts -g... yes
+checking for x86_64-w64-mingw32-gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of x86_64-w64-mingw32-gcc... gcc3
+checking for a BSD-compatible install... /opt/local/bin/install -c
+checking how to run the C preprocessor... x86_64-w64-mingw32-gcc -E
+checking for function prototypes... yes
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for string.h... (cached) yes
+checking for ANSI C header files... (cached) yes
+checking for library containing strerror... none required
+checking for a sed that does not truncate output... /bin/sed
+checking for ld used by x86_64-w64-mingw32-gcc... c:/opt/mingw64/x86_64-w64-mingw32/bin/ld.exe
+checking if the linker (c:/opt/mingw64/x86_64-w64-mingw32/bin/ld.exe) is GNU ld... yes
+checking for c:/opt/mingw64/x86_64-w64-mingw32/bin/ld.exe option to reload object files... -r
+checking for BSD-compatible nm... /opt/mingw64/bin/x86_64-w64-mingw32-nm
+checking whether ln -s works... yes
+checking how to recognize dependent libraries... (cached) pass_all
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking for x86_64-w64-mingw32-g++... x86_64-w64-mingw32-g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether x86_64-w64-mingw32-g++ accepts -g... yes
+checking dependency style of x86_64-w64-mingw32-g++... gcc3
+checking how to run the C++ preprocessor... x86_64-w64-mingw32-g++ -E
+checking for x86_64-w64-mingw32-g77... no
+checking for x86_64-w64-mingw32-xlf... no
+checking for x86_64-w64-mingw32-f77... no
+checking for x86_64-w64-mingw32-frt... no
+checking for x86_64-w64-mingw32-pgf77... no
+checking for x86_64-w64-mingw32-cf77... no
+checking for x86_64-w64-mingw32-fort77... no
+checking for x86_64-w64-mingw32-fl32... no
+checking for x86_64-w64-mingw32-af77... no
+checking for x86_64-w64-mingw32-xlf90... no
+checking for x86_64-w64-mingw32-f90... no
+checking for x86_64-w64-mingw32-pgf90... no
+checking for x86_64-w64-mingw32-pghpf... no
+checking for x86_64-w64-mingw32-epcf90... no
+checking for x86_64-w64-mingw32-gfortran... x86_64-w64-mingw32-gfortran
+checking whether we are using the GNU Fortran 77 compiler... yes
+checking whether x86_64-w64-mingw32-gfortran accepts -g... yes
+checking the maximum length of command line arguments... 8192
+checking command to parse /opt/mingw64/bin/x86_64-w64-mingw32-nm output from x86_64-w64-mingw32-gcc object... ok
+checking for objdir... .libs
+checking for x86_64-w64-mingw32-ar... x86_64-w64-mingw32-ar
+checking for x86_64-w64-mingw32-ranlib... x86_64-w64-mingw32-ranlib
+checking for x86_64-w64-mingw32-strip... (cached) x86_64-w64-mingw32-strip
+checking if x86_64-w64-mingw32-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-w64-mingw32-gcc option to produce PIC... -DDLL_EXPORT
+checking if x86_64-w64-mingw32-gcc PIC flag -DDLL_EXPORT works... yes
+checking if x86_64-w64-mingw32-gcc static flag -static works... yes
+checking if x86_64-w64-mingw32-gcc supports -c -o file.o... yes
+checking whether the x86_64-w64-mingw32-gcc linker (c:/opt/mingw64/x86_64-w64-mingw32/bin/ld.exe) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... yes
+checking dynamic linker characteristics... Win32 ld.exe
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by x86_64-w64-mingw32-g++... c:/opt/mingw64/x86_64-w64-mingw32/bin/ld.exe
+checking if the linker (c:/opt/mingw64/x86_64-w64-mingw32/bin/ld.exe) is GNU ld... yes
+checking whether the x86_64-w64-mingw32-g++ linker (c:/opt/mingw64/x86_64-w64-mingw32/bin/ld.exe) supports shared libraries... yes
+checking for x86_64-w64-mingw32-g++ option to produce PIC... -DDLL_EXPORT
+checking if x86_64-w64-mingw32-g++ PIC flag -DDLL_EXPORT works... yes
+checking if x86_64-w64-mingw32-g++ static flag -static works... yes
+checking if x86_64-w64-mingw32-g++ supports -c -o file.o... yes
+checking whether the x86_64-w64-mingw32-g++ linker (c:/opt/mingw64/x86_64-w64-mingw32/bin/ld.exe) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 ld.exe
+(cached) (cached) checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for x86_64-w64-mingw32-gfortran option to produce PIC... -DDLL_EXPORT
+checking if x86_64-w64-mingw32-gfortran PIC flag -DDLL_EXPORT works... yes
+checking if x86_64-w64-mingw32-gfortran static flag -static works... yes
+checking if x86_64-w64-mingw32-gfortran supports -c -o file.o... yes
+checking whether the x86_64-w64-mingw32-gfortran linker (c:/opt/mingw64/x86_64-w64-mingw32/bin/ld.exe) supports shared libraries... yes
+checking dynamic linker characteristics... Win32 ld.exe
+(cached) (cached) checking how to hardcode library paths into programs... immediate
+checking for x86_64-w64-mingw32-pkg-config... no
+checking for pkg-config... /devel/dist/win64/pkg-config-0.23-2/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether to build gtk-doc documentation... no
+checking for gtkdoc-check... no
+checking for GLIB2... yes
+checking for LIBXML2... yes
+checking whether make sets $(MAKE)... (cached) yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libcroco.pc
+config.status: creating libcroco.spec
+config.status: creating libcroco-zip
+config.status: creating croco-config
+config.status: creating docs/Makefile
+config.status: creating docs/examples/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/test-inputs/Makefile
+config.status: creating tests/test-output-refs/Makefile
+config.status: creating global-test-vars.sh
+config.status: creating src/Makefile
+config.status: creating src/libcroco-config.h
+config.status: creating csslint/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+
+	=====================================================================
+	      LIBCROCO, GNOME CSS2 PARSING AND MANIPULATION TOOLKIT 0.6.2
+	=====================================================================
+
+	prefix:				      :	c:/devel/target/6c109371e468ca0fa87c69f4625d9a45
+	source code location:		      :	.
+	compiler: 			      :	x86_64-w64-mingw32-gcc
+	cflags:				      :	-O -Wall
+
+	Maintainer mode:		      :	no
+
+++ make -j3 install
+Making install in src
+make[1]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/src'
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-utils.lo -MD -MP -MF .deps/cr-utils.Tpo -c -o cr-utils.lo cr-utils.c
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-input.lo -MD -MP -MF .deps/cr-input.Tpo -c -o cr-input.lo cr-input.c
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-enc-handler.lo -MD -MP -MF .deps/cr-enc-handler.Tpo -c -o cr-enc-handler.lo cr-enc-handler.c
+mkdir .libs
+mkdir .libs
+mkdir: cannot create directory `.libs': File exists
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-enc-handler.lo -MD -MP -MF .deps/cr-enc-handler.Tpo -c cr-enc-handler.c  -DDLL_EXPORT -DPIC -o .libs/cr-enc-handler.o
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-utils.lo -MD -MP -MF .deps/cr-utils.Tpo -c cr-utils.c  -DDLL_EXPORT -DPIC -o .libs/cr-utils.o
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-input.lo -MD -MP -MF .deps/cr-input.Tpo -c cr-input.c  -DDLL_EXPORT -DPIC -o .libs/cr-input.o
+cr-enc-handler.c: In function 'cr_enc_handler_resolve_enc_alias':
+cr-enc-handler.c:121:9: warning: pointer targets in passing argument 1 of 'g_strdup' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstrfuncs.h:190:22: note: expected 'const gchar *' but argument is of type 'const guchar *'
+cr-enc-handler.c:121:23: warning: pointer targets in assignment differ in signedness
+cr-enc-handler.c:122:9: warning: pointer targets in passing argument 1 of 'g_ascii_strup' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstrfuncs.h:167:23: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-enc-handler.c:125:17: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:51:15: note: expected 'const char *' but argument is of type 'guchar *'
+cr-input.c: In function 'cr_input_peek_char':
+cr-input.c:769:18: warning: pointer targets in passing argument 4 of 'cr_utils_read_char_from_utf8_buf' differ in signedness
+cr-utils.h:147:1: note: expected 'gulong *' but argument is of type 'glong *'
+mv -f .deps/cr-enc-handler.Tpo .deps/cr-enc-handler.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-num.lo -MD -MP -MF .deps/cr-num.Tpo -c -o cr-num.lo cr-num.c
+mv -f .deps/cr-input.Tpo .deps/cr-input.Plo
+mv -f .deps/cr-utils.Tpo .deps/cr-utils.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-rgb.lo -MD -MP -MF .deps/cr-rgb.Tpo -c -o cr-rgb.lo cr-rgb.c
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-token.lo -MD -MP -MF .deps/cr-token.Tpo -c -o cr-token.lo cr-token.c
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-num.lo -MD -MP -MF .deps/cr-num.Tpo -c cr-num.c  -DDLL_EXPORT -DPIC -o .libs/cr-num.o
+cr-num.c: In function 'cr_num_to_string':
+cr-num.c:108:27: warning: pointer targets in assignment differ in signedness
+cr-num.c:110:27: warning: pointer targets in assignment differ in signedness
+cr-num.c:112:25: warning: pointer targets in passing argument 1 of 'g_ascii_dtostr' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstrfuncs.h:145:23: note: expected 'gchar *' but argument is of type 'guchar *'
+cr-num.c:196:17: warning: pointer targets in passing argument 1 of 'g_strconcat' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstrfuncs.h:199:22: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-num.c:196:24: warning: pointer targets in assignment differ in signedness
+mv -f .deps/cr-num.Tpo .deps/cr-num.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-tknzr.lo -MD -MP -MF .deps/cr-tknzr.Tpo -c -o cr-tknzr.lo cr-tknzr.c
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-rgb.lo -MD -MP -MF .deps/cr-rgb.Tpo -c cr-rgb.c  -DDLL_EXPORT -DPIC -o .libs/cr-rgb.o
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-token.lo -MD -MP -MF .deps/cr-token.Tpo -c cr-token.c  -DDLL_EXPORT -DPIC -o .libs/cr-token.o
+cr-rgb.c:32:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:33:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:34:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:35:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:36:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:37:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:38:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:39:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:40:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:41:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:42:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:43:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:44:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:45:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:46:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:47:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:48:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:49:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:50:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:51:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:52:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:53:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:54:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:55:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:56:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:57:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:58:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:59:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:60:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:61:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:62:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:63:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:64:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:65:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:66:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:67:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:68:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:69:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:70:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:71:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:72:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:73:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:74:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:75:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:76:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:77:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:78:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:79:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:80:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:81:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:82:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:83:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:84:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:85:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:86:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:87:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:88:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:89:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:90:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:91:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:92:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:93:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:94:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:95:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:96:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:97:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:98:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:99:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:100:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:101:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:102:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:103:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:104:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:105:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:106:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:107:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:108:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:109:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:110:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:111:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:112:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:113:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:114:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:115:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:116:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:117:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:118:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:119:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:120:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:121:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:122:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:123:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:124:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:125:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:126:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:127:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:128:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:129:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:130:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:131:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:132:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:133:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:134:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:135:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:136:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:137:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:138:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:139:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:140:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:141:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:142:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:143:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:144:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:145:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:146:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:147:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:148:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:149:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:150:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:151:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:152:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:153:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:154:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:155:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:156:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:157:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:158:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:159:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:160:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:161:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:162:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:163:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:164:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:165:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:166:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:167:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:168:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:169:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:170:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:171:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:172:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:173:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:174:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:175:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:176:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:177:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:178:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c:179:9: warning: pointer targets in initialization differ in signedness
+cr-rgb.c: In function 'cr_rgb_to_string':
+cr-rgb.c:275:24: warning: pointer targets in assignment differ in signedness
+cr-rgb.c: In function 'cr_rgb_set_from_name':
+cr-rgb.c:469:17: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:51:15: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-rgb.c:469:17: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:51:15: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-rgb.c: In function 'cr_rgb_set_from_hex_str':
+cr-rgb.c:499:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-rgb.c:514:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-rgb.c: In function 'cr_rgb_set_from_term':
+cr-rgb.c:579:42: warning: pointer targets in passing argument 2 of 'cr_rgb_set_from_name' differ in signedness
+cr-rgb.c:461:1: note: expected 'const guchar *' but argument is of type 'gchar *'
+cr-rgb.c:592:34: warning: pointer targets in passing argument 2 of 'cr_rgb_set_from_hex_str' differ in signedness
+cr-rgb.c:491:1: note: expected 'const guchar *' but argument is of type 'gchar *'
+cr-rgb.c: In function 'cr_rgb_parse_from_buf':
+cr-rgb.c:648:2: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+mv -f .deps/cr-rgb.Tpo .deps/cr-rgb.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-term.lo -MD -MP -MF .deps/cr-term.Tpo -c -o cr-term.lo cr-term.c
+mv -f .deps/cr-token.Tpo .deps/cr-token.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-attr-sel.lo -MD -MP -MF .deps/cr-attr-sel.Tpo -c -o cr-attr-sel.lo cr-attr-sel.c
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-tknzr.lo -MD -MP -MF .deps/cr-tknzr.Tpo -c cr-tknzr.c  -DDLL_EXPORT -DPIC -o .libs/cr-tknzr.o
+cr-tknzr.c: In function 'cr_tknzr_parse_nl':
+cr-tknzr.c:359:17: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:366:17: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c: In function 'cr_tknzr_try_to_skip_spaces':
+cr-tknzr.c:414:25: warning: pointer targets in passing argument 2 of 'cr_input_consume_white_spaces' differ in signedness
+cr-input.h:93:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c: In function 'cr_tknzr_parse_uri':
+cr-tknzr.c:1156:9: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:1158:9: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c: In function 'cr_tknzr_parse_rgb':
+cr-tknzr.c:1269:17: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:1271:17: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:1289:17: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:1304:25: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c: In function 'cr_tknzr_new_from_uri':
+cr-tknzr.c:1627:9: warning: pointer targets in passing argument 1 of 'cr_input_new_from_uri' differ in signedness
+cr-input.h:67:1: note: expected 'const gchar *' but argument is of type 'const guchar *'
+cr-tknzr.c: In function 'cr_tknzr_consume_chars':
+cr-tknzr.c:1900:40: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c: In function 'cr_tknzr_get_next_token':
+cr-tknzr.c:1994:33: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:1997:33: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2012:33: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2015:33: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2029:33: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2032:33: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2045:33: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2048:33: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2060:33: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2063:33: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2128:25: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2131:25: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2143:25: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2146:25: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2169:25: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2172:25: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2183:25: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2186:25: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2213:17: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2223:17: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2233:17: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2243:17: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2253:17: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2263:17: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2273:17: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2372:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2379:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2386:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2393:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2400:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2407:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2414:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2421:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2429:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2437:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2446:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2453:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2459:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2466:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2474:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2480:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+cr-tknzr.c:2528:41: warning: pointer targets in passing argument 3 of 'cr_input_consume_chars' differ in signedness
+cr-input.h:86:1: note: expected 'gulong *' but argument is of type 'glong *'
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-term.lo -MD -MP -MF .deps/cr-term.Tpo -c cr-term.c  -DDLL_EXPORT -DPIC -o .libs/cr-term.o
+cr-term.c: In function 'cr_term_parse_expression_from_buf':
+cr-term.c:115:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-term.c: In function 'cr_term_to_string':
+cr-term.c:337:33: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-term.c:346:41: warning: pointer targets in assignment differ in signedness
+cr-term.c:364:10: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-term.c:379:41: warning: pointer targets in assignment differ in signedness
+cr-term.c:394:41: warning: pointer targets in assignment differ in signedness
+cr-term.c:400:33: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-term.c:408:41: warning: pointer targets in assignment differ in signedness
+cr-term.c:429:41: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-term.c:446:41: warning: pointer targets in assignment differ in signedness
+cr-term.c:467:24: warning: pointer targets in assignment differ in signedness
+cr-term.c: In function 'cr_term_one_to_string':
+cr-term.c:532:25: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-term.c:541:33: warning: pointer targets in assignment differ in signedness
+cr-term.c:575:33: warning: pointer targets in assignment differ in signedness
+cr-term.c:590:33: warning: pointer targets in assignment differ in signedness
+cr-term.c:596:25: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-term.c:604:33: warning: pointer targets in assignment differ in signedness
+cr-term.c:625:33: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-term.c:642:33: warning: pointer targets in assignment differ in signedness
+cr-term.c:663:24: warning: pointer targets in assignment differ in signedness
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-attr-sel.lo -MD -MP -MF .deps/cr-attr-sel.Tpo -c cr-attr-sel.c  -DDLL_EXPORT -DPIC -o .libs/cr-attr-sel.o
+cr-attr-sel.c: In function 'cr_attr_sel_to_string':
+cr-attr-sel.c:126:30: warning: pointer targets in assignment differ in signedness
+cr-attr-sel.c:129:33: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-attr-sel.c:138:31: warning: pointer targets in assignment differ in signedness
+cr-attr-sel.c:171:24: warning: pointer targets in assignment differ in signedness
+mv -f .deps/cr-tknzr.Tpo .deps/cr-tknzr.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-pseudo.lo -MD -MP -MF .deps/cr-pseudo.Tpo -c -o cr-pseudo.lo cr-pseudo.c
+mv -f .deps/cr-term.Tpo .deps/cr-term.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-additional-sel.lo -MD -MP -MF .deps/cr-additional-sel.Tpo -c -o cr-additional-sel.lo cr-additional-sel.c
+mv -f .deps/cr-attr-sel.Tpo .deps/cr-attr-sel.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-simple-sel.lo -MD -MP -MF .deps/cr-simple-sel.Tpo -c -o cr-simple-sel.lo cr-simple-sel.c
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-pseudo.lo -MD -MP -MF .deps/cr-pseudo.Tpo -c cr-pseudo.c  -DDLL_EXPORT -DPIC -o .libs/cr-pseudo.o
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-additional-sel.lo -MD -MP -MF .deps/cr-additional-sel.Tpo -c cr-additional-sel.c  -DDLL_EXPORT -DPIC -o .libs/cr-additional-sel.o
+cr-pseudo.c: In function 'cr_pseudo_to_string':
+cr-pseudo.c:71:22: warning: pointer targets in assignment differ in signedness
+cr-pseudo.c:75:25: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-pseudo.c:86:22: warning: pointer targets in assignment differ in signedness
+cr-pseudo.c:90:29: warning: pointer targets in assignment differ in signedness
+cr-pseudo.c:100:33: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-pseudo.c:110:24: warning: pointer targets in assignment differ in signedness
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-simple-sel.lo -MD -MP -MF .deps/cr-simple-sel.Tpo -c cr-simple-sel.c  -DDLL_EXPORT -DPIC -o .libs/cr-simple-sel.o
+cr-additional-sel.c: In function 'cr_additional_sel_to_string':
+cr-additional-sel.c:250:46: warning: pointer targets in assignment differ in signedness
+cr-additional-sel.c:270:46: warning: pointer targets in assignment differ in signedness
+cr-additional-sel.c:326:24: warning: pointer targets in assignment differ in signedness
+cr-additional-sel.c: In function 'cr_additional_sel_one_to_string':
+cr-additional-sel.c:350:30: warning: pointer targets in assignment differ in signedness
+cr-additional-sel.c:370:30: warning: pointer targets in assignment differ in signedness
+cr-additional-sel.c:425:24: warning: pointer targets in assignment differ in signedness
+mv -f .deps/cr-pseudo.Tpo .deps/cr-pseudo.Plo
+cr-simple-sel.c: In function 'cr_simple_sel_to_string':
+cr-simple-sel.c:115:39: warning: pointer targets in initialization differ in signedness
+cr-simple-sel.c:136:33: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-simple-sel.c:147:33: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-simple-sel.c:155:24: warning: pointer targets in assignment differ in signedness
+cr-simple-sel.c: In function 'cr_simple_sel_one_to_string':
+cr-simple-sel.c:174:31: warning: pointer targets in initialization differ in signedness
+cr-simple-sel.c:197:24: warning: pointer targets in assignment differ in signedness
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-selector.lo -MD -MP -MF .deps/cr-selector.Tpo -c -o cr-selector.lo cr-selector.c
+mv -f .deps/cr-additional-sel.Tpo .deps/cr-additional-sel.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-doc-handler.lo -MD -MP -MF .deps/cr-doc-handler.Tpo -c -o cr-doc-handler.lo cr-doc-handler.c
+mv -f .deps/cr-simple-sel.Tpo .deps/cr-simple-sel.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-parser.lo -MD -MP -MF .deps/cr-parser.Tpo -c -o cr-parser.lo cr-parser.c
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-selector.lo -MD -MP -MF .deps/cr-selector.Tpo -c cr-selector.c  -DDLL_EXPORT -DPIC -o .libs/cr-selector.o
+cr-selector.c: In function 'cr_selector_parse_from_buf':
+cr-selector.c:60:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-selector.c: In function 'cr_selector_to_string':
+cr-selector.c:164:41: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-selector.c:174:24: warning: pointer targets in assignment differ in signedness
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-doc-handler.lo -MD -MP -MF .deps/cr-doc-handler.Tpo -c cr-doc-handler.c  -DDLL_EXPORT -DPIC -o .libs/cr-doc-handler.o
+mv -f .deps/cr-selector.Tpo .deps/cr-selector.Plo
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-parser.lo -MD -MP -MF .deps/cr-parser.Tpo -c cr-parser.c  -DDLL_EXPORT -DPIC -o .libs/cr-parser.o
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-declaration.lo -MD -MP -MF .deps/cr-declaration.Tpo -c -o cr-declaration.lo cr-declaration.c
+cr-parser.c: In function 'cr_parser_error_set_msg':
+cr-parser.c:447:9: warning: pointer targets in passing argument 1 of 'g_strdup' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstrfuncs.h:190:22: note: expected 'const gchar *' but argument is of type 'const guchar *'
+cr-parser.c:447:21: warning: pointer targets in assignment differ in signedness
+cr-parser.c: In function 'cr_parser_parse_stylesheet_core':
+cr-parser.c:736:17: warning: pointer targets in passing argument 2 of 'cr_parser_push_error' differ in signedness
+cr-parser.c:517:1: note: expected 'const guchar *' but argument is of type 'char *'
+cr-parser.c: In function 'cr_parser_parse_stylesheet':
+cr-parser.c:2706:17: warning: pointer targets in passing argument 2 of 'cr_parser_push_error' differ in signedness
+cr-parser.c:517:1: note: expected 'const guchar *' but argument is of type 'char *'
+cr-parser.c: In function 'cr_parser_parse_declaration':
+cr-parser.c:3190:9: warning: pointer targets in passing argument 2 of 'cr_parser_push_error' differ in signedness
+cr-parser.c:517:1: note: expected 'const guchar *' but argument is of type 'char *'
+cr-parser.c:3202:26: warning: pointer targets in passing argument 2 of 'cr_parser_push_error' differ in signedness
+cr-parser.c:517:1: note: expected 'const guchar *' but argument is of type 'char *'
+cr-parser.c:3210:9: warning: pointer targets in passing argument 2 of 'cr_parser_push_error' differ in signedness
+cr-parser.c:517:1: note: expected 'const guchar *' but argument is of type 'char *'
+mv -f .deps/cr-doc-handler.Tpo .deps/cr-doc-handler.Plo
+cr-parser.c: In function 'cr_parser_parse_ruleset':
+cr-parser.c:3350:9: warning: pointer targets in passing argument 2 of 'cr_parser_push_error' differ in signedness
+cr-parser.c:517:1: note: expected 'const guchar *' but argument is of type 'char *'
+cr-parser.c:3414:9: warning: pointer targets in passing argument 2 of 'cr_parser_push_error' differ in signedness
+cr-parser.c:517:1: note: expected 'const guchar *' but argument is of type 'char *'
+cr-parser.c:3456:9: warning: pointer targets in passing argument 2 of 'cr_parser_push_error' differ in signedness
+cr-parser.c:517:1: note: expected 'const guchar *' but argument is of type 'char *'
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-statement.lo -MD -MP -MF .deps/cr-statement.Tpo -c -o cr-statement.lo cr-statement.c
+mv -f .deps/cr-parser.Tpo .deps/cr-parser.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-stylesheet.lo -MD -MP -MF .deps/cr-stylesheet.Tpo -c -o cr-stylesheet.lo cr-stylesheet.c
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-declaration.lo -MD -MP -MF .deps/cr-declaration.Tpo -c cr-declaration.c  -DDLL_EXPORT -DPIC -o .libs/cr-declaration.o
+cr-declaration.c: In function 'dump':
+cr-declaration.c:51:13: warning: pointer targets in assignment differ in signedness
+cr-declaration.c: In function 'cr_declaration_parse_from_buf':
+cr-declaration.c:133:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-declaration.c: In function 'cr_declaration_parse_list_from_buf':
+cr-declaration.c:197:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-declaration.c: In function 'cr_declaration_to_string':
+cr-declaration.c:514:7: warning: pointer targets in assignment differ in signedness
+cr-declaration.c:519:4: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-declaration.c:542:24: warning: pointer targets in assignment differ in signedness
+cr-declaration.c:545:9: warning: pointer targets in return differ in signedness
+cr-declaration.c:557:9: warning: pointer targets in return differ in signedness
+cr-declaration.c: In function 'cr_declaration_list_to_string':
+cr-declaration.c:581:21: warning: pointer targets in assignment differ in signedness
+cr-declaration.c:589:24: warning: pointer targets in assignment differ in signedness
+cr-declaration.c: In function 'cr_declaration_list_to_string2':
+cr-declaration.c:620:21: warning: pointer targets in assignment differ in signedness
+cr-declaration.c:628:58: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-declaration.c:635:58: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-declaration.c:642:24: warning: pointer targets in assignment differ in signedness
+cr-declaration.c: In function 'cr_declaration_get_by_prop_name':
+cr-declaration.c:714:10: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:51:15: note: expected 'const char *' but argument is of type 'const guchar *'
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-statement.lo -MD -MP -MF .deps/cr-statement.Tpo -c cr-statement.c  -DDLL_EXPORT -DPIC -o .libs/cr-statement.o
+cr-statement.c: In function 'cr_statement_ruleset_to_string':
+cr-statement.c:603:25: warning: pointer targets in assignment differ in signedness
+cr-statement.c:614:25: warning: pointer targets in assignment differ in signedness
+cr-statement.c: In function 'cr_statement_font_face_rule_to_string':
+cr-statement.c:670:25: warning: pointer targets in assignment differ in signedness
+cr-statement.c: In function 'cr_statement_at_page_rule_to_string':
+cr-statement.c:773:21: warning: pointer targets in assignment differ in signedness
+cr-statement.c: In function 'cr_statement_media_rule_to_string':
+cr-statement.c:816:47: warning: pointer targets in initialization differ in signedness
+cr-statement.c: In function 'cr_statement_import_rule_to_string':
+cr-statement.c:868:21: warning: pointer targets in assignment differ in signedness
+cr-statement.c:906:21: warning: pointer targets in assignment differ in signedness
+cr-statement.c:910:9: warning: pointer targets in return differ in signedness
+cr-statement.c: In function 'cr_statement_does_buf_parses_against_core':
+cr-statement.c:938:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-statement.c: In function 'cr_statement_ruleset_parse_from_buf':
+cr-statement.c:1058:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-statement.c: In function 'cr_statement_at_media_rule_parse_from_buf':
+cr-statement.c:1195:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-statement.c: In function 'cr_statement_at_import_rule_parse_from_buf':
+cr-statement.c:1381:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-statement.c: In function 'cr_statement_at_page_rule_parse_from_buf':
+cr-statement.c:1510:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-statement.c: In function 'cr_statement_at_charset_rule_parse_from_buf':
+cr-statement.c:1626:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-statement.c: In function 'cr_statement_font_face_rule_parse_from_buf':
+cr-statement.c:1723:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+cr-statement.c: In function 'cr_statement_dump_ruleset':
+cr-statement.c:2612:13: warning: pointer targets in assignment differ in signedness
+cr-statement.c:2614:17: warning: pointer targets in passing argument 2 of 'fprintf' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/stdio.h:188:15: note: expected 'const char *' but argument is of type 'guchar *'
+cr-statement.c: In function 'cr_statement_dump_charset':
+cr-statement.c:2662:13: warning: pointer targets in assignment differ in signedness
+cr-statement.c:2665:17: warning: pointer targets in passing argument 2 of 'fprintf' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/stdio.h:188:15: note: expected 'const char *' but argument is of type 'guchar *'
+cr-statement.c: In function 'cr_statement_dump_page':
+cr-statement.c:2690:13: warning: pointer targets in assignment differ in signedness
+cr-statement.c:2692:17: warning: pointer targets in passing argument 2 of 'fprintf' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/stdio.h:188:15: note: expected 'const char *' but argument is of type 'guchar *'
+mv -f .deps/cr-declaration.Tpo .deps/cr-declaration.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-cascade.lo -MD -MP -MF .deps/cr-cascade.Tpo -c -o cr-cascade.lo cr-cascade.c
+mv -f .deps/cr-statement.Tpo .deps/cr-statement.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-om-parser.lo -MD -MP -MF .deps/cr-om-parser.Tpo -c -o cr-om-parser.lo cr-om-parser.c
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-stylesheet.lo -MD -MP -MF .deps/cr-stylesheet.Tpo -c cr-stylesheet.c  -DDLL_EXPORT -DPIC -o .libs/cr-stylesheet.o
+mv -f .deps/cr-stylesheet.Tpo .deps/cr-stylesheet.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-style.lo -MD -MP -MF .deps/cr-style.Tpo -c -o cr-style.lo cr-style.c
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-cascade.lo -MD -MP -MF .deps/cr-cascade.Tpo -c cr-cascade.c  -DDLL_EXPORT -DPIC -o .libs/cr-cascade.o
+mv -f .deps/cr-cascade.Tpo .deps/cr-cascade.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-sel-eng.lo -MD -MP -MF .deps/cr-sel-eng.Tpo -c -o cr-sel-eng.lo cr-sel-eng.c
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-om-parser.lo -MD -MP -MF .deps/cr-om-parser.Tpo -c cr-om-parser.c  -DDLL_EXPORT -DPIC -o .libs/cr-om-parser.o
+mv -f .deps/cr-om-parser.Tpo .deps/cr-om-parser.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-fonts.lo -MD -MP -MF .deps/cr-fonts.Tpo -c -o cr-fonts.lo cr-fonts.c
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-style.lo -MD -MP -MF .deps/cr-style.Tpo -c cr-style.c  -DDLL_EXPORT -DPIC -o .libs/cr-style.o
+cr-style.c:100:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:101:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:102:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:103:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:104:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:105:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:106:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:107:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:108:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:109:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:110:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:111:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:112:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:113:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:114:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:115:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:116:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:117:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:118:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:119:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:120:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:121:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:122:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:123:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:124:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:125:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:126:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:127:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:128:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:129:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:130:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:131:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:132:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:133:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:134:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:135:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:136:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:137:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:138:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:139:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:140:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:141:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:142:9: warning: pointer targets in initialization differ in signedness
+cr-style.c:143:2: warning: pointer targets in initialization differ in signedness
+cr-style.c: In function 'set_prop_padding_x_from_value':
+cr-style.c:470:34: warning: pointer targets in passing argument 1 of 'strncmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:76:15: note: expected 'const char *' but argument is of type 'guchar *'
+cr-style.c: In function 'set_prop_display_from_value':
+cr-style.c:815:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:816:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:817:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:818:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:819:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:820:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:821:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:822:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:823:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:824:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:825:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:826:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:827:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:828:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:829:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:830:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:831:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:851:38: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar * const'
+cr-style.c:851:38: warning: pointer targets in passing argument 1 of 'strncmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:76:15: note: expected 'const char *' but argument is of type 'const guchar * const'
+cr-style.c: In function 'set_prop_position_from_value':
+cr-style.c:877:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:878:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:879:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:880:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:881:17: warning: pointer targets in initialization differ in signedness
+cr-style.c:902:55: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar * const'
+cr-style.c:902:55: warning: pointer targets in passing argument 1 of 'strncmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:76:15: note: expected 'const char *' but argument is of type 'const guchar * const'
+cr-style.c: In function 'set_prop_border_x_color_from_value':
+cr-style.c:1123:34: warning: pointer targets in passing argument 2 of 'cr_rgb_set_from_name' differ in signedness
+cr-rgb.h:78:15: note: expected 'const guchar *' but argument is of type 'gchar *'
+cr-style.c:1127:25: warning: pointer targets in passing argument 2 of 'cr_rgb_set_from_name' differ in signedness
+cr-rgb.h:78:15: note: expected 'const guchar *' but argument is of type 'char *'
+cr-style.c: In function 'set_prop_font_family_from_value':
+cr-style.c:1361:50: warning: pointer targets in passing argument 2 of 'cr_font_family_new' differ in signedness
+cr-fonts.h:231:1: note: expected 'guchar *' but argument is of type 'gchar *'
+cr-style.c: In function 'cr_style_set_style_from_decl':
+cr-style.c:2027:17: warning: pointer targets in passing argument 1 of 'cr_style_get_prop_id' differ in signedness
+cr-style.c:416:1: note: expected 'const guchar *' but argument is of type 'gchar *'
+cr-style.c: In function 'cr_style_to_string':
+cr-style.c:2749:17: warning: pointer targets in assignment differ in signedness
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-sel-eng.lo -MD -MP -MF .deps/cr-sel-eng.Tpo -c cr-sel-eng.c  -DDLL_EXPORT -DPIC -o .libs/cr-sel-eng.o
+mv -f .deps/cr-style.Tpo .deps/cr-style.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-prop-list.lo -MD -MP -MF .deps/cr-prop-list.Tpo -c -o cr-prop-list.lo cr-prop-list.c
+cr-sel-eng.c: In function 'lang_pseudo_class_handler':
+cr-sel-eng.c:139:17: warning: pointer targets in passing argument 2 of 'xmlGetProp' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/tree.h:981:3: note: expected 'const xmlChar *' but argument is of type 'char *'
+cr-sel-eng.c:141:21: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'xmlChar *'
+cr-sel-eng.c: In function 'pseudo_class_add_sel_matches_node':
+cr-sel-eng.c:200:18: warning: pointer targets in passing argument 2 of 'cr_sel_eng_get_pseudo_class_selector_handler' differ in signedness
+cr-sel-eng.h:80:15: note: expected 'guchar *' but argument is of type 'gchar *'
+cr-sel-eng.c: In function 'class_add_sel_matches_node':
+cr-sel-eng.c:227:9: warning: pointer targets in passing argument 2 of 'xmlHasProp' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/tree.h:984:3: note: expected 'const xmlChar *' but argument is of type 'char *'
+cr-sel-eng.c:228:17: warning: pointer targets in passing argument 2 of 'xmlGetProp' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/tree.h:981:3: note: expected 'const xmlChar *' but argument is of type 'char *'
+cr-sel-eng.c:237:39: warning: pointer targets in passing argument 1 of 'strncmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:76:15: note: expected 'const char *' but argument is of type 'xmlChar *'
+cr-sel-eng.c: In function 'id_add_sel_matches_node':
+cr-sel-eng.c:281:9: warning: pointer targets in passing argument 2 of 'xmlHasProp' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/tree.h:984:3: note: expected 'const xmlChar *' but argument is of type 'char *'
+cr-sel-eng.c:282:17: warning: pointer targets in passing argument 2 of 'xmlGetProp' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/tree.h:981:3: note: expected 'const xmlChar *' but argument is of type 'char *'
+cr-sel-eng.c:283:17: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'xmlChar *'
+cr-sel-eng.c: In function 'attr_add_sel_matches_node':
+cr-sel-eng.c:323:42: warning: pointer targets in passing argument 2 of 'xmlHasProp' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/tree.h:984:3: note: expected 'const xmlChar *' but argument is of type 'gchar *'
+cr-sel-eng.c:341:38: warning: pointer targets in passing argument 2 of 'xmlHasProp' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/tree.h:984:3: note: expected 'const xmlChar *' but argument is of type 'gchar *'
+cr-sel-eng.c:346:42: warning: pointer targets in passing argument 2 of 'xmlGetProp' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/tree.h:981:3: note: expected 'const xmlChar *' but argument is of type 'gchar *'
+cr-sel-eng.c:351:38: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:51:15: note: expected 'const char *' but argument is of type 'xmlChar *'
+cr-sel-eng.c:369:38: warning: pointer targets in passing argument 2 of 'xmlHasProp' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/tree.h:984:3: note: expected 'const xmlChar *' but argument is of type 'gchar *'
+cr-sel-eng.c:373:42: warning: pointer targets in passing argument 2 of 'xmlGetProp' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/tree.h:981:3: note: expected 'const xmlChar *' but argument is of type 'gchar *'
+cr-sel-eng.c:407:46: warning: pointer targets in passing argument 1 of 'strncmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:76:15: note: expected 'const char *' but argument is of type 'xmlChar *'
+cr-sel-eng.c:432:38: warning: pointer targets in passing argument 2 of 'xmlHasProp' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/tree.h:984:3: note: expected 'const xmlChar *' but argument is of type 'gchar *'
+cr-sel-eng.c:436:42: warning: pointer targets in passing argument 2 of 'xmlGetProp' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/tree.h:981:3: note: expected 'const xmlChar *' but argument is of type 'gchar *'
+cr-sel-eng.c:455:46: warning: pointer targets in passing argument 1 of 'g_strstr_len' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstrfuncs.h:115:23: note: expected 'const gchar *' but argument is of type 'xmlChar *'
+cr-sel-eng.c: In function 'sel_matches_node_real':
+cr-sel-eng.c:656:35: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:51:15: note: expected 'const char *' but argument is of type 'const xmlChar *'
+cr-sel-eng.c: In function 'cr_sel_eng_register_pseudo_class_sel_handler':
+cr-sel-eng.c:1183:9: warning: pointer targets in passing argument 1 of 'g_strdup' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstrfuncs.h:190:22: note: expected 'const gchar *' but argument is of type 'guchar *'
+cr-sel-eng.c:1183:29: warning: pointer targets in assignment differ in signedness
+cr-sel-eng.c: In function 'cr_sel_eng_unregister_pseudo_class_sel_handler':
+cr-sel-eng.c:1209:17: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:51:15: note: expected 'const char *' but argument is of type 'guchar *'
+cr-sel-eng.c:1209:17: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:51:15: note: expected 'const char *' but argument is of type 'guchar *'
+cr-sel-eng.c: In function 'cr_sel_eng_get_pseudo_class_selector_handler':
+cr-sel-eng.c:1282:17: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:51:15: note: expected 'const char *' but argument is of type 'guchar *'
+cr-sel-eng.c:1282:17: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:51:15: note: expected 'const char *' but argument is of type 'guchar *'
+mv -f .deps/cr-sel-eng.Tpo .deps/cr-sel-eng.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-parsing-location.lo -MD -MP -MF .deps/cr-parsing-location.Tpo -c -o cr-parsing-location.lo cr-parsing-location.c
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-fonts.lo -MD -MP -MF .deps/cr-fonts.Tpo -c cr-fonts.c  -DDLL_EXPORT -DPIC -o .libs/cr-fonts.o
+cr-fonts.c: In function 'cr_font_family_to_string_real':
+cr-fonts.c:81:25: warning: pointer targets in passing argument 2 of 'g_string_append' differ in signedness
+c:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0/glib/gstring.h:85:14: note: expected 'const gchar *' but argument is of type 'const guchar *'
+cr-fonts.c: In function 'cr_font_family_to_string':
+cr-fonts.c:190:24: warning: pointer targets in assignment differ in signedness
+cr-fonts.c:199:24: warning: pointer targets in assignment differ in signedness
+cr-fonts.c: In function 'cr_font_size_set_predefined_absolute_font_size':
+cr-fonts.c:423:9: warning: comparison between 'enum CRPredefinedAbsoluteFontSize' and 'enum CRFontSizeType'
+cr-fonts.c:423:9: warning: comparison between 'enum CRPredefinedAbsoluteFontSize' and 'enum CRFontSizeType'
+cr-fonts.c: In function 'cr_font_size_to_string':
+cr-fonts.c:532:21: warning: pointer targets in assignment differ in signedness
+cr-fonts.c: In function 'cr_font_size_adjust_to_string':
+cr-fonts.c:692:29: warning: pointer targets in assignment differ in signedness
+mv -f .deps/cr-fonts.Tpo .deps/cr-fonts.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include  -O -Wall -MT cr-string.lo -MD -MP -MF .deps/cr-string.Tpo -c -o cr-string.lo cr-string.c
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-prop-list.lo -MD -MP -MF .deps/cr-prop-list.Tpo -c cr-prop-list.c  -DDLL_EXPORT -DPIC -o .libs/cr-prop-list.o
+mv -f .deps/cr-prop-list.Tpo .deps/cr-prop-list.Plo
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-parsing-location.lo -MD -MP -MF .deps/cr-parsing-location.Tpo -c cr-parsing-location.c  -DDLL_EXPORT -DPIC -o .libs/cr-parsing-location.o
+mv -f .deps/cr-parsing-location.Tpo .deps/cr-parsing-location.Plo
+ x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../intl -I ../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -I/devel/dist/win64/proxy-libintl-20090911/include -O -Wall -MT cr-string.lo -MD -MP -MF .deps/cr-string.Tpo -c cr-string.c  -DDLL_EXPORT -DPIC -o .libs/cr-string.o
+mv -f .deps/cr-string.Tpo .deps/cr-string.Plo
+/bin/sh ../libtool --tag=CC   --mode=link x86_64-w64-mingw32-gcc  -O -Wall -version-info 3:1:0 -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -Lc:/devel/dist/win64/glib-2.24.0-2/lib -lglib-2.0 -lintl   -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -lxml2   -no-undefined -L/devel/dist/win64/proxy-libintl-20090911/lib -Wl,--exclude-libs=libintl.a -o libcroco-0.6.la -rpath c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib cr-utils.lo cr-input.lo cr-enc-handler.lo cr-num.lo cr-rgb.lo cr-token.lo cr-tknzr.lo cr-term.lo cr-attr-sel.lo cr-pseudo.lo cr-additional-sel.lo cr-simple-sel.lo cr-selector.lo cr-doc-handler.lo cr-parser.lo cr-declaration.lo cr-statement.lo cr-stylesheet.lo cr-cascade.lo cr-om-parser.lo cr-style.lo cr-sel-eng.lo cr-fonts.lo cr-prop-list.lo cr-parsing-location.lo cr-string.lo -Lc:/devel/dist/win64/glib-2.24.0-2/lib -lglib-2.0 -lintl   -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -lxml2   
+x86_64-w64-mingw32-gcc -shared  .libs/cr-utils.o .libs/cr-input.o .libs/cr-enc-handler.o .libs/cr-num.o .libs/cr-rgb.o .libs/cr-token.o .libs/cr-tknzr.o .libs/cr-term.o .libs/cr-attr-sel.o .libs/cr-pseudo.o .libs/cr-additional-sel.o .libs/cr-simple-sel.o .libs/cr-selector.o .libs/cr-doc-handler.o .libs/cr-parser.o .libs/cr-declaration.o .libs/cr-statement.o .libs/cr-stylesheet.o .libs/cr-cascade.o .libs/cr-om-parser.o .libs/cr-style.o .libs/cr-sel-eng.o .libs/cr-fonts.o .libs/cr-prop-list.o .libs/cr-parsing-location.o .libs/cr-string.o  -Lc:/devel/dist/win64/glib-2.24.0-2/lib -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -L/devel/dist/win64/proxy-libintl-20090911/lib -lglib-2.0 -lintl -lxml2  -mms-bitfields -Wl,--exclude-libs=libintl.a -o .libs/libcroco-0.6-3.dll -Wl,--enable-auto-image-base -Xlinker --out-implib -Xlinker .libs/libcroco-0.6.dll.a
+Creating library file: .libs/libcroco-0.6.dll.a
+creating libcroco-0.6.la
+(cd .libs && rm -f libcroco-0.6.la && ln -s ../libcroco-0.6.la libcroco-0.6.la)
+make[2]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/src'
+test -z "c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib" || /bin/mkdir -p "c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib"
+test -z "c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco" || /bin/mkdir -p "c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco"
+ /bin/sh ../libtool   --mode=install /opt/local/bin/install -c  'libcroco-0.6.la' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib/libcroco-0.6.la'
+ /opt/local/bin/install -c -m 644 'libcroco.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/libcroco.h'
+ /opt/local/bin/install -c -m 644 'cr-additional-sel.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-additional-sel.h'
+ /opt/local/bin/install -c -m 644 'cr-attr-sel.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-attr-sel.h'
+ /opt/local/bin/install -c -m 644 'cr-cascade.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-cascade.h'
+ /opt/local/bin/install -c -m 644 'cr-declaration.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-declaration.h'
+ /opt/local/bin/install -c -m 644 'cr-doc-handler.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-doc-handler.h'
+ /opt/local/bin/install -c -m 644 'cr-enc-handler.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-enc-handler.h'
+ /opt/local/bin/install -c -m 644 'cr-input.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-input.h'
+ /opt/local/bin/install -c -m 644 'cr-num.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-num.h'
+ /opt/local/bin/install -c -m 644 'cr-om-parser.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-om-parser.h'
+ /opt/local/bin/install -c -m 644 'cr-parser.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-parser.h'
+ /opt/local/bin/install -c -m 644 'cr-pseudo.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-pseudo.h'
+/opt/local/bin/install -c .libs/libcroco-0.6.dll.a c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib/libcroco-0.6.dll.a
+base_file=`basename ${file}`
+ /opt/local/bin/install -c -m 644 'cr-rgb.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-rgb.h'
+ dlpath=`/bin/sh 2>&1 -c '. .libs/'${base_file}'i;echo $dlname'`
+ dldir=c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib/`dirname $dlpath`
+ /opt/local/bin/install -c -m 644 'cr-selector.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-selector.h'
+ test -d $dldir || mkdir -p $dldir
+ /opt/local/bin/install -c .libs/libcroco-0.6-3.dll $dldir/libcroco-0.6-3.dll
+ /opt/local/bin/install -c -m 644 'cr-simple-sel.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-simple-sel.h'
+ chmod a+x $dldir/libcroco-0.6-3.dll
+ /opt/local/bin/install -c -m 644 'cr-statement.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-statement.h'
+/opt/local/bin/install -c .libs/libcroco-0.6.lai c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib/libcroco-0.6.la
+ /opt/local/bin/install -c -m 644 'cr-stylesheet.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-stylesheet.h'
+ /opt/local/bin/install -c -m 644 'cr-term.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-term.h'
+ /opt/local/bin/install -c -m 644 'cr-tknzr.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-tknzr.h'
+ /opt/local/bin/install -c -m 644 'cr-token.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-token.h'
+ /opt/local/bin/install -c -m 644 'cr-utils.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-utils.h'
+ /opt/local/bin/install -c -m 644 'cr-fonts.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-fonts.h'
+ /opt/local/bin/install -c -m 644 'cr-sel-eng.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-sel-eng.h'
+----------------------------------------------------------------------
+Libraries have been installed in:
+   c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-LLIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+ /opt/local/bin/install -c -m 644 'cr-style.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-style.h'
+----------------------------------------------------------------------
+ /opt/local/bin/install -c -m 644 'cr-prop-list.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-prop-list.h'
+ /opt/local/bin/install -c -m 644 'cr-parsing-location.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-parsing-location.h'
+ /opt/local/bin/install -c -m 644 'cr-string.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/cr-string.h'
+ /opt/local/bin/install -c -m 644 'libcroco-config.h' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/include/libcroco-0.6/libcroco/libcroco-config.h'
+make[2]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/src'
+make[1]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/src'
+Making install in csslint
+make[1]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/csslint'
+x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I../intl -I../src -I../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2    -I/devel/dist/win64/proxy-libintl-20090911/include -I../intl -I../src -I../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -O -Wall -MT csslint.o -MD -MP -MF .deps/csslint.Tpo -c -o csslint.o csslint.c
+csslint.c: In function 'evaluate_selectors':
+csslint.c:334:25: warning: pointer targets in passing argument 1 of 'cr_om_parser_simply_parse_file' differ in signedness
+../src/cr-om-parser.h:61:15: note: expected 'const guchar *' but argument is of type 'gchar *'
+csslint.c:341:25: warning: pointer targets in passing argument 1 of 'cr_om_parser_simply_parse_file' differ in signedness
+../src/cr-om-parser.h:61:15: note: expected 'const guchar *' but argument is of type 'gchar *'
+csslint.c:348:25: warning: pointer targets in passing argument 1 of 'cr_om_parser_simply_parse_file' differ in signedness
+../src/cr-om-parser.h:61:15: note: expected 'const guchar *' but argument is of type 'gchar *'
+csslint.c:370:9: warning: pointer targets in passing argument 1 of 'xmlXPathEvalExpression' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/xpath.h:511:7: note: expected 'const xmlChar *' but argument is of type 'gchar *'
+csslint.c: In function 'dump_location_annotated_simple_sel':
+csslint.c:739:14: warning: pointer targets in assignment differ in signedness
+csslint.c:772:22: warning: pointer targets in assignment differ in signedness
+csslint.c: In function 'property':
+csslint.c:851:29: warning: pointer targets in assignment differ in signedness
+csslint.c:884:21: warning: pointer targets in assignment differ in signedness
+csslint.c: In function 'main':
+csslint.c:973:25: warning: pointer targets in passing argument 1 of 'cssom_parse' differ in signedness
+csslint.c:243:1: note: expected 'guchar *' but argument is of type 'gchar *'
+csslint.c:978:33: warning: pointer targets in passing argument 1 of 'sac_parse_and_display_locations' differ in signedness
+csslint.c:902:1: note: expected 'guchar *' but argument is of type 'gchar *'
+mv -f .deps/csslint.Tpo .deps/csslint.Po
+/bin/sh ../libtool --tag=CC   --mode=link x86_64-w64-mingw32-gcc -I../intl -I../src -I../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -O -Wall -Lc:/devel/dist/win64/glib-2.24.0-2/lib -lglib-2.0 -lintl   -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -lxml2   -L/devel/dist/win64/proxy-libintl-20090911/lib -Wl,--exclude-libs=libintl.a -o csslint-0.6.exe csslint.o ../src/libcroco-0.6.la 
+mkdir .libs
+x86_64-w64-mingw32-gcc -I../intl -I../src -I../src -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -O -Wall -Wl,--exclude-libs=libintl.a -o csslint-0.6.exe csslint.o  -Lc:/devel/dist/win64/glib-2.24.0-2/lib -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -L/devel/dist/win64/proxy-libintl-20090911/lib ../src/.libs/libcroco-0.6.dll.a -lglib-2.0 -lintl -lxml2   -L/devel/src/gnome/libcroco/0.6.2-1_win64/src/.libs -Lc:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib
+make[2]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/csslint'
+test -z "c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/bin" || /bin/mkdir -p "c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/bin"
+make[2]: Nothing to be done for `install-data-am'.
+  /bin/sh ../libtool   --mode=install /opt/local/bin/install -c 'csslint-0.6.exe' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/bin/csslint-0.6.exe'
+/opt/local/bin/install -c csslint-0.6.exe c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/bin/csslint-0.6.exe
+make[2]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/csslint'
+make[1]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/csslint'
+Making install in docs
+make[1]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/docs'
+Making install in examples
+make[2]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/docs/examples'
+make[3]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/docs/examples'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/docs/examples'
+make[2]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/docs/examples'
+make[2]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/docs'
+make[3]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/docs'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/docs'
+make[2]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/docs'
+make[1]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/docs'
+Making install in tests
+make[1]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests'
+Making install in test-inputs
+make[2]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests/test-inputs'
+make[3]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests/test-inputs'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests/test-inputs'
+make[2]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests/test-inputs'
+Making install in test-output-refs
+make[2]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests/test-output-refs'
+make[3]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests/test-output-refs'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests/test-output-refs'
+make[2]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests/test-output-refs'
+make[2]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests'
+x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I../intl -I../src -I../src  -I/devel/dist/win64/proxy-libintl-20090911/include -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -MT test0-main.o -MD -MP -MF .deps/test0-main.Tpo -c -o test0-main.o test0-main.c
+x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I../intl -I../src -I../src  -I/devel/dist/win64/proxy-libintl-20090911/include -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -MT test1-main.o -MD -MP -MF .deps/test1-main.Tpo -c -o test1-main.o test1-main.c
+x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I../intl -I../src -I../src  -I/devel/dist/win64/proxy-libintl-20090911/include -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -MT test2-main.o -MD -MP -MF .deps/test2-main.Tpo -c -o test2-main.o test2-main.c
+test0-main.c: In function 'test_cr_input_read_byte':
+test0-main.c:148:9: warning: pointer targets in passing argument 1 of 'cr_input_new_from_uri' differ in signedness
+../src/cr-input.h:67:1: note: expected 'const gchar *' but argument is of type 'guchar *'
+test0-main.c: In function 'main':
+test0-main.c:200:9: warning: pointer targets in passing argument 1 of 'test_cr_input_read_byte' differ in signedness
+test0-main.c:139:1: note: expected 'guchar *' but argument is of type 'gchar *'
+test1-main.c: In function 'test_cr_input_read_char':
+test1-main.c:143:9: warning: pointer targets in passing argument 1 of 'cr_input_new_from_uri' differ in signedness
+../src/cr-input.h:67:1: note: expected 'const gchar *' but argument is of type 'guchar *'
+test1-main.c: In function 'main':
+test1-main.c:194:9: warning: pointer targets in passing argument 1 of 'test_cr_input_read_char' differ in signedness
+test1-main.c:135:1: note: expected 'guchar *' but argument is of type 'gchar *'
+test2-main.c: In function 'test_import_style':
+test2-main.c:128:41: warning: pointer targets in initialization differ in signedness
+test2-main.c:133:41: warning: pointer targets in passing argument 2 of 'fprintf' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/stdio.h:188:15: note: expected 'const char *' but argument is of type 'guchar *'
+test2-main.c:145:39: warning: pointer targets in initialization differ in signedness
+test2-main.c:148:33: warning: pointer targets in passing argument 2 of 'fprintf' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/stdio.h:188:15: note: expected 'const char *' but argument is of type 'guchar *'
+test2-main.c: In function 'test_namespace_declaration':
+test2-main.c:173:24: warning: pointer targets in assignment differ in signedness
+test2-main.c:183:21: warning: pointer targets in assignment differ in signedness
+test2-main.c: In function 'test_comment':
+test2-main.c:207:25: warning: pointer targets in assignment differ in signedness
+test2-main.c: In function 'test_property':
+test2-main.c:268:32: warning: pointer targets in initialization differ in signedness
+test2-main.c:273:25: warning: pointer targets in passing argument 2 of 'fprintf' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/stdio.h:188:15: note: expected 'const char *' but argument is of type 'guchar *'
+test2-main.c: In function 'test_start_media':
+test2-main.c:327:32: warning: pointer targets in assignment differ in signedness
+test2-main.c: In function 'test_end_media':
+test2-main.c:358:32: warning: pointer targets in assignment differ in signedness
+test2-main.c: In function 'test_start_page':
+test2-main.c:388:22: warning: pointer targets in assignment differ in signedness
+test2-main.c:391:29: warning: pointer targets in assignment differ in signedness
+test2-main.c: In function 'test_end_page':
+test2-main.c:424:22: warning: pointer targets in assignment differ in signedness
+test2-main.c:427:29: warning: pointer targets in assignment differ in signedness
+test2-main.c: In function 'test_ignorable_at_rule':
+test2-main.c:459:22: warning: pointer targets in assignment differ in signedness
+test2-main.c: In function 'main':
+test2-main.c:556:9: warning: pointer targets in passing argument 1 of 'test_cr_parser_parse' differ in signedness
+test2-main.c:502:1: note: expected 'guchar *' but argument is of type 'gchar *'
+mv -f .deps/test0-main.Tpo .deps/test0-main.Po
+mv -f .deps/test1-main.Tpo .deps/test1-main.Po
+x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I../intl -I../src -I../src  -I/devel/dist/win64/proxy-libintl-20090911/include -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -MT cr-test-utils.o -MD -MP -MF .deps/cr-test-utils.Tpo -c -o cr-test-utils.o cr-test-utils.c
+x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I../intl -I../src -I../src  -I/devel/dist/win64/proxy-libintl-20090911/include -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -MT test3-main.o -MD -MP -MF .deps/test3-main.Tpo -c -o test3-main.o test3-main.c
+test3-main.c: In function 'test_import_style':
+test3-main.c:124:41: warning: pointer targets in initialization differ in signedness
+test3-main.c:126:41: warning: pointer targets in passing argument 2 of 'fprintf' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/stdio.h:188:15: note: expected 'const char *' but argument is of type 'guchar *'
+test3-main.c:137:39: warning: pointer targets in initialization differ in signedness
+test3-main.c:139:33: warning: pointer targets in passing argument 2 of 'fprintf' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/stdio.h:188:15: note: expected 'const char *' but argument is of type 'guchar *'
+test3-main.c: In function 'test_namespace_declaration':
+test3-main.c:164:24: warning: pointer targets in assignment differ in signedness
+test3-main.c:174:21: warning: pointer targets in assignment differ in signedness
+test3-main.c: In function 'test_comment':
+test3-main.c:199:25: warning: pointer targets in assignment differ in signedness
+test3-main.c: In function 'test_property':
+test3-main.c:256:32: warning: pointer targets in initialization differ in signedness
+test3-main.c:258:25: warning: pointer targets in passing argument 2 of 'fprintf' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/stdio.h:188:15: note: expected 'const char *' but argument is of type 'guchar *'
+test3-main.c: In function 'test_start_media':
+test3-main.c:312:32: warning: pointer targets in assignment differ in signedness
+mv -f .deps/test2-main.Tpo .deps/test2-main.Po
+test3-main.c: In function 'test_end_media':
+test3-main.c:341:32: warning: pointer targets in assignment differ in signedness
+test3-main.c: In function 'test_start_page':
+test3-main.c:369:22: warning: pointer targets in assignment differ in signedness
+test3-main.c:372:29: warning: pointer targets in assignment differ in signedness
+test3-main.c: In function 'test_end_page':
+test3-main.c:404:22: warning: pointer targets in assignment differ in signedness
+test3-main.c:407:29: warning: pointer targets in assignment differ in signedness
+test3-main.c: In function 'test_ignorable_at_rule':
+test3-main.c:439:22: warning: pointer targets in assignment differ in signedness
+test3-main.c: In function 'main':
+test3-main.c:537:9: warning: pointer targets in passing argument 1 of 'test_cr_parser_parse' differ in signedness
+test3-main.c:482:1: note: expected 'guchar *' but argument is of type 'gchar *'
+mv -f .deps/cr-test-utils.Tpo .deps/cr-test-utils.Po
+x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I../intl -I../src -I../src  -I/devel/dist/win64/proxy-libintl-20090911/include -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -MT test4-main.o -MD -MP -MF .deps/test4-main.Tpo -c -o test4-main.o test4-main.c
+x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I../intl -I../src -I../src  -I/devel/dist/win64/proxy-libintl-20090911/include -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -MT test5-main.o -MD -MP -MF .deps/test5-main.Tpo -c -o test5-main.o test5-main.c
+test4-main.c:35:29: warning: pointer targets in initialization differ in signedness
+test4-main.c:37:29: warning: pointer targets in initialization differ in signedness
+test4-main.c:39:34: warning: pointer targets in initialization differ in signedness
+test4-main.c:41:32: warning: pointer targets in initialization differ in signedness
+test4-main.c:44:9: warning: pointer targets in initialization differ in signedness
+test4-main.c:46:32: warning: pointer targets in initialization differ in signedness
+test4-main.c:48:35: warning: pointer targets in initialization differ in signedness
+test4-main.c:51:9: warning: pointer targets in initialization differ in signedness
+test4-main.c:55:34: warning: pointer targets in initialization differ in signedness
+test4-main.c: In function 'test_cr_declaration_parse':
+test4-main.c:175:17: warning: pointer targets in assignment differ in signedness
+test4-main.c: In function 'test_cr_declaration_parse_list':
+test4-main.c:203:25: warning: pointer targets in assignment differ in signedness
+test4-main.c: In function 'main':
+test4-main.c:429:9: warning: pointer targets in passing argument 1 of 'test_cr_parser_parse' differ in signedness
+test4-main.c:110:1: note: expected 'guchar *' but argument is of type 'gchar *'
+test5-main.c:35:9: warning: pointer targets in initialization differ in signedness
+test5-main.c: In function 'test_sel_eng':
+test5-main.c:163:9: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+test5-main.c:163:9: warning: pointer targets in passing argument 1 of 'xmlParseMemory' differ in signedness
+c:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2/libxml/parser.h:837:3: note: expected 'const char *' but argument is of type 'const guchar *'
+test5-main.c: In function 'main':
+test5-main.c:245:9: warning: pointer targets in passing argument 1 of 'test_sel_eng' differ in signedness
+test5-main.c:144:1: note: expected 'guchar *' but argument is of type 'gchar *'
+mv -f .deps/test3-main.Tpo .deps/test3-main.Po
+x86_64-w64-mingw32-gcc -DHAVE_CONFIG_H -I. -I.. -I../intl -I../src -I../src  -I/devel/dist/win64/proxy-libintl-20090911/include -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -MT test6-main.o -MD -MP -MF .deps/test6-main.Tpo -c -o test6-main.o test6-main.c
+mv -f .deps/test4-main.Tpo .deps/test4-main.Po
+mv -f .deps/test5-main.Tpo .deps/test5-main.Po
+/bin/sh ../libtool --tag=CC   --mode=link x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -Lc:/devel/dist/win64/glib-2.24.0-2/lib -lglib-2.0 -lintl   -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -lxml2   -L/devel/dist/win64/proxy-libintl-20090911/lib -Wl,--exclude-libs=libintl.a -o test0.exe test0-main.o ../src/libcroco-0.6.la 
+/bin/sh ../libtool --tag=CC   --mode=link x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -Lc:/devel/dist/win64/glib-2.24.0-2/lib -lglib-2.0 -lintl   -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -lxml2   -L/devel/dist/win64/proxy-libintl-20090911/lib -Wl,--exclude-libs=libintl.a -o test1.exe test1-main.o ../src/libcroco-0.6.la 
+test6-main.c:34:9: warning: pointer targets in initialization differ in signedness
+test6-main.c: In function 'test_cr_parser_parse':
+test6-main.c:57:42: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness
+c:/opt/mingw64/lib/gcc/../../x86_64-w64-mingw32/include/string.h:52:18: note: expected 'const char *' but argument is of type 'const guchar *'
+mv -f .deps/test6-main.Tpo .deps/test6-main.Po
+/bin/sh ../libtool --tag=CC   --mode=link x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -Lc:/devel/dist/win64/glib-2.24.0-2/lib -lglib-2.0 -lintl   -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -lxml2   -L/devel/dist/win64/proxy-libintl-20090911/lib -Wl,--exclude-libs=libintl.a -o test2.exe test2-main.o cr-test-utils.o ../src/libcroco-0.6.la 
+mkdir .libs
+x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -O -Wall -Wl,--exclude-libs=libintl.a -o test0.exe test0-main.o  -Lc:/devel/dist/win64/glib-2.24.0-2/lib -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -L/devel/dist/win64/proxy-libintl-20090911/lib ../src/.libs/libcroco-0.6.dll.a -lglib-2.0 -lintl -lxml2   -L/devel/src/gnome/libcroco/0.6.2-1_win64/src/.libs -Lc:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib
+x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -O -Wall -Wl,--exclude-libs=libintl.a -o test2.exe test2-main.o cr-test-utils.o  -Lc:/devel/dist/win64/glib-2.24.0-2/lib -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -L/devel/dist/win64/proxy-libintl-20090911/lib ../src/.libs/libcroco-0.6.dll.a -lglib-2.0 -lintl -lxml2   -L/devel/src/gnome/libcroco/0.6.2-1_win64/src/.libs -Lc:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib
+/bin/sh ../libtool --tag=CC   --mode=link x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -Lc:/devel/dist/win64/glib-2.24.0-2/lib -lglib-2.0 -lintl   -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -lxml2   -L/devel/dist/win64/proxy-libintl-20090911/lib -Wl,--exclude-libs=libintl.a -o test3.exe test3-main.o cr-test-utils.o ../src/libcroco-0.6.la 
+x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -O -Wall -Wl,--exclude-libs=libintl.a -o test1.exe test1-main.o  -Lc:/devel/dist/win64/glib-2.24.0-2/lib -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -L/devel/dist/win64/proxy-libintl-20090911/lib ../src/.libs/libcroco-0.6.dll.a -lglib-2.0 -lintl -lxml2   -L/devel/src/gnome/libcroco/0.6.2-1_win64/src/.libs -Lc:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib
+/bin/sh ../libtool --tag=CC   --mode=link x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -Lc:/devel/dist/win64/glib-2.24.0-2/lib -lglib-2.0 -lintl   -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -lxml2   -L/devel/dist/win64/proxy-libintl-20090911/lib -Wl,--exclude-libs=libintl.a -o test4.exe test4-main.o cr-test-utils.o ../src/libcroco-0.6.la 
+/bin/sh ../libtool --tag=CC   --mode=link x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -Lc:/devel/dist/win64/glib-2.24.0-2/lib -lglib-2.0 -lintl   -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -lxml2   -L/devel/dist/win64/proxy-libintl-20090911/lib -Wl,--exclude-libs=libintl.a -o test5.exe test5-main.o cr-test-utils.o ../src/libcroco-0.6.la 
+x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -O -Wall -Wl,--exclude-libs=libintl.a -o test3.exe test3-main.o cr-test-utils.o  -Lc:/devel/dist/win64/glib-2.24.0-2/lib -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -L/devel/dist/win64/proxy-libintl-20090911/lib ../src/.libs/libcroco-0.6.dll.a -lglib-2.0 -lintl -lxml2   -L/devel/src/gnome/libcroco/0.6.2-1_win64/src/.libs -Lc:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib
+x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -O -Wall -Wl,--exclude-libs=libintl.a -o test4.exe test4-main.o cr-test-utils.o  -Lc:/devel/dist/win64/glib-2.24.0-2/lib -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -L/devel/dist/win64/proxy-libintl-20090911/lib ../src/.libs/libcroco-0.6.dll.a -lglib-2.0 -lintl -lxml2   -L/devel/src/gnome/libcroco/0.6.2-1_win64/src/.libs -Lc:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib
+/bin/sh ../libtool --tag=CC   --mode=link x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2   -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include   -O -Wall -Lc:/devel/dist/win64/glib-2.24.0-2/lib -lglib-2.0 -lintl   -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -lxml2   -L/devel/dist/win64/proxy-libintl-20090911/lib -Wl,--exclude-libs=libintl.a -o test6.exe test6-main.o cr-test-utils.o ../src/libcroco-0.6.la 
+x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -O -Wall -Wl,--exclude-libs=libintl.a -o test5.exe test5-main.o cr-test-utils.o  -Lc:/devel/dist/win64/glib-2.24.0-2/lib -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -L/devel/dist/win64/proxy-libintl-20090911/lib ../src/.libs/libcroco-0.6.dll.a -lglib-2.0 -lintl -lxml2   -L/devel/src/gnome/libcroco/0.6.2-1_win64/src/.libs -Lc:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib
+x86_64-w64-mingw32-gcc -I. -Ic:/devel/dist/win64/libxml2-2.7.4-1/include/libxml2 -mms-bitfields -Ic:/devel/dist/win64/glib-2.24.0-2/include/glib-2.0 -Ic:/devel/dist/win64/glib-2.24.0-2/lib/glib-2.0/include -O -Wall -Wl,--exclude-libs=libintl.a -o test6.exe test6-main.o cr-test-utils.o  -Lc:/devel/dist/win64/glib-2.24.0-2/lib -Lc:/devel/dist/win64/libxml2-2.7.4-1/lib -L/devel/dist/win64/proxy-libintl-20090911/lib ../src/.libs/libcroco-0.6.dll.a -lglib-2.0 -lintl -lxml2   -L/devel/src/gnome/libcroco/0.6.2-1_win64/src/.libs -Lc:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib
+make[3]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests'
+make[2]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests'
+make[1]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64/tests'
+make[1]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64'
+cp croco-config croco-0.6-config
+cp libcroco.pc libcroco-0.6.pc
+cp libcroco.pc libcroco-0.6-uninstalled.pc
+cp croco-config croco-0.6-config-uninstalled
+make[2]: Entering directory `/devel/src/gnome/libcroco/0.6.2-1_win64'
+test -z "c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/bin" || /bin/mkdir -p "c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/bin"
+test -z "c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib/pkgconfig" || /bin/mkdir -p "c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib/pkgconfig"
+ /opt/local/bin/install -c 'croco-0.6-config' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/bin/croco-0.6-config'
+ /opt/local/bin/install -c -m 644 'libcroco-0.6.pc' 'c:/devel/target/6c109371e468ca0fa87c69f4625d9a45/lib/pkgconfig/libcroco-0.6.pc'
+make[2]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64'
+make[1]: Leaving directory `/devel/src/gnome/libcroco/0.6.2-1_win64'
+++ ./libcroco-zip
+rm: cannot lstat `/tmp/libcroco-0.6.2.zip': No such file or directory
+  adding: bin/libcroco-0.6-3.dll (200 bytes security) (deflated 67%)
+rm: cannot lstat `/tmp/libcroco-dev-0.6.2.zip': No such file or directory
+  adding: bin/csslint-0.6.exe (200 bytes security) (deflated 69%)
+  adding: include/libcroco-0.6/ (200 bytes security) (stored 0%)
+  adding: include/libcroco-0.6/libcroco/ (200 bytes security) (stored 0%)
+  adding: include/libcroco-0.6/libcroco/cr-additional-sel.h (200 bytes security) (deflated 65%)
+  adding: include/libcroco-0.6/libcroco/cr-attr-sel.h (200 bytes security) (deflated 56%)
+  adding: include/libcroco-0.6/libcroco/cr-cascade.h (200 bytes security) (deflated 56%)
+  adding: include/libcroco-0.6/libcroco/cr-declaration.h (200 bytes security) (deflated 64%)
+  adding: include/libcroco-0.6/libcroco/cr-doc-handler.h (200 bytes security) (deflated 74%)
+  adding: include/libcroco-0.6/libcroco/cr-enc-handler.h (200 bytes security) (deflated 62%)
+  adding: include/libcroco-0.6/libcroco/cr-fonts.h (200 bytes security) (deflated 74%)
+  adding: include/libcroco-0.6/libcroco/cr-input.h (200 bytes security) (deflated 70%)
+  adding: include/libcroco-0.6/libcroco/cr-num.h (200 bytes security) (deflated 57%)
+  adding: include/libcroco-0.6/libcroco/cr-om-parser.h (200 bytes security) (deflated 69%)
+  adding: include/libcroco-0.6/libcroco/cr-parser.h (200 bytes security) (deflated 70%)
+  adding: include/libcroco-0.6/libcroco/cr-parsing-location.h (200 bytes security) (deflated 54%)
+  adding: include/libcroco-0.6/libcroco/cr-prop-list.h (200 bytes security) (deflated 65%)
+  adding: include/libcroco-0.6/libcroco/cr-pseudo.h (200 bytes security) (deflated 48%)
+  adding: include/libcroco-0.6/libcroco/cr-rgb.h (200 bytes security) (deflated 61%)
+  adding: include/libcroco-0.6/libcroco/cr-sel-eng.h (200 bytes security) (deflated 70%)
+  adding: include/libcroco-0.6/libcroco/cr-selector.h (200 bytes security) (deflated 56%)
+  adding: include/libcroco-0.6/libcroco/cr-simple-sel.h (200 bytes security) (deflated 60%)
+  adding: include/libcroco-0.6/libcroco/cr-statement.h (200 bytes security) (deflated 76%)
+  adding: include/libcroco-0.6/libcroco/cr-string.h (200 bytes security) (deflated 53%)
+  adding: include/libcroco-0.6/libcroco/cr-style.h (200 bytes security) (deflated 74%)
+  adding: include/libcroco-0.6/libcroco/cr-stylesheet.h (200 bytes security) (deflated 54%)
+  adding: include/libcroco-0.6/libcroco/cr-term.h (200 bytes security) (deflated 65%)
+  adding: include/libcroco-0.6/libcroco/cr-tknzr.h (200 bytes security) (deflated 65%)
+  adding: include/libcroco-0.6/libcroco/cr-token.h (200 bytes security) (deflated 73%)
+  adding: include/libcroco-0.6/libcroco/cr-utils.h (200 bytes security) (deflated 72%)
+  adding: include/libcroco-0.6/libcroco/libcroco-config.h (200 bytes security) (deflated 53%)
+  adding: include/libcroco-0.6/libcroco/libcroco.h (200 bytes security) (deflated 52%)
+  adding: lib/libcroco-0.6.dll.a (200 bytes security) (deflated 93%)
+  adding: lib/pkgconfig/libcroco-0.6.pc (200 bytes security) (deflated 34%)
+++ mv /tmp/libcroco-0.6.2.zip /tmp/libcroco_0.6.2-1_win64.zip
+++ mv /tmp/libcroco-dev-0.6.2.zip /tmp/libcroco-dev_0.6.2-1_win64.zip
+++ :

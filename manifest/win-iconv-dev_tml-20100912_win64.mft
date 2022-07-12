@@ -1,0 +1,8 @@
+include/iconv.h
+lib/libiconv.a
+src/tml/win_iconv/README.txt
+src/tml/win_iconv/iconv.h
+src/tml/win_iconv/win_iconv.c
+src/tml/win_iconv/win_iconv_dll.c
+src/tml/win_iconv/Makefile
+manifest/win-iconv-dev_tml-20100912_win64.mft

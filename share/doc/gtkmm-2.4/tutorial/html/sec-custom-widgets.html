@@ -1,0 +1,359 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Custom Widgets</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<link rel="home" href="index.html" title="Programming with gtkmm">
+<link rel="up" href="chapter-customwidgets.html" title="Chapter 26. Custom Widgets">
+<link rel="prev" href="chapter-customwidgets.html" title="Chapter 26. Custom Widgets">
+<link rel="next" href="chapter-recommended-techniques.html" title="Chapter 27. Recommended Techniques">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">Custom Widgets</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="chapter-customwidgets.html"><img src="icons/prev.png" alt="Prev"></a> </td>
+<th width="60%" align="center">Chapter 26. Custom Widgets</th>
+<td width="20%" align="right"> <a accesskey="n" href="chapter-recommended-techniques.html"><img src="icons/next.png" alt="Next"></a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="sect1" title="Custom Widgets">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="sec-custom-widgets"></a>Custom Widgets</h2></div></div></div>
+<p>By deriving directly from <code class="classname">Gtk::Widget</code> you can
+        do all the drawing for your widget directly, instead of just arranging
+        child widgets. For instance, a <code class="classname">Gtk::Label</code> draws
+        the text of the label, but does not do this by using other
+        widgets.</p>
+<div class="sect2" title="Example">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="custom-widget-example"></a>Example</h3></div></div></div>
+<p>This example implements a widget which draws a Penrose triangle.</p>
+<div class="figure">
+<a name="figure-custom-widget"></a><p class="title"><b>Figure 26.2. Custom Widget</b></p>
+<div class="figure-contents"><div class="screenshot"><div><img src="figures/custom_widget.png" alt="Custom Widget"></div></div></div>
+</div>
+<br class="figure-break"><p><a class="ulink" href="http://git.gnome.org/cgit/gtkmm-documentation/tree/examples/book/custom/custom_widget/" target="_top">Source Code</a></p>
+<p>File: <code class="filename">mywidget.h</code>
+</p>
+<pre class="programlisting">
+#ifndef GTKMM_CUSTOM_WIDGET_MYWIDGET_H
+#define GTKMM_CUSTOM_WIDGET_MYWIDGET_H
+
+#include &lt;gtkmm/widget.h&gt;
+
+class MyWidget : public Gtk::Widget
+{
+public:
+  MyWidget();
+  virtual ~MyWidget();
+
+protected:
+
+  //Overrides:
+  virtual void on_size_request(Gtk::Requisition* requisition);
+  virtual void on_size_allocate(Gtk::Allocation&amp; allocation);
+  virtual void on_map();
+  virtual void on_unmap();
+  virtual void on_realize();
+  virtual void on_unrealize();
+  virtual bool on_expose_event(GdkEventExpose* event);
+
+  Glib::RefPtr&lt;Gdk::Window&gt; m_refGdkWindow;
+
+  int m_scale;
+};
+
+#endif //GTKMM_CUSTOM_WIDGET_MYWIDGET_H
+</pre>
+<p>File: <code class="filename">examplewindow.h</code>
+</p>
+<pre class="programlisting">
+#ifndef GTKMM_EXAMPLEWINDOW_H
+#define GTKMM_EXAMPLEWINDOW_H
+
+#include &lt;gtkmm.h&gt;
+#include "mywidget.h"
+
+class ExampleWindow : public Gtk::Window
+{
+public:
+  ExampleWindow();
+  virtual ~ExampleWindow();
+
+protected:
+  //Signal handlers:
+  void on_button_quit();
+
+  //Child widgets:
+  Gtk::VBox m_VBox;
+  MyWidget m_MyWidget;
+  Gtk::HButtonBox m_ButtonBox;
+  Gtk::Button m_Button_Quit;
+};
+
+#endif //GTKMM_EXAMPLEWINDOW_H
+</pre>
+<p>File: <code class="filename">examplewindow.cc</code>
+</p>
+<pre class="programlisting">
+#include "examplewindow.h"
+
+ExampleWindow::ExampleWindow()
+: m_Button_Quit("Quit")
+{
+  set_title("Custom Widget example");
+  set_border_width(6);
+  set_default_size(400, 200);
+
+  add(m_VBox);
+  m_VBox.pack_start(m_MyWidget, Gtk::PACK_EXPAND_WIDGET);
+  m_MyWidget.show();
+
+  m_VBox.pack_start(m_ButtonBox, Gtk::PACK_SHRINK);
+
+  m_ButtonBox.pack_start(m_Button_Quit, Gtk::PACK_SHRINK);
+  m_ButtonBox.set_border_width(6);
+  m_ButtonBox.set_layout(Gtk::BUTTONBOX_END);
+  m_Button_Quit.signal_clicked().connect( sigc::mem_fun(*this, &amp;ExampleWindow::on_button_quit) );
+
+  show_all_children();
+}
+
+ExampleWindow::~ExampleWindow()
+{
+}
+
+void ExampleWindow::on_button_quit()
+{
+  hide();
+}
+</pre>
+<p>File: <code class="filename">main.cc</code>
+</p>
+<pre class="programlisting">
+#include "examplewindow.h"
+#include &lt;gtkmm/main.h&gt;
+
+int main(int argc, char *argv[])
+{
+  Gtk::Main kit(argc, argv);
+
+  ExampleWindow window;
+  //Shows the window and returns when it is closed.
+  Gtk::Main::run(window);
+
+  return 0;
+}
+</pre>
+<p>File: <code class="filename">mywidget.cc</code>
+</p>
+<pre class="programlisting">
+#include "mywidget.h"
+#include &lt;gdkmm/drawable.h&gt;
+#include &lt;gdkmm/general.h&gt;  // for cairo helper functions
+#include &lt;iostream&gt;
+//#include &lt;gtk/gtkwidget.h&gt; //For GTK_IS_WIDGET()
+#include &lt;cstring&gt;
+
+
+MyWidget::MyWidget() :
+  //The GType name will actually be gtkmm__CustomObject_mywidget
+  Glib::ObjectBase("mywidget"),
+  Gtk::Widget(),
+  m_scale(1000)
+{
+  set_has_window(false);
+
+  //This shows the GType name, which must be used in the RC file.
+  std::cout &lt;&lt; "GType name: " &lt;&lt; G_OBJECT_TYPE_NAME(gobj()) &lt;&lt; std::endl;
+
+  //This show that the GType still derives from GtkWidget:
+  //std::cout &lt;&lt; "Gtype is a GtkWidget?:" &lt;&lt; GTK_IS_WIDGET(gobj()) &lt;&lt; std::endl;
+
+  //Install a style so that an aspect of this widget may be themed via an RC
+  //file: 
+  gtk_widget_class_install_style_property(GTK_WIDGET_CLASS(
+              G_OBJECT_GET_CLASS(gobj())), 
+      g_param_spec_int("example_scale",
+        "Scale of Example Drawing",
+        "The scale to use when drawing. This is just a silly example.",
+        G_MININT,
+        G_MAXINT,
+        0,
+        G_PARAM_READABLE) );
+
+  gtk_rc_parse("custom_gtkrc");
+}
+
+MyWidget::~MyWidget()
+{
+}
+
+void MyWidget::on_size_request(Gtk::Requisition* requisition)
+{
+  //Initialize the output parameter:
+  *requisition = Gtk::Requisition();
+
+  //Discover the total amount of minimum space needed by this widget.
+
+  //Let's make this simple example widget always need 50 by 50:
+  requisition-&gt;height = 50;
+  requisition-&gt;width = 50;
+}
+
+void MyWidget::on_size_allocate(Gtk::Allocation&amp; allocation)
+{
+  //Do something with the space that we have actually been given:
+  //(We will not be given heights or widths less than we have requested, though
+  //we might get more)
+
+  //Use the offered allocation for this container:
+  set_allocation(allocation);
+
+  if(m_refGdkWindow)
+  {
+    m_refGdkWindow-&gt;move_resize( allocation.get_x(), allocation.get_y(),
+            allocation.get_width(), allocation.get_height() );
+  }
+}
+
+void MyWidget::on_map()
+{
+  //Call base class:
+  Gtk::Widget::on_map();
+}
+
+void MyWidget::on_unmap()
+{
+  //Call base class:
+  Gtk::Widget::on_unmap();
+}
+
+void MyWidget::on_realize()
+{
+  //Call base class:
+  Gtk::Widget::on_realize();
+
+  ensure_style();
+
+  //Get the themed style from the RC file:
+  get_style_property("example_scale", m_scale);
+  std::cout &lt;&lt; "m_scale (example_scale from the theme/rc-file) is: "
+      &lt;&lt; m_scale &lt;&lt; std::endl; 
+
+  if(!m_refGdkWindow)
+  {
+    //Create the GdkWindow:
+
+    GdkWindowAttr attributes;
+    memset(&amp;attributes, 0, sizeof(attributes));
+
+    Gtk::Allocation allocation = get_allocation();
+
+    //Set initial position and size of the Gdk::Window:
+    attributes.x = allocation.get_x();
+    attributes.y = allocation.get_y();
+    attributes.width = allocation.get_width();
+    attributes.height = allocation.get_height();
+
+    attributes.event_mask = get_events () | Gdk::EXPOSURE_MASK; 
+    attributes.window_type = GDK_WINDOW_CHILD;
+    attributes.wclass = GDK_INPUT_OUTPUT;
+
+
+    m_refGdkWindow = Gdk::Window::create(get_window() /* parent */, &amp;attributes,
+            GDK_WA_X | GDK_WA_Y);
+    set_has_window();
+    set_window(m_refGdkWindow);
+
+    //set colors
+    modify_bg(Gtk::STATE_NORMAL , Gdk::Color("red"));
+    modify_fg(Gtk::STATE_NORMAL , Gdk::Color("blue"));
+
+    //make the widget receive expose events
+    m_refGdkWindow-&gt;set_user_data(gobj());
+  }
+}
+
+void MyWidget::on_unrealize()
+{
+  m_refGdkWindow.clear();
+
+  //Call base class:
+  Gtk::Widget::on_unrealize();
+}
+
+bool MyWidget::on_expose_event(GdkEventExpose* event)
+{
+  if(m_refGdkWindow)
+  {
+    double scale_x = (double)get_allocation().get_width() / m_scale;
+    double scale_y = (double)get_allocation().get_height() / m_scale;
+
+    Cairo::RefPtr&lt;Cairo::Context&gt; cr = m_refGdkWindow-&gt;create_cairo_context();
+    if(event)
+    {
+      // clip to the area that needs to be re-exposed so we don't draw any
+      // more than we need to.
+      cr-&gt;rectangle(event-&gt;area.x, event-&gt;area.y,
+              event-&gt;area.width, event-&gt;area.height);
+      cr-&gt;clip();
+    }
+
+    // paint the background
+    Gdk::Cairo::set_source_color(cr, get_style()-&gt;get_bg(Gtk::STATE_NORMAL));
+    cr-&gt;paint();
+
+    // draw the foreground
+    Gdk::Cairo::set_source_color(cr, get_style()-&gt;get_fg(Gtk::STATE_NORMAL));
+    cr-&gt;move_to(155.*scale_x, 165.*scale_y);
+    cr-&gt;line_to(155.*scale_x, 838.*scale_y);
+    cr-&gt;line_to(265.*scale_x, 900.*scale_y);
+    cr-&gt;line_to(849.*scale_x, 564.*scale_y);
+    cr-&gt;line_to(849.*scale_x, 438.*scale_y);
+    cr-&gt;line_to(265.*scale_x, 100.*scale_y);
+    cr-&gt;line_to(155.*scale_x, 165.*scale_y);
+    cr-&gt;move_to(265.*scale_x, 100.*scale_y);
+    cr-&gt;line_to(265.*scale_x, 652.*scale_y);
+    cr-&gt;line_to(526.*scale_x, 502.*scale_y);
+    cr-&gt;move_to(369.*scale_x, 411.*scale_y);
+    cr-&gt;line_to(633.*scale_x, 564.*scale_y);
+    cr-&gt;move_to(369.*scale_x, 286.*scale_y);
+    cr-&gt;line_to(369.*scale_x, 592.*scale_y);
+    cr-&gt;move_to(369.*scale_x, 286.*scale_y);
+    cr-&gt;line_to(849.*scale_x, 564.*scale_y);
+    cr-&gt;move_to(633.*scale_x, 564.*scale_y);
+    cr-&gt;line_to(155.*scale_x, 838.*scale_y);
+    cr-&gt;stroke();
+  }
+  return true;
+}
+</pre>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="chapter-customwidgets.html"><img src="icons/prev.png" alt="Prev"></a> </td>
+<td width="20%" align="center"><a accesskey="u" href="chapter-customwidgets.html"><img src="icons/up.png" alt="Up"></a></td>
+<td width="40%" align="right"> <a accesskey="n" href="chapter-recommended-techniques.html"><img src="icons/next.png" alt="Next"></a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">Chapter 26. Custom Widgets </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html"><img src="icons/home.png" alt="Home"></a></td>
+<td width="40%" align="right" valign="top"> Chapter 27. Recommended Techniques</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

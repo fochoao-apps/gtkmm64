@@ -1,0 +1,137 @@
+﻿  autofit.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\autofit\afglobal.c(284,12): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+  ftbase.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\include\freetype\internal\ftvalid.h(87,36): warning C4324: 'FT_ValidatorRec_': structure was padded due to alignment specifier
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\base\ftrfork.c(532,32): warning C4267: 'initializing': conversion from 'size_t' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\base\ftrfork.c(568,32): warning C4267: 'initializing': conversion from 'size_t' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\base\ftrfork.c(814,10): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\base\ftrfork.c(830,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\base\ftrfork.c(831,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\base\ftrfork.c(820,7): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ftbbox.c
+  ftbitmap.c
+  ftfstype.c
+  ftgasp.c
+  ftglyph.c
+  ftgxval.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\include\freetype\internal\ftvalid.h(87,36): warning C4324: 'FT_ValidatorRec_': structure was padded due to alignment specifier
+  ftinit.c
+  ftlcdfil.c
+  ftmm.c
+  ftotval.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\include\freetype\internal\ftvalid.h(87,36): warning C4324: 'FT_ValidatorRec_': structure was padded due to alignment specifier
+  ftpatent.c
+  ftpfr.c
+  ftstroke.c
+  ftsynth.c
+  ftsystem.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\base\ftsystem.c(239,12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  fttype1.c
+  ftwinfnt.c
+  ftxf86.c
+  Generating Code...
+  Compiling...
+  bdf.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\bdf\bdflib.c(722,41): warning C4244: 'function': conversion from 'ptrdiff_t' to 'unsigned long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\bdf\bdflib.c(726,43): warning C4244: 'function': conversion from 'ptrdiff_t' to 'unsigned long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\bdf\bdflib.c(1004,10): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\bdf\bdflib.c(1171,56): warning C4267: 'function': conversion from 'size_t' to 'unsigned long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\bdf\bdflib.c(1918,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\bdf\bdflib.c(1930,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\bdf\bdflib.c(2249,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\bdf\bdflib.c(2256,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\bdf\bdfdrivr.c(269,12): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+  ftcache.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\cache\ftcmru.c(266,15): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\cache\ftcmanag.c(595,13): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\cache\ftccache.c(294,40): warning C4267: '-=': conversion from 'size_t' to 'FT_ULong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\cache\ftccache.c(372,46): warning C4267: '-=': conversion from 'size_t' to 'FT_ULong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\cache\ftccache.c(427,42): warning C4267: '+=': conversion from 'size_t' to 'FT_ULong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\cache\ftccache.c(583,42): warning C4267: '-=': conversion from 'size_t' to 'FT_ULong', possible loss of data
+  cff.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\cff\cffobjs.c(405,48): warning C4267: 'initializing': conversion from 'size_t' to 'FT_Int32', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\cff\cffgload.c(2704,38): warning C4244: '=': conversion from 'FT_UInt' to 'FT_Byte', possible loss of data
+  type1cid.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\cid\cidparse.c(120,34): warning C4244: '+=': conversion from '__int64' to 'FT_ULong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\cid\cidparse.c(125,34): warning C4244: '+=': conversion from '__int64' to 'FT_ULong', possible loss of data
+  ftgzip.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infcodes.c(122,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infcodes.c(157,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infcodes.c(160,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infcodes.c(169,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infcodes.c(189,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infcodes.c(192,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infcodes.c(203,9): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infcodes.c(212,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infcodes.c(226,9): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infcodes.c(230,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infcodes.c(233,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infcodes.c(236,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(139,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(165,15): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(182,11): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(186,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(192,9): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(201,9): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(202,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(217,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(225,9): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(232,9): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(241,9): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(258,9): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(271,9): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(284,11): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(297,13): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(326,11): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(332,11): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(339,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(357,9): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(361,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(364,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\gzip\infblock.c(367,7): warning C4244: '+=': conversion from '__int64' to 'uLong', possible loss of data
+  ftlzw.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\lzw\ftzopen.c(127,12): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+  pcf.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\pcf\pcfread.c(1062,12): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\pcf\pcfdrivr.c(516,46): warning C4267: 'function': conversion from 'size_t' to 'FT_ULong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\pcf\pcfdrivr.c(521,10): warning C4267: 'function': conversion from 'size_t' to 'FT_ULong', possible loss of data
+  pfr.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\pfr\pfrload.c(460,10): warning C4244: 'function': conversion from 'FT_PtrDist' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\pfr\pfrobjs.c(506,12): warning C4267: 'function': conversion from 'size_t' to 'FT_ULong', possible loss of data
+  psaux.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\psaux\psobjs.c(206,43): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\psaux\psobjs.c(252,10): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\psaux\afmparse.c(404,17): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+  pshinter.c
+  psmodule.c
+  raster.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\raster\ftraster.c(3452,53): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
+  sfnt.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\include\freetype\internal\ftvalid.h(87,36): warning C4324: 'FT_ValidatorRec_': structure was padded due to alignment specifier
+  smooth.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\smooth\ftgrays.c(358,28): warning C4324: 'TWorker_': structure was padded due to alignment specifier
+  truetype.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\truetype\ttobjs.c(316,52): warning C4244: 'function': conversion from 'int' to 'FT_UShort', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\truetype\ttgxvar.c(223,10): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\truetype\ttgxvar.c(708,12): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\truetype\ttgxvar.c(787,12): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\truetype\ttgxvar.c(1171,19): warning C4244: '=': conversion from '__int64' to 'FT_ULong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\truetype\ttgxvar.c(1246,14): warning C4244: '=': conversion from '__int64' to 'FT_ULong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\truetype\ttgxvar.c(1364,19): warning C4244: '=': conversion from '__int64' to 'FT_ULong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\truetype\ttgxvar.c(1379,14): warning C4244: '=': conversion from '__int64' to 'FT_ULong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\truetype\ttgxvar.c(1384,22): warning C4244: '=': conversion from '__int64' to 'FT_ULong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\truetype\ttgxvar.c(1438,14): warning C4244: '=': conversion from '__int64' to 'FT_ULong', possible loss of data
+  type1.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\type1\t1parse.c(120,11): warning C4267: 'function': conversion from 'size_t' to 'FT_ULong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\type1\t1parse.c(419,31): warning C4244: '=': conversion from '__int64' to 'FT_ULong', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\type1\t1load.c(619,12): warning C4244: 'function': conversion from 'FT_PtrDist' to 'FT_Long', possible loss of data
+  type42.c
+  winfnt.c
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\winfonts\winfnt.c(847,12): warning C4244: 'function': conversion from 'FT_PtrDist' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\winfonts\winfnt.c(856,1): warning C4244: 'function': conversion from 'FT_PtrDist' to 'FT_Long', possible loss of data
+C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\src\winfonts\winfnt.c(856,1): warning C4267: 'function': conversion from 'size_t' to 'FT_Long', possible loss of data
+  Generating Code...
+  ftdebug.c
+D:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1553,5): warning MSB8012: TargetPath(C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\builds\win32\visualc\x64\Release Multithreaded\freetype.lib) does not match the Library's OutputFile property value (C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\objs\freetype244MT.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+D:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1555,5): warning MSB8012: TargetName(freetype) does not match the Library's OutputFile property value (freetype244MT). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  freetype.vcxproj -> C:\Users\Administrator\Downloads\freetype-2.4.4.tar\freetype-2.4.4\builds\win32\visualc\x64\Release Multithreaded\freetype.lib

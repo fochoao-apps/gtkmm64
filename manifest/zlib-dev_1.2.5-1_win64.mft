@@ -1,0 +1,8 @@
+lib/libz.dll.a
+lib/zdll.lib
+lib/zlib.def
+include/zconf.h
+include/zlib.h
+src/tml/packaging/zlib_1.2.5-1_win64.sh
+src/tml/packaging/zlib_1.2.5-1_win64.log
+manifest/zlib-dev_1.2.5-1_win64.mft
